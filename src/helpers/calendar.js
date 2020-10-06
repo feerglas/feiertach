@@ -2,17 +2,19 @@ import download from './writeFile';
 
 const ics = require('ics');
 
-const addEvent = (details) => {
-  ics.createEvent(details, (error, value) => {
-    if (error) {
-      console.log(error);
+const addEvents = (events) => {
+  const {
+    error,
+    value
+  } = ics.createEvents(events);
 
-      return;
-    }
+  if (error) {
+    console.log(error);
 
-    download('feiertaCH', value);
+    return;
+  }
 
-  });
+  download('feiertaCH', value);
 };
 
-export default addEvent;
+export default addEvents;

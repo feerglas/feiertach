@@ -27,9 +27,9 @@
 
 <script>
 
-import addEvent from '../helpers/calendar';
+import addEvents from '../helpers/calendar';
 
-addEvent({
+const event1 = {
   description: 'Desc',
   end: [
     2020,
@@ -42,7 +42,27 @@ addEvent({
     7
   ],
   title: 'Title'
-});
+};
+
+const event2 = {
+  description: 'Desc 2',
+  end: [
+    2020,
+    10,
+    8
+  ],
+  start: [
+    2020,
+    10,
+    8
+  ],
+  title: 'Title 2'
+};
+
+addEvents([
+  event1,
+  event2
+]);
 
 export default {
   metaInfo: {
