@@ -36,5 +36,6 @@
     "vue-svg-loader": "~0.16.0"
   },
   "author": "Yves Tscherry",
-  "license": "MIT"
+  "license": "MIT",
+  "version": "1.0.0"
 }
