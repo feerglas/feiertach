@@ -13,8 +13,10 @@
   },
   "dependencies": {
     "buefy": "~0.9.3",
+    "file-saver": "~2.0.2",
     "gridsome": "^0.7.0",
-    "gridsome-plugin-i18n": "~1.6.0"
+    "gridsome-plugin-i18n": "~1.6.0",
+    "ics": "~2.25.0"
   },
   "devDependencies": {
     "@commitlint/cli": "~11.0.0",
