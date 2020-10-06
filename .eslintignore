@@ -1,0 +1,9 @@
+/node_modules/
+/cache/
+/git/
+/dist/
+/src/.temp
+.eslintrc.js
+
+# not ignored folders/files
+!.travis.yml
