@@ -26,6 +26,24 @@
 </template>
 
 <script>
+
+import addEvent from '../helpers/calendar';
+
+addEvent({
+  description: 'Desc',
+  end: [
+    2020,
+    10,
+    7
+  ],
+  start: [
+    2020,
+    10,
+    7
+  ],
+  title: 'Title'
+});
+
 export default {
   metaInfo: {
     title: 'Hello, world!'
