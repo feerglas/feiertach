@@ -7,8 +7,18 @@
 
         <transition name="fade" appear>
           <main>
-            <h1 class="title">{{title}}</h1>
+
+            <h1 class="title">
+              <g-image
+                v-if="image"
+                class="image"
+                :src="image"
+              />
+              {{title}}
+            </h1>
+
             <slot/>
+
           </main>
         </transition>
       </div>
@@ -27,12 +37,26 @@ export default {
     Footer,
     Header
   },
-  props: ['title']
+  props: [
+    'title',
+    'image'
+  ]
 };
 </script>
 
 <style lang="scss" scoped>
 @import "../styles/bulma.scss";
+
+.title {
+  display: flex;
+  align-items: center;
+}
+
+.image {
+  height: 3rem;
+  border: 1px solid black;
+  margin-right: 1rem;
+}
 
 .fade-enter-active {
   transition: opacity 300ms;
@@ -42,8 +66,8 @@ export default {
   opacity: 0;
 }
 
-@include until($desktop) {
-  .container.is-max-desktop {
+.container.is-max-desktop {
+  @include until($desktop) {
     padding: 1rem;
   }
 }
