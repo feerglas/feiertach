@@ -1,3 +1,11 @@
+## [1.2.1](https://github.com/feerglas/feiertach/compare/v1.2.0...v1.2.1) (2020-10-13)
+
+
+### Bug Fixes
+
+* fix pathPrefix ([f7f273b](https://github.com/feerglas/feiertach/commit/f7f273b56c32ac0f44340dfd0c055b8dcf0e22f8))
+* fix svg paths ([38ba972](https://github.com/feerglas/feiertach/commit/38ba97284fe510bf7ae6d0f42d0c56b4aecf2302))
+
 # [1.2.0](https://github.com/feerglas/feiertach/compare/v1.1.0...v1.2.0) (2020-10-13)
 
 
