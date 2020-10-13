@@ -1,2 +1,4 @@
 - robots.txt
 - pwa
+- add precommit/prepush hook with husky to lint
+- add version to footer
