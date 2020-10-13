@@ -1,6 +1,7 @@
 const cantons = require('./src/data/cantons');
 const allHolidays = require('./src/data/holidays/allHolidays');
 const globalConfig = require('./src/config/global');
+const iconsPath = require('./src/helpers/icons');
 
 const addCantonsCollection = (actions) => {
   const cantonsCollection = actions.addCollection('Canton');
@@ -10,6 +11,9 @@ const addCantonsCollection = (actions) => {
 
   for (const canton of cantons) {
     let holidays = [];
+
+    // fix svg path
+    canton.flag = iconsPath() + canton.flag;
 
     for (const year of years) {
       const holidaysForYear = allHolidays.getHolidaysForYearAndCanton(year, canton.key);

@@ -1,7 +1,7 @@
 <template>
   <Layout
     :title="$page.canton.name[this.$i18n.locale]"
-    :image="$data.iconsPath + $page.canton.flag"
+    :image="$page.canton.flag"
     >
     <span>{{filteredHolidays.length}}</span>
 
@@ -116,7 +116,6 @@ import {
   addEvents,
   getCalendarEventForHoliday
 } from '../helpers/calendar';
-import iconsPath from '../helpers/icons';
 
 const globalConfig = require('../config/global');
 
@@ -132,7 +131,6 @@ export default {
     return {
       currentLocale: this.$i18n.locale,
       currentLocaleString: `${this.$i18n.locale}-${this.$i18n.locale.toUpperCase()}`,
-      iconsPath: iconsPath(),
       years: globalConfig.years,
       yearSelection: [globalConfig.years[0]]
     };
