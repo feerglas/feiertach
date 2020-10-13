@@ -11,7 +11,7 @@ module.exports = {
       .use('vue-svg-loader')
       .loader('vue-svg-loader');
   },
-  pathPrefix: '/feiertach',
+  pathPrefix: '/feiertach/',
   plugins: [
     {
       options: {
