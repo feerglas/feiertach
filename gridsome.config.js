@@ -38,5 +38,8 @@ module.exports = {
   ],
   siteDescription: 'List holidays from Switzerland',
   siteName: 'Swiss Holidays',
-  siteUrl: 'https://feerglas.github.io'
+  siteUrl: 'https://feerglas.github.io',
+  templates: {
+    Canton: '/cantons/:id'
+  }
 };
