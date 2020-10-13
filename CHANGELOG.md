@@ -1,3 +1,10 @@
+## [1.2.5](https://github.com/feerglas/feiertach/compare/v1.2.4...v1.2.5) (2020-10-13)
+
+
+### Bug Fixes
+
+* log path ([cda458d](https://github.com/feerglas/feiertach/commit/cda458d6a399e2aa59833579009dfdfa894fbb34))
+
 ## [1.2.4](https://github.com/feerglas/feiertach/compare/v1.2.3...v1.2.4) (2020-10-13)
 
 
