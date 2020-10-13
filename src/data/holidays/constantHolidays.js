@@ -1119,4 +1119,4 @@ const holidays = [
   }
 ];
 
-export default holidays;
+module.exports = holidays;
