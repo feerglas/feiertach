@@ -1,5 +1,5 @@
 /* eslint-disable sort-keys */
-module.exports = {
+const locales = {
   navigation: {
     cantons: {
       de: 'Kantone',
@@ -22,3 +22,5 @@ module.exports = {
   }
 };
 /* eslint-enable sort-keys */
+
+export default locales;
