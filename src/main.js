@@ -34,6 +34,7 @@ export default (Vue, {
     defaultIconPack: 'mdi'
   });
 
+  // Set Locales Messages
   appOptions.i18n.setLocaleMessage('de', extractLocale('de', locales));
   appOptions.i18n.setLocaleMessage('en', extractLocale('en', locales));
   appOptions.i18n.setLocaleMessage('it', extractLocale('it', locales));
