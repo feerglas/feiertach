@@ -12,7 +12,7 @@
         >
           <g-image
             class="image"
-            :src="'/images/flags/' + item.node.flag"
+            :src="'../../images/flags/' + item.node.flag"
           />
           <span class="name">{{item.node.name[$data.currentLocale]}}</span>
         </g-link>
