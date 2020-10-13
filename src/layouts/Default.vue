@@ -3,16 +3,15 @@
 
     <Header />
 
-    <div class="columns is-desktop">
-      <div class="column">
+    <div class="container is-max-desktop">
+
         <transition name="fade" appear>
           <main>
+            <h1 class="title">{{title}}</h1>
             <slot/>
           </main>
         </transition>
       </div>
-
-    </div>
 
     <Footer />
 
@@ -27,11 +26,13 @@ export default {
   components: {
     Footer,
     Header
-  }
+  },
+  props: ['title']
 };
 </script>
 
 <style lang="scss" scoped>
+@import "../styles/bulma.scss";
 
 .fade-enter-active {
   transition: opacity 300ms;
@@ -41,8 +42,10 @@ export default {
   opacity: 0;
 }
 
-.columns {
-  margin: 0;
+@include until($desktop) {
+  .container.is-max-desktop {
+    padding: 1rem;
+  }
 }
 
 </style>
