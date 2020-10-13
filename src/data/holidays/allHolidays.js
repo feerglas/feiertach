@@ -1,5 +1,5 @@
-import constantHolidays from './constantHolidays';
-import variableHolidays from './variableHolidays';
+const constantHolidays = require('./constantHolidays');
+const variableHolidays = require('./variableHolidays');
 
 /**
  * Private
@@ -18,7 +18,7 @@ const addYearToHolidays = (holidays, year) => {
 
 const addLeadingZeroesToDate = (holidays) => {
   const holidaysWithZeroes = holidays.map((day) => {
-    const dayWithZeroes = day;
+    const dayWithZeroes = JSON.parse(JSON.stringify(day));
     const _day = dayWithZeroes.date.day;
     const _month = dayWithZeroes.date.month;
     const _dayZero = _day < 10
@@ -111,6 +111,7 @@ const getHolidaysForYear = (year) => {
 
 const getHolidaysForYearAndCanton = (year, canton) => {
   const yearHolidays = getHolidaysForYear(year);
+
   const filtered = yearHolidays.filter((day) => {
     const cantonKeys = Object.keys(day.cantons);
 
@@ -120,7 +121,7 @@ const getHolidaysForYearAndCanton = (year, canton) => {
   return filtered;
 };
 
-export {
+module.exports = {
   getHolidaysForYear,
   getHolidaysForYearAndCanton
 };
