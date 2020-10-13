@@ -12,7 +12,7 @@
         >
           <g-image
             class="image"
-            :src="'../../images/flags/' + item.node.flag"
+            :src="$data.iconsPath + item.node.flag"
           />
           <span class="name">{{item.node.name[$data.currentLocale]}}</span>
         </g-link>
@@ -44,10 +44,13 @@
 </page-query>
 
 <script>
+import iconsPath from '../helpers/icons';
+
 export default {
   data() {
     return {
-      currentLocale: this.$i18n.locale
+      currentLocale: this.$i18n.locale,
+      iconsPath: iconsPath()
     };
   }
 };
