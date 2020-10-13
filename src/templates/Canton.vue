@@ -1,7 +1,7 @@
 <template>
   <Layout
     :title="$page.canton.name[this.$i18n.locale]"
-    :image="'feiertach/images/flags/' + $page.canton.flag"
+    :image="'/feiertach/images/flags/' + $page.canton.flag"
     >
     <span>{{filteredHolidays.length}}</span>
 
