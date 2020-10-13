@@ -1,3 +1,10 @@
+## [1.2.6](https://github.com/feerglas/feiertach/compare/v1.2.5...v1.2.6) (2020-10-13)
+
+
+### Bug Fixes
+
+* fix svg path during build time ([c16e883](https://github.com/feerglas/feiertach/commit/c16e883f079ecd83d29051a9d3ff5afaa45dbfc7))
+
 ## [1.2.5](https://github.com/feerglas/feiertach/compare/v1.2.4...v1.2.5) (2020-10-13)
 
 
