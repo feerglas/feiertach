@@ -1,3 +1,10 @@
+## [1.2.4](https://github.com/feerglas/feiertach/compare/v1.2.3...v1.2.4) (2020-10-13)
+
+
+### Bug Fixes
+
+* fix icon paths for good ([6c4091f](https://github.com/feerglas/feiertach/commit/6c4091f4cf26057ab4d663e5daf9f72f700d9df0))
+
 ## [1.2.3](https://github.com/feerglas/feiertach/compare/v1.2.2...v1.2.3) (2020-10-13)
 
 
