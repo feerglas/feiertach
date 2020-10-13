@@ -36,8 +36,6 @@ const getCalendarEventForHoliday = (holiday, locale, copyright, canton) => {
     event.description = copyright;
   }
 
-  // console.log(event);
-
   return event;
 };
 
