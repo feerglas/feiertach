@@ -116,7 +116,7 @@ const holidays = [
       fr: '40 jours après Pâques',
       it: '40 giorni dopo Pasqua'
     },
-    links: {
+    link: {
       de: 'http://de.m.wikipedia.org/wiki/Christi_Himmelfahrt',
       en: 'http://de.m.wikipedia.org/wiki/Christi_Himmelfahrt',
       fr: 'https://fr.m.wikipedia.org/wiki/Ascension_(f%C3%AAte)',
@@ -158,7 +158,7 @@ const holidays = [
       fr: 'le lundi après Jeûne fédéral',
       it: 'il Lunedi dopo che  Eidgenössischer Dank-, Buss- und Bettag'
     },
-    links: {
+    link: {
       de: 'http://de.m.wikipedia.org/wiki/Eidgenössischer_Dank-,_Buss-_und_Bettag',
       en: 'http://de.m.wikipedia.org/wiki/Eidgenössischer_Dank-,_Buss-_und_Bettag',
       fr: 'http://de.m.wikipedia.org/wiki/Eidgenössischer_Dank-,_Buss-_und_Bettag',
@@ -248,7 +248,7 @@ const holidays = [
       fr: '60 jours après Pâques',
       it: '60 giorni dopo Pasqua'
     },
-    links: {
+    link: {
       de: 'http://de.m.wikipedia.org/wiki/Fronleichnam',
       en: 'http://en.m.wikipedia.org/wiki/Corpus_Christi_(feast)',
       fr: 'http://fr.m.wikipedia.org/wiki/Fête-Dieu',
@@ -278,7 +278,7 @@ const holidays = [
       fr: 'le jeudi après le premier dimanche en Septembre',
       it: 'il Giovedi dopo la prima Domenica di settembre'
     },
-    links: {
+    link: {
       de: 'http://de.m.wikipedia.org/wiki/Genfer_Bettag',
       en: 'http://de.m.wikipedia.org/wiki/Genfer_Bettag',
       fr: 'http://de.m.wikipedia.org/wiki/Genfer_Bettag',
@@ -400,7 +400,7 @@ const holidays = [
       fr: 'le vendredi précédant le dimanche de Pâques',
       it: 'il venerdì che precede la Pasqua cristiana'
     },
-    links: {
+    link: {
       de: 'http://de.m.wikipedia.org/wiki/Karfreitag',
       en: 'http://en.m.wikipedia.org/wiki/Good_friday',
       fr: 'http://fr.m.wikipedia.org/wiki/Vendredi_saint',
@@ -430,7 +430,7 @@ const holidays = [
       fr: 'le deuxième week-end en Septembre',
       it: 'il secondo fine settimana di settembre'
     },
-    links: {
+    link: {
       de: 'http://de.m.wikipedia.org/wiki/Knabenschiessen',
       en: 'http://de.m.wikipedia.org/wiki/Knabenschiessen',
       fr: 'http://de.m.wikipedia.org/wiki/Knabenschiessen',
@@ -460,7 +460,7 @@ const holidays = [
       fr: 'le premier jeudi d\'avril',
       it: 'il primo Giovedi nel mese di aprile'
     },
-    links: {
+    link: {
       de: 'http://de.m.wikipedia.org/wiki/Näfelser_Fahrt',
       en: 'http://de.m.wikipedia.org/wiki/Näfelser_Fahrt',
       fr: 'http://de.m.wikipedia.org/wiki/Näfelser_Fahrt',
@@ -586,7 +586,7 @@ const holidays = [
       fr: 'le lendemain du jour de Pâques',
       it: 'il giorno dopo la Pasqua'
     },
-    links: {
+    link: {
       de: 'http://de.m.wikipedia.org/wiki/Ostermontag',
       en: 'http://en.m.wikipedia.org/wiki/Easter_Monday',
       fr: 'http://fr.m.wikipedia.org/wiki/Lundi_de_Pâques',
@@ -716,7 +716,7 @@ const holidays = [
       fr: 'le dimanche après la première pleine lune de printemps',
       it: 'la Domenica dopo la luna piena prima molla'
     },
-    links: {
+    link: {
       de: 'http://de.m.wikipedia.org/wiki/Ostern',
       en: 'http://en.m.wikipedia.org/wiki/Easter',
       fr: 'http://fr.m.wikipedia.org/wiki/Pâques',
@@ -842,7 +842,7 @@ const holidays = [
       fr: 'le lundi après la Pentecôte',
       it: 'il Lunedi dopo la Pentecoste'
     },
-    links: {
+    link: {
       de: 'http://de.m.wikipedia.org/wiki/Pfingsten',
       en: 'http://en.m.wikipedia.org/wiki/Pentecost',
       fr: 'http://fr.m.wikipedia.org/wiki/Pentecôte',
@@ -872,7 +872,7 @@ const holidays = [
       fr: 'sur le troisième lundi d\'avril',
       it: 'sul terzo Lunedi nel mese di aprile'
     },
-    links: {
+    link: {
       de: 'http://de.m.wikipedia.org/wiki/Sechseläuten',
       en: 'http://de.m.wikipedia.org/wiki/Sechseläuten',
       fr: 'http://de.m.wikipedia.org/wiki/Sechseläuten',
@@ -887,4 +887,4 @@ const holidays = [
   }
 ];
 
-export default holidays;
+module.exports = holidays;
