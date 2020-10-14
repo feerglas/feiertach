@@ -40,16 +40,28 @@ const locales = {
       it: 'Hinzugefügt mit feiertaCH: https://feerglas.github.io/feiertach/'
     },
     allCanton: {
-      de: 'Im ganzen Kanton',
-      en: 'Im ganzen Kanton',
-      fr: 'Im ganzen Kanton',
-      it: 'Im ganzen Kanton'
+      de: 'Überall',
+      en: 'Überall',
+      fr: 'Überall',
+      it: 'Überall'
+    },
+    allCantonExplanation: {
+      de: 'Dieser Feiertag gilt im ganzen Kanton',
+      en: 'Dieser Feiertag gilt im ganzen Kanton',
+      fr: 'Dieser Feiertag gilt im ganzen Kanton',
+      it: 'Dieser Feiertag gilt im ganzen Kanton'
     },
     official: {
-      de: 'Gesetzlich anerkannt',
-      en: 'Gesetzlich anerkannt',
-      fr: 'Gesetzlich anerkannt',
-      it: 'Gesetzlich anerkannt'
+      de: 'Gesetzlich',
+      en: 'Gesetzlich',
+      fr: 'Gesetzlich',
+      it: 'Gesetzlich'
+    },
+    officialExplanation: {
+      de: 'Dies ist ein gesetzlicher anerkannter Feiertag',
+      en: 'Dies ist ein gesetzlicher anerkannter Feiertag',
+      fr: 'Dies ist ein gesetzlicher anerkannter Feiertag',
+      it: 'Dies ist ein gesetzlicher anerkannter Feiertag'
     },
     date: {
       de: 'Datum',
@@ -62,6 +74,12 @@ const locales = {
       en: 'Feiertag',
       fr: 'Feiertag',
       it: 'Feiertag'
+    },
+    infos: {
+      de: 'Infos',
+      en: 'Infos',
+      fr: 'Infos',
+      it: 'Infos'
     }
   }
 };
