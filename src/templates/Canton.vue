@@ -13,6 +13,7 @@
         :key="index"
         :native-value="year"
         v-model="yearSelection"
+        @change.native="handleCheckboxChange(year)"
       >
         {{year}}
       </b-checkbox>
@@ -27,36 +28,67 @@
       :data="filteredHolidays"
       :paginated="false"
       default-sort-direction="asc"
-      sort-icon="arrow-up"
-      sort-icon-size="is-medium"
+      sort-icon="chevron-up"
+
       default-sort="sortDate"
     >
 
-      <b-table-column field="date" :label="$t('holiday.date')" sortable numeric v-slot="props">
+      <b-table-column field="sortDate" :label="$t('holiday.date')" sortable v-slot="props">
         {{ formatDate(props.row.dateObject) }}
       </b-table-column>
 
-      <b-table-column field="title" :label="$t('holiday.holiday')" sortable v-slot="props">
+      <b-table-column :field="`title.${$data.currentLocale}`" :label="$t('holiday.holiday')" sortable v-slot="props">
         {{ props.row.title[$data.currentLocale] }}
         <p v-if="props.row.description">({{props.row.description[$data.currentLocale]}})</p>
       </b-table-column>
 
-      <b-table-column field="link" label="Wikipedia" sortable v-slot="props">
-        {{ props.row.link[$data.currentLocale] }}
+      <b-table-column field="official" :label="$t('holiday.official')" centered sortable>
+        <template v-slot:header="{ column }">
+          <b-tooltip :label="$t('holiday.officialExplanation')" dashed type="is-black">
+            <p>{{ column.label }}</p>
+          </b-tooltip>
+        </template>
+        <template v-slot="props">
+          <b-icon
+            :icon="props.row.official ? 'check' : 'close'"
+            size="is-small"
+            :type="props.row.official ? 'is-success' : 'is-danger'"
+          ></b-icon>
+        </template>
       </b-table-column>
 
-      <b-table-column field="official" :label="$t('holiday.official')" sortable v-slot="props">
-        {{ props.row.official }}
+      <b-table-column field="allCanton" :label="$t('holiday.allCanton')" centered sortable>
+        <template v-slot:header="{ column }">
+          <b-tooltip :label="$t('holiday.allCantonExplanation')" dashed type="is-black">
+            <p>{{ column.label }}</p>
+          </b-tooltip>
+        </template>
+        <template v-slot="props">
+          <b-icon
+            :icon="props.row.allCanton ? 'check' : 'close'"
+            size="is-small"
+            :type="props.row.allCanton ? 'is-success' : 'is-danger'"
+          ></b-icon>
+        </template>
       </b-table-column>
 
-      <b-table-column field="allCanton" :label="$t('holiday.allCanton')" sortable v-slot="props">
-        {{ props.row.allCanton }}
+      <b-table-column field="link" :label="$t('holiday.infos')" v-slot="props">
+        <a
+          :href="props.row.link[$data.currentLocale]"
+          target="_blank"
+        >Wikipedia</a>
       </b-table-column>
 
-      <b-table-column field="addToCalendar" :label="$t('holiday.addToCalendar')" sortable v-slot="props">
+      <b-table-column field="addToCalendar" :label="$t('holiday.addToCalendar')" v-slot="props">
         <a
           @click="addSingleEvent(props.row)"
-        >+</a>
+        >
+          <b-icon
+            v-if="props.row.official"
+            icon="plus"
+          >
+          </b-icon>
+        </a>
       </b-table-column>
 
     </b-table>
@@ -170,6 +202,12 @@ export default {
       const weekdayString = date.toLocaleDateString(this.currentLocaleString, weekdayOptions);
 
       return `${dateString} (${weekdayString})`;
+    },
+    handleCheckboxChange(year) {
+      // make sure that at least 1 year is selected
+      if (this.yearSelection.length === 0) {
+        this.yearSelection = [year];
+      }
     }
   }
 };
