@@ -46,6 +46,14 @@ const locales = {
       it: 'Wähle einen Kanton oder schau dir die Feiertage sämtlicher Kantone an.'
     }
   },
+  holidays: {
+    cantons: {
+      de: 'Kantone',
+      en: 'Kantone',
+      fr: 'Kantone',
+      it: 'Kantone'
+    }
+  },
   holiday: {
     addToCalendar: {
       de: 'In den Kalender',
