@@ -1,6 +1,12 @@
 /* eslint-disable sort-keys */
 const locales = {
   navigation: {
+    home: {
+      de: 'Home',
+      en: 'Home',
+      fr: 'Home',
+      it: 'Home'
+    },
     cantons: {
       de: 'Kantone',
       en: 'Cantons',
@@ -12,6 +18,26 @@ const locales = {
       en: 'Holidays',
       fr: 'Feiertage',
       it: 'Feiertage'
+    },
+    planner: {
+      de: 'Planer',
+      en: 'Planer',
+      fr: 'Planer',
+      it: 'Planer'
+    }
+  },
+  footer: {
+    findOnGithub: {
+      de: 'Project on GitHub',
+      en: 'Project on GitHub',
+      fr: 'Project on GitHub',
+      it: 'Project on GitHub'
+    },
+    findOnSocial: {
+      de: 'Find me on',
+      en: 'Find me on',
+      fr: 'Find me on',
+      it: 'Find me on'
     }
   },
   home: {
