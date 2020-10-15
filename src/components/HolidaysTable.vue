@@ -78,10 +78,7 @@
 </template>
 
 <script>
-import {
-  addEvents,
-  getCalendarEventForHoliday
-} from '../helpers/calendar';
+import { addEventForHoliday } from '../helpers/calendar';
 import dateHelper from '../helpers/date';
 
 export default {
@@ -93,16 +90,11 @@ export default {
   },
   methods: {
     addSingleEvent(holiday) {
-      const copyright = this.$t('holiday.copyright');
-      let canton = false;
+      const canton = this.forCanton === 'true'
+        ? this.$page.canton.key.toUpperCase()
+        : false;
 
-      if (this.forCanton === 'true') {
-        canton = this.$page.canton.key.toUpperCase();
-      }
-
-      const calendarEvent = getCalendarEventForHoliday(holiday, this.currentLocale, copyright, canton);
-
-      addEvents([calendarEvent]);
+      addEventForHoliday(holiday, this.currentLocale, this.$t('holiday.copyright'), canton);
     },
     cantonsForHoliday(cantons) {
       const cantonsUpperCase = cantons.map((canton) => canton.toUpperCase());

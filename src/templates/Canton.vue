@@ -80,10 +80,7 @@ query ($id: ID!) {
 </page-query>
 
 <script>
-import {
-  addEvents,
-  getCalendarEventForHoliday
-} from '../helpers/calendar';
+import { addEventsForHolidays } from '../helpers/calendar';
 import HolidaysTable from '../components/HolidaysTable.vue';
 
 const globalConfig = require('../config/global');
@@ -108,17 +105,7 @@ export default {
   },
   methods: {
     addAllEvents(holidays) {
-      const events = [];
-      const copyright = this.$t('holiday.copyright');
-      const canton = this.$page.canton.key.toUpperCase();
-
-      holidays.forEach((holiday) => {
-        const event = getCalendarEventForHoliday(holiday, this.currentLocale, copyright, canton);
-
-        events.push(event);
-      });
-
-      addEvents(events);
+      addEventsForHolidays(holidays, this.currentLocale, this.$t('holiday.copyright'), this.$page.canton.key.toUpperCase());
     },
     handleCheckboxChange(year) {
       // make sure that at least 1 year is selected
