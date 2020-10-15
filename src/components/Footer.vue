@@ -36,7 +36,7 @@ export default {
     };
   },
   async mounted() {
-    const versionData = await fetch('/version.txt');
+    const versionData = await fetch('/feiertach/version.txt');
 
     if (!versionData.ok) {
       throw new Error('Version file not found');
