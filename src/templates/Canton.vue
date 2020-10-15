@@ -29,7 +29,6 @@
       :paginated="false"
       default-sort-direction="asc"
       sort-icon="chevron-up"
-
       default-sort="sortDate"
     >
 
@@ -84,7 +83,6 @@
           @click="addSingleEvent(props.row)"
         >
           <b-icon
-            v-if="props.row.official"
             icon="plus"
           >
           </b-icon>
