@@ -3,12 +3,12 @@
 
     <Header />
 
-    <div class="container is-max-desktop">
+    <div class="container">
 
         <transition name="fade" appear>
           <main>
 
-            <h1 class="title">
+            <h1 class="title is-1">
               <g-image
                 v-if="image"
                 class="image"
@@ -56,6 +56,7 @@ export default {
   height: 3rem;
   border: 1px solid black;
   margin-right: 1rem;
+  border-radius: .5rem;
 }
 
 .fade-enter-active {
@@ -66,9 +67,14 @@ export default {
   opacity: 0;
 }
 
-.container.is-max-desktop {
+.container {
   @include until($desktop) {
-    padding: 1rem;
+    padding: 1rem 1rem 3rem;
+  }
+
+  @include from($desktop) {
+    max-width: calc(960px - (2 * $gap));
+    padding: 2rem 0 4rem;
   }
 }
 
