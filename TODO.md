@@ -3,3 +3,4 @@
 - add precommit/prepush hook with husky to lint
 - add version to footer
 - add variable holidays for next years
+- add holiday planner
