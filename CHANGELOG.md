@@ -1,3 +1,15 @@
+# [1.6.0](https://github.com/feerglas/feiertach/compare/v1.5.0...v1.6.0) (2020-10-15)
+
+
+### Bug Fixes
+
+* remove important statements ([ba82e67](https://github.com/feerglas/feiertach/commit/ba82e67701199357be756a0734a85494290e2b9c))
+
+
+### Features
+
+* add version to github link ([5f2871a](https://github.com/feerglas/feiertach/commit/5f2871a1df18eadb7ca3655e0880cc308b009a16))
+
 # [1.5.0](https://github.com/feerglas/feiertach/compare/v1.4.0...v1.5.0) (2020-10-15)
 
 
