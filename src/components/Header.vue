@@ -3,7 +3,7 @@
   <header>
 
     <nav
-      class="navbar"
+      class="navbar is-primary"
       role="navigation"
       aria-label="main navigation"
     >
@@ -11,6 +11,7 @@
         <g-link
           :to="$tp(`/${this.$i18n.locale}/`)"
           class="navbar-item"
+          exact-active-class="is-active"
         >
           Home
         </g-link>
@@ -40,6 +41,7 @@
             v-for="(item, index) in $data.navItems"
             :key="index"
             :to="$tp(`/${item}/`)"
+            active-class="is-active"
           >
             {{$t(`navigation.${item}`)}}
           </g-link>
