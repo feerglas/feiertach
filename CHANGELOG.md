@@ -1,3 +1,10 @@
+## [1.6.2](https://github.com/feerglas/feiertach/compare/v1.6.1...v1.6.2) (2020-10-15)
+
+
+### Bug Fixes
+
+* fix version path for local development ([4354842](https://github.com/feerglas/feiertach/commit/43548429e81c2e3e894278275946a69e563ddd65))
+
 ## [1.6.1](https://github.com/feerglas/feiertach/compare/v1.6.0...v1.6.1) (2020-10-15)
 
 
