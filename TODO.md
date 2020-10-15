@@ -5,3 +5,4 @@
 - add variable holidays for next years
 - add holiday planner
 - cantons.vue is sorted by sortValue. Sort by localized canton name instead
+- add lang switch
