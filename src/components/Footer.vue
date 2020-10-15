@@ -9,7 +9,7 @@
           <a
             href="https://github.com/feerglas/feiertach"
             target="_blank"
-          >{{$t('footer.findOnGithub')}}</a>
+          >{{$t('footer.findOnGithub')}} <span class="tag">Version {{$data.version}}</span></a>
         </div>
 
         <div class="block social-links">
@@ -29,6 +29,20 @@ import SocialLinks from './SocialLinks.vue';
 export default {
   components: {
     SocialLinks
+  },
+  data() {
+    return {
+      version: '0.0.0'
+    };
+  },
+  async mounted() {
+    const versionData = await fetch('/version.txt');
+
+    if (!versionData.ok) {
+      throw new Error('Version file not found');
+    }
+
+    this.version = await versionData.text();
   },
   name: 'Footer'
 };
