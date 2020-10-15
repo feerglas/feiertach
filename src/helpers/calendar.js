@@ -43,7 +43,25 @@ const getCalendarEventForHoliday = (holiday, locale, copyright, canton) => {
   return event;
 };
 
+const addEventForHoliday = (holiday, locale, copyright, canton) => {
+  const calendarEvent = getCalendarEventForHoliday(holiday, locale, copyright, canton);
+
+  addEvents([calendarEvent]);
+};
+
+const addEventsForHolidays = (holidays, locale, copyright, canton) => {
+  const events = [];
+
+  holidays.forEach((holiday) => {
+    const event = getCalendarEventForHoliday(holiday, locale, copyright, canton);
+
+    events.push(event);
+  });
+
+  addEvents(events);
+};
+
 export {
-  addEvents,
-  getCalendarEventForHoliday
+  addEventForHoliday,
+  addEventsForHolidays
 };
