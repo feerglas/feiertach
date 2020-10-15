@@ -39,8 +39,37 @@ const addCantonsCollection = (actions) => {
   }
 };
 
+const addHolidaysCollection = (actions) => {
+  const holidaysCollection = actions.addCollection('Holiday');
+  let holidays = [];
+  const {
+    years
+  } = globalConfig;
+
+  for (const year of years) {
+    const holidaysForYear = allHolidays.getHolidaysForYear(year);
+
+    const extractCantonInfo = holidaysForYear.map((holiday) => {
+      const _holiday = JSON.parse(JSON.stringify(holiday));
+      const cantonKeys = Object.keys(_holiday.cantons);
+
+      _holiday.cantons = cantonKeys;
+
+      return _holiday;
+    });
+
+    holidays = holidays.concat(extractCantonInfo);
+
+  }
+
+  holidaysCollection.addNode({
+    holidays
+  });
+};
+
 module.exports = (api) => {
   api.loadSource((actions) => {
     addCantonsCollection(actions);
+    addHolidaysCollection(actions);
   });
 };
