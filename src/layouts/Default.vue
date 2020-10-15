@@ -9,12 +9,12 @@
           <main>
 
             <h1 class="title is-1">
+              {{title}}
               <g-image
                 v-if="image"
                 class="image"
                 :src="image"
               />
-              {{title}}
             </h1>
 
             <slot/>
@@ -55,7 +55,7 @@ export default {
 .image {
   height: 3rem;
   border: 1px solid black;
-  margin-right: 1rem;
+  margin-left: 1rem;
   border-radius: .5rem;
 }
 
