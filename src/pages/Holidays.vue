@@ -16,9 +16,10 @@
 
     </div>
 
-    <a
-      @click="addAllEvents(filteredHolidays)"
-    >{{$t('holiday.addAllToCalendar')}}</a>
+    <AddHolidays
+      :holidays="filteredHolidays"
+      :canton="false"
+    />
 
     <HolidaysTable
       :holidays="filteredHolidays"
@@ -71,13 +72,14 @@
 </page-query>
 
 <script>
-import { addEventsForHolidays } from '../helpers/calendar';
+import AddHolidays from '../components/AddHolidays.vue';
 import HolidaysTable from '../components/HolidaysTable.vue';
 
 const globalConfig = require('../config/global');
 
 export default {
   components: {
+    AddHolidays,
     HolidaysTable
   },
   computed: {
@@ -95,9 +97,6 @@ export default {
     };
   },
   methods: {
-    addAllEvents(holidays) {
-      addEventsForHolidays(holidays, this.currentLocale, this.$t('holiday.copyright'), false);
-    },
     handleCheckboxChange(year) {
       // make sure that at least 1 year is selected
       if (this.yearSelection.length === 0) {
