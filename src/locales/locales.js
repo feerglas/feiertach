@@ -8,16 +8,42 @@ const locales = {
       it: 'Kantone'
     },
     holidays: {
-      de: 'Feiertag',
+      de: 'Feiertage',
       en: 'Holidays',
-      fr: 'Feiertag',
-      it: 'Feiertag'
+      fr: 'Feiertage',
+      it: 'Feiertage'
+    }
+  },
+  home: {
+    lead: {
+      de: 'Mit feiertaCH kannst du Feiertage für die einzelnen Kantone direkt in den Kalender eintragen.',
+      en: 'Mit feiertaCH kannst du Feiertage für die einzelnen Kantone direkt in den Kalender eintragen.',
+      fr: 'Mit feiertaCH kannst du Feiertage für die einzelnen Kantone direkt in den Kalender eintragen.',
+      it: 'Mit feiertaCH kannst du Feiertage für die einzelnen Kantone direkt in den Kalender eintragen.'
     },
-    about: {
-      de: 'Über',
-      en: 'About',
-      fr: 'About',
-      it: 'About'
+    title1: {
+      de: 'Trommelwirbel',
+      en: 'Trommelwirbel',
+      fr: 'Trommelwirbel',
+      it: 'Trommelwirbel'
+    },
+    content1: {
+      de: 'Diese App ist werbefrei, und du kannst sie umsonst benutzen. Wenn du mir "Merci" sagen willst, wenn du Verbesserungsvorschläge hast oder Fehler gefunden hast, kannst du dich gerne via Twitter, Facebook oder Insta bei mir melden:',
+      en: 'Diese App ist werbefrei, und du kannst sie umsonst benutzen. Wenn du mir "Merci" sagen willst, wenn du Verbesserungsvorschläge hast oder Fehler gefunden hast, kannst du dich gerne via Twitter, Facebook oder Insta bei mir melden:',
+      fr: 'Diese App ist werbefrei, und du kannst sie umsonst benutzen. Wenn du mir "Merci" sagen willst, wenn du Verbesserungsvorschläge hast oder Fehler gefunden hast, kannst du dich gerne via Twitter, Facebook oder Insta bei mir melden:',
+      it: 'Diese App ist werbefrei, und du kannst sie umsonst benutzen. Wenn du mir "Merci" sagen willst, wenn du Verbesserungsvorschläge hast oder Fehler gefunden hast, kannst du dich gerne via Twitter, Facebook oder Insta bei mir melden:'
+    },
+    title2: {
+      de: 'Los geht\'s',
+      en: 'Los geht\'s',
+      fr: 'Los geht\'s',
+      it: 'Los geht\'s'
+    },
+    content2: {
+      de: 'Wähle einen Kanton oder schau dir die Feiertage sämtlicher Kantone an.',
+      en: 'Wähle einen Kanton oder schau dir die Feiertage sämtlicher Kantone an.',
+      fr: 'Wähle einen Kanton oder schau dir die Feiertage sämtlicher Kantone an.',
+      it: 'Wähle einen Kanton oder schau dir die Feiertage sämtlicher Kantone an.'
     }
   },
   holiday: {
