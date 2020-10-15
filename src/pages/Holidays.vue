@@ -1,5 +1,5 @@
 <template>
-  <Layout title="Holidays">
+  <Layout :title="$t('navigation.holidays')">
 
   </Layout>
 </template>
