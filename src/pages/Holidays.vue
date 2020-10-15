@@ -1,5 +1,6 @@
 <template>
   <Layout :title="$t('navigation.holidays')">
+
     <span>{{$data.filteredHolidays.length}}</span>
 
     <YearsSelector

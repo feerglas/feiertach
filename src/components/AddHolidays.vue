@@ -1,7 +1,5 @@
 <template>
-  <a
-    @click="addAllEvents(holidays, canton)"
-  >{{$t('holiday.addAllToCalendar')}}</a>
+  <a @click="addAllEvents(holidays, canton)">{{$t('holiday.addAllToCalendar')}}</a>
 </template>
 
 <script>

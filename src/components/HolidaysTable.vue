@@ -7,27 +7,57 @@
     default-sort="sortDate"
   >
 
-    <b-table-column field="sortDate" :label="$t('holiday.date')" sortable v-slot="props">
+    <b-table-column
+      field="sortDate"
+      :label="$t('holiday.date')"
+      sortable
+      v-slot="props"
+    >
       {{ formatDate(props.row.dateObject) }}
     </b-table-column>
 
-    <b-table-column :field="`title.${$data.currentLocale}`" :label="$t('holiday.holiday')" sortable v-slot="props">
+    <b-table-column
+      :field="`title.${$data.currentLocale}`"
+      :label="$t('holiday.holiday')"
+      sortable
+      v-slot="props"
+    >
       {{ props.row.title[$data.currentLocale] }}
       <p v-if="props.row.description">({{props.row.description[$data.currentLocale]}})</p>
     </b-table-column>
 
-    <b-table-column v-if="forCanton === 'false'" field="cantons.length" :label="$t('holidays.cantons')" v-slot="props" sortable>
+    <b-table-column
+      v-if="forCanton === 'false'"
+      field="cantons.length"
+      :label="$t('holidays.cantons')"
+      v-slot="props"
+      sortable
+    >
 
       <b-tooltip
-      multilined :label="cantonsForHoliday(props.row.cantons)" dashed type="is-black">
+        multilined
+        :label="cantonsForHoliday(props.row.cantons)"
+        dashed
+        type="is-black"
+      >
         <p>{{ props.row.cantons.length }}</p>
       </b-tooltip>
 
     </b-table-column>
 
-    <b-table-column v-if="forCanton === 'true'" field="official" :label="$t('holiday.official')" centered sortable>
+    <b-table-column
+      v-if="forCanton === 'true'"
+      field="official"
+      :label="$t('holiday.official')"
+      centered
+      sortable
+    >
       <template v-slot:header="{ column }">
-        <b-tooltip :label="$t('holiday.officialExplanation')" dashed type="is-black">
+        <b-tooltip
+          :label="$t('holiday.officialExplanation')"
+          dashed
+          type="is-black"
+        >
           <p>{{ column.label }}</p>
         </b-tooltip>
       </template>
@@ -40,9 +70,19 @@
       </template>
     </b-table-column>
 
-    <b-table-column v-if="forCanton === 'true'" field="allCanton" :label="$t('holiday.allCanton')" centered sortable>
+    <b-table-column
+      v-if="forCanton === 'true'"
+      field="allCanton"
+      :label="$t('holiday.allCanton')"
+      centered
+      sortable
+    >
       <template v-slot:header="{ column }">
-        <b-tooltip :label="$t('holiday.allCantonExplanation')" dashed type="is-black">
+        <b-tooltip
+          :label="$t('holiday.allCantonExplanation')"
+          dashed
+          type="is-black"
+        >
           <p>{{ column.label }}</p>
         </b-tooltip>
       </template>
@@ -55,14 +95,22 @@
       </template>
     </b-table-column>
 
-    <b-table-column field="link" :label="$t('holiday.infos')" v-slot="props">
+    <b-table-column
+      field="link"
+      :label="$t('holiday.infos')"
+      v-slot="props"
+    >
       <a
         :href="props.row.link[$data.currentLocale]"
         target="_blank"
       >Wikipedia</a>
     </b-table-column>
 
-    <b-table-column field="addToCalendar" :label="$t('holiday.addToCalendar')" v-slot="props">
+    <b-table-column
+      field="addToCalendar"
+      :label="$t('holiday.addToCalendar')"
+      v-slot="props"
+    >
       <a
         @click="addSingleEvent(props.row)"
       >

@@ -7,9 +7,32 @@
       <p>{{$t("home.content1")}}</p>
 
       <ul>
-        <li><a href="https://twitter.com/feerglas" target="_blank">Twitter</a></li>
-        <li><a href="https://www.facebook.com/yves.tscherry" target="_blank">Facbeook</a></li>
-        <li><a href="https://www.instagram.com/feerglas" target="_blank">Instagram</a></li>
+        <li>
+          <a
+            href="https://twitter.com/feerglas"
+            target="_blank"
+          >
+            Twitter
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://www.facebook.com/yves.tscherry"
+            target="_blank"
+          >
+            Facbeook
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://www.instagram.com/feerglas"
+            target="_blank"
+          >
+            Instagram
+          </a>
+        </li>
       </ul>
 
       <h2 class="title is-2">{{$t("home.title2")}}</h2>
