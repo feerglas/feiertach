@@ -1,3 +1,11 @@
+# [1.3.0](https://github.com/feerglas/feiertach/compare/v1.2.6...v1.3.0) (2020-10-14)
+
+
+### Features
+
+* add locale strings to display holidays ([76e08ff](https://github.com/feerglas/feiertach/commit/76e08ff62516e4fabc7480f2c66872e55220d185))
+* use table to display holidays ([939f0b7](https://github.com/feerglas/feiertach/commit/939f0b7f3b0a8cc147e0e8f059e9c9894ffda8b3))
+
 ## [1.2.6](https://github.com/feerglas/feiertach/compare/v1.2.5...v1.2.6) (2020-10-13)
 
 
