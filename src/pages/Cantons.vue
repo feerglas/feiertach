@@ -1,5 +1,5 @@
 <template>
-  <Layout title="Cantons">
+  <Layout :title="$t('navigation.cantons')">
     <ul class="list">
       <li
         class="list-item"
@@ -71,6 +71,7 @@ export default {
   .image {
     width: 3rem;
     border: 1px solid black;
+    border-radius: .5rem;
   }
 
   .name {
