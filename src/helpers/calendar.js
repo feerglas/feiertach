@@ -28,7 +28,11 @@ const getCalendarEventForHoliday = (holiday, locale, copyright, canton) => {
   event.start = date;
   event.end = date;
 
-  event.title = `${holiday.title[locale]} (${canton})`;
+  event.title = holiday.title[locale];
+
+  if (canton) {
+    event.title += ` (${canton})`;
+  }
 
   if (holiday.description) {
     event.description = `${holiday.description[locale]}\n\n${copyright}`;
