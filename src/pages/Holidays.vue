@@ -1,28 +1,19 @@
 <template>
   <Layout :title="$t('navigation.holidays')">
-    <span>{{filteredHolidays.length}}</span>
-    <div class="year-selection">
+    <span>{{$data.filteredHolidays.length}}</span>
 
-      <b-checkbox
-        class="is-medium"
-        v-for="(year, index) in $data.years"
-        :key="index"
-        :native-value="year"
-        v-model="yearSelection"
-        @change.native="handleCheckboxChange(year)"
-      >
-        {{year}}
-      </b-checkbox>
-
-    </div>
+    <YearsSelector
+      :holidays="this.$page.allHoliday.edges[0].node.holidays"
+      @filter="handleFilter"
+    />
 
     <AddHolidays
-      :holidays="filteredHolidays"
+      :holidays="$data.filteredHolidays"
       :canton="false"
     />
 
     <HolidaysTable
-      :holidays="filteredHolidays"
+      :holidays="$data.filteredHolidays"
       for-canton="false"
     />
 
@@ -74,34 +65,22 @@
 <script>
 import AddHolidays from '../components/AddHolidays.vue';
 import HolidaysTable from '../components/HolidaysTable.vue';
-
-const globalConfig = require('../config/global');
+import YearsSelector from '../components/YearsSelector.vue';
 
 export default {
   components: {
     AddHolidays,
-    HolidaysTable
-  },
-  computed: {
-    filteredHolidays() {
-      const filtered = this.$page.allHoliday.edges[0].node.holidays.filter((holiday) => this.yearSelection.indexOf(holiday.date.year) !== -1);
-
-      return filtered;
-    }
+    HolidaysTable,
+    YearsSelector
   },
   data() {
     return {
-      currentLocale: this.$i18n.locale,
-      years: globalConfig.years,
-      yearSelection: [globalConfig.years[0]]
+      filteredHolidays: []
     };
   },
   methods: {
-    handleCheckboxChange(year) {
-      // make sure that at least 1 year is selected
-      if (this.yearSelection.length === 0) {
-        this.yearSelection = [year];
-      }
+    handleFilter(holidays) {
+      this.filteredHolidays = holidays;
     }
   }
 };

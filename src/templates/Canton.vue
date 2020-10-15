@@ -3,30 +3,20 @@
     :title="$page.canton.name[this.$i18n.locale]"
     :image="$page.canton.flag"
     >
-    <span>{{filteredHolidays.length}}</span>
+    <span>{{$data.filteredHolidays.length}}</span>
 
-    <div class="year-selection">
-
-      <b-checkbox
-        class="is-medium"
-        v-for="(year, index) in $data.years"
-        :key="index"
-        :native-value="year"
-        v-model="yearSelection"
-        @change.native="handleCheckboxChange(year)"
-      >
-        {{year}}
-      </b-checkbox>
-
-    </div>
+    <YearsSelector
+      :holidays="this.$page.canton.holidays"
+      @filter="handleFilter"
+    />
 
     <AddHolidays
-      :holidays="filteredHolidays"
+      :holidays="$data.filteredHolidays"
       :canton="this.$page.canton.key.toUpperCase()"
     />
 
     <HolidaysTable
-      :holidays="filteredHolidays"
+      :holidays="$data.filteredHolidays"
       for-canton="true"
     />
 
@@ -83,34 +73,22 @@ query ($id: ID!) {
 <script>
 import AddHolidays from '../components/AddHolidays.vue';
 import HolidaysTable from '../components/HolidaysTable.vue';
-
-const globalConfig = require('../config/global');
+import YearsSelector from '../components/YearsSelector.vue';
 
 export default {
   components: {
     AddHolidays,
-    HolidaysTable
-  },
-  computed: {
-    filteredHolidays() {
-      const filtered = this.$page.canton.holidays.filter((holiday) => this.yearSelection.indexOf(holiday.date.year) !== -1);
-
-      return filtered;
-    }
+    HolidaysTable,
+    YearsSelector
   },
   data() {
     return {
-      currentLocale: this.$i18n.locale,
-      years: globalConfig.years,
-      yearSelection: [globalConfig.years[0]]
+      filteredHolidays: []
     };
   },
   methods: {
-    handleCheckboxChange(year) {
-      // make sure that at least 1 year is selected
-      if (this.yearSelection.length === 0) {
-        this.yearSelection = [year];
-      }
+    handleFilter(holidays) {
+      this.filteredHolidays = holidays;
     }
   }
 };
