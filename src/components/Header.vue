@@ -3,50 +3,19 @@
   <header>
 
     <nav
-      class="navbar is-primary"
+      class="navigation"
       role="navigation"
       aria-label="main navigation"
     >
-      <div class="navbar-brand">
-        <g-link
-          :to="$tp(`/${this.$i18n.locale}/`)"
-          class="navbar-item"
-          exact-active-class="is-active"
-        >
-          Home
-        </g-link>
-
-        <a
-          role="button"
-          class="navbar-burger burger"
-          aria-label="menu"
-          aria-expanded="false"
-          @click="toggleMenu"
-          v-bind:class="{'is-active': menuOpen}"
-        >
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-
-      </div>
-
-      <div
-        class="navbar-menu"
-        v-bind:class="{'is-active': menuOpen}"
+      <g-link
+        class="nav-item"
+        v-for="(item, index) in $data.navItems"
+        :key="index"
+        :to="item === 'home' ? $tp(`/${$data.currentLocale}/`) : $tp(`/${item}/`)"
+        exact-active-class="is-active"
       >
-        <div class="navbar-start">
-          <g-link
-            class="navbar-item"
-            v-for="(item, index) in $data.navItems"
-            :key="index"
-            :to="$tp(`/${item}/`)"
-            active-class="is-active"
-          >
-            {{$t(`navigation.${item}`)}}
-          </g-link>
-        </div>
-      </div>
+        {{$t(`navigation.${item}`)}}
+      </g-link>
     </nav>
   </header>
 </template>
@@ -60,6 +29,7 @@ export default {
     const navItems = Object.keys(locales.navigation);
 
     return {
+      currentLocale: this.$i18n.locale,
       menuOpen: false,
       navItems
     };
@@ -75,5 +45,31 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../styles/bulma.scss";
 
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: $primary;
+  border: .3rem solid $primary;
+}
+
+.nav-item {
+  display: block;
+  padding: .7rem;
+  margin: 0 .2rem;
+  color: white;
+  border: 1px solid $primary;
+  transition: border-color 150ms ease-in;
+}
+
+.nav-item:hover:not(.is-active) {
+  border: 1px solid $grey-lightest;
+  color: white;
+}
+
+.nav-item.is-active {
+  background-color: white;
+  color: $primary;
+}
 </style>
