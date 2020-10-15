@@ -9,6 +9,9 @@
     ["@semantic-release/npm", {
       npmPublish: false
     }],
+    ["@semantic-release/exec", {
+      "prepareCmd": "echo ${nextRelease.version} > dist/version.txt"
+    }],
     ["@semantic-release/git", {
       "assets": [
         "package.json",
