@@ -2,7 +2,7 @@
 const locales = {
   navigation: {
     home: {
-      de: 'Home',
+      de: 'Start',
       en: 'Home',
       fr: 'Home',
       it: 'Home'
