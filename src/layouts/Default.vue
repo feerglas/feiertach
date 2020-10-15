@@ -68,13 +68,18 @@ export default {
 }
 
 .container {
-  @include until($desktop) {
-    padding: 1rem 1rem 3rem;
+
+  @include until($tablet) {
+    padding: 2rem;
+  }
+
+  @include from($tablet) {
+    padding: 2.5rem;
   }
 
   @include from($desktop) {
     max-width: calc(960px - (2 * #{$gap}));
-    padding: 2rem 0 4rem;
+    padding: 3rem 0 4rem;
   }
 }
 
