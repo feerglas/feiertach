@@ -1,7 +1,6 @@
 <template>
 
   <header>
-
     <nav
       class="navigation"
       role="navigation"
@@ -9,12 +8,12 @@
     >
       <g-link
         class="nav-item"
+        v-bind:class="{'is-active': item.isActive}"
         v-for="(item, index) in $data.navItems"
         :key="index"
-        :to="item === 'home' ? $tp(`/${$data.currentLocale}/`) : $tp(`/${item}/`)"
-        exact-active-class="is-active"
+        :to="item.path"
       >
-        {{$t(`navigation.${item}`)}}
+        {{item.text}}
       </g-link>
     </nav>
   </header>
@@ -25,8 +24,31 @@ import locales from '../locales/locales';
 
 export default {
   data() {
+    const _navItems = Object.keys(locales.navigation);
+    const currentRoute = this.$route.path;
+    const homeRoute = `/${this.$i18n.locale}/`;
+    const isHomeRoute = currentRoute === homeRoute;
+    const navItems = _navItems.map((item) => {
+      const navItem = {
+        isActive: false,
+        path: this.$tp(`/${item}/`),
+        text: this.$t(`navigation.${item}`)
+      };
 
-    const navItems = Object.keys(locales.navigation);
+      if (item === 'home') {
+        navItem.path = this.$tp(homeRoute);
+
+        if (isHomeRoute) {
+          navItem.isActive = true;
+        }
+      } else {
+        if (currentRoute.indexOf(`/${item}/`) !== -1) {
+          navItem.isActive = true;
+        }
+      }
+
+      return navItem;
+    });
 
     return {
       currentLocale: this.$i18n.locale,
