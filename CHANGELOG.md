@@ -1,3 +1,10 @@
+## [1.6.1](https://github.com/feerglas/feiertach/compare/v1.6.0...v1.6.1) (2020-10-15)
+
+
+### Bug Fixes
+
+* add correct path for version file ([93b3e09](https://github.com/feerglas/feiertach/commit/93b3e097c587b59d2d25c7ab88b9136db916f1df))
+
 # [1.6.0](https://github.com/feerglas/feiertach/compare/v1.5.0...v1.6.0) (2020-10-15)
 
 
