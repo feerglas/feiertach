@@ -146,6 +146,7 @@ import {
   addEvents,
   getCalendarEventForHoliday
 } from '../helpers/calendar';
+import dateHelper from '../helpers/date';
 
 const globalConfig = require('../config/global');
 
@@ -187,19 +188,7 @@ export default {
       addEvents([calendarEvent]);
     },
     formatDate(dateObject) {
-      const date = new Date(dateObject);
-      const dateOptions = {
-        day: 'numeric',
-        month: 'numeric',
-        year: 'numeric'
-      };
-      const weekdayOptions = {
-        weekday: 'long'
-      };
-      const dateString = date.toLocaleDateString(this.currentLocaleString, dateOptions);
-      const weekdayString = date.toLocaleDateString(this.currentLocaleString, weekdayOptions);
-
-      return `${dateString} (${weekdayString})`;
+      return dateHelper(dateObject, this.currentLocaleString);
     },
     handleCheckboxChange(year) {
       // make sure that at least 1 year is selected
