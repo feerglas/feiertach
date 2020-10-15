@@ -5,35 +5,7 @@
 
       <h2 class="title is-2">{{$t("home.title1")}}</h2>
       <p>{{$t("home.content1")}}</p>
-
-      <ul>
-        <li>
-          <a
-            href="https://twitter.com/feerglas"
-            target="_blank"
-          >
-            Twitter
-          </a>
-        </li>
-
-        <li>
-          <a
-            href="https://www.facebook.com/yves.tscherry"
-            target="_blank"
-          >
-            Facbeook
-          </a>
-        </li>
-
-        <li>
-          <a
-            href="https://www.instagram.com/feerglas"
-            target="_blank"
-          >
-            Instagram
-          </a>
-        </li>
-      </ul>
+      <SocialLinks />
 
       <h2 class="title is-2">{{$t("home.title2")}}</h2>
       <p>{{$t("home.content2")}}</p>
@@ -46,7 +18,12 @@
 </template>
 
 <script>
+import SocialLinks from '../components/SocialLinks.vue';
+
 export default {
+  components: {
+    SocialLinks
+  },
   metaInfo: {
     title: 'feiertaCH'
   }
