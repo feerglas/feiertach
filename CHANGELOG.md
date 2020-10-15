@@ -1,3 +1,11 @@
+# [1.5.0](https://github.com/feerglas/feiertach/compare/v1.4.0...v1.5.0) (2020-10-15)
+
+
+### Features
+
+* add content and stylings ([ae7d0ad](https://github.com/feerglas/feiertach/commit/ae7d0add8f8595ccfe13c68ce8accf9273d4c594))
+* refactor header, always visible navigation ([154fe4a](https://github.com/feerglas/feiertach/commit/154fe4a9c6f2213da4c9b0e7498dca3f458313bd))
+
 # [1.4.0](https://github.com/feerglas/feiertach/compare/v1.3.0...v1.4.0) (2020-10-15)
 
 
