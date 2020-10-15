@@ -1,3 +1,25 @@
+# [1.4.0](https://github.com/feerglas/feiertach/compare/v1.3.0...v1.4.0) (2020-10-15)
+
+
+### Bug Fixes
+
+* add active class ([fdf19ec](https://github.com/feerglas/feiertach/commit/fdf19eceb5ef74ef316b5617711760fb89623c52))
+* fix stylings ([2ea1d2b](https://github.com/feerglas/feiertach/commit/2ea1d2b59c8b381798a08b2c8ad13fb59d3fef88))
+* make canton optional ([1f0f9ee](https://github.com/feerglas/feiertach/commit/1f0f9ee02273a5ef242f3fd2e12ff8219fd7f0a2))
+* remove v-if ([83ad096](https://github.com/feerglas/feiertach/commit/83ad09680c0ae6689fd907eb15641e6e8757d709))
+* try to fix sass issue ([42b8956](https://github.com/feerglas/feiertach/commit/42b895660a6bdfcc51d728130f6aa5c5f2c4d30c))
+* use localized string ([87e66b7](https://github.com/feerglas/feiertach/commit/87e66b71a41d33afd3448bdded00e776d083b9cd))
+* use localized string ([31d7e21](https://github.com/feerglas/feiertach/commit/31d7e216e496b93b2bcbafff1d2eaf09561b1bd0))
+
+
+### Features
+
+* add content to home ([4cf8052](https://github.com/feerglas/feiertach/commit/4cf8052179fc3908d2ff9d4ccca69c998051495a))
+* add holidays collection ([50b00b5](https://github.com/feerglas/feiertach/commit/50b00b556275575f466b1258696b1da60570bd1c))
+* add locales for holidays page ([192e3b0](https://github.com/feerglas/feiertach/commit/192e3b0a051400ae264a85314925068a8aa7c987))
+* add strings for home ([46a9dc4](https://github.com/feerglas/feiertach/commit/46a9dc429723148208f8d9a19068efbf9378fc09))
+* add table with holidays ([93323bb](https://github.com/feerglas/feiertach/commit/93323bbad8b92c13bae8ce9611dff201c07a34cd))
+
 # [1.3.0](https://github.com/feerglas/feiertach/compare/v1.2.6...v1.3.0) (2020-10-14)
 
 
