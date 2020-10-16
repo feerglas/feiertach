@@ -14,7 +14,7 @@ const getFormattedDate = (dateObject, localeString) => {
   return {
     date: dateString,
     weekday: weekdayString
-  }
+  };
 };
 
 export default getFormattedDate;
