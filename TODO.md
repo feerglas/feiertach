@@ -6,3 +6,8 @@
 - add holiday planner
 - cantons.vue is sorted by sortValue. Sort by localized canton name instead
 - add lang switch
+- lazyload images
+- better mobile variant for tables
+- test browsers/devices
+- tooltip on table is cut off in tablet viewport
+- holidays -> if more than 1 year is selected, make separator for years
