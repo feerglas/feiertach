@@ -1,3 +1,13 @@
+## [1.6.3](https://github.com/feerglas/feiertach/compare/v1.6.2...v1.6.3) (2020-10-16)
+
+
+### Bug Fixes
+
+* fix active class for active nav item ([61e2409](https://github.com/feerglas/feiertach/commit/61e24098f3239eeccac01cd784db7e834915b64c))
+* make sure ics can be downloaded on ios ([f0e7654](https://github.com/feerglas/feiertach/commit/f0e7654a16aa2bf88ccf470c23dcc41683bd3050))
+* move image right from text ([b8f220c](https://github.com/feerglas/feiertach/commit/b8f220caa6989370c8a12896828cda9b78714809))
+* set correct localisation for home nav item ([4a5279c](https://github.com/feerglas/feiertach/commit/4a5279ca6b71b10570916647fbdf84db785cbb20))
+
 ## [1.6.2](https://github.com/feerglas/feiertach/compare/v1.6.1...v1.6.2) (2020-10-15)
 
 
