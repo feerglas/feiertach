@@ -1,8 +1,8 @@
 const getFormattedDate = (dateObject, localeString) => {
   const date = new Date(dateObject);
   const dateOptions = {
-    day: 'numeric',
-    month: 'numeric',
+    day: '2-digit',
+    month: '2-digit',
     year: 'numeric'
   };
   const weekdayOptions = {
@@ -11,7 +11,10 @@ const getFormattedDate = (dateObject, localeString) => {
   const dateString = date.toLocaleDateString(localeString, dateOptions);
   const weekdayString = date.toLocaleDateString(localeString, weekdayOptions);
 
-  return `${dateString} (${weekdayString})`;
+  return {
+    date: dateString,
+    weekday: weekdayString
+  }
 };
 
 export default getFormattedDate;
