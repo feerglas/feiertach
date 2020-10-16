@@ -1,127 +1,242 @@
 <template>
-  <b-table
-    :data="holidays"
-    :paginated="false"
-    default-sort-direction="asc"
-    sort-icon="chevron-up"
-    default-sort="sortDate"
-  >
 
-    <b-table-column
-      field="sortDate"
-      :label="$t('holiday.date')"
-      sortable
-      v-slot="props"
+  <div>
+
+    <!-- CUSTOM LAYOUT FOR MOBILE -->
+    <div class="is-block-mobile is-hidden-tablet content">
+
+      <ul class="mobile-list">
+        <li
+          class="mobile-list-item"
+          v-for="(item, index) in holidays"
+          :key="index"
+        >
+
+          <div class="mobile-header">
+            <p class="mobile-title">{{ item.title[$data.currentLocale] }}</p>
+            <div class="mobile-date">
+              {{ formatDate(item.dateObject).date }}
+              <span class="mobile-weekday">{{ formatDate(item.dateObject).weekday }}</span>
+            </div>
+          </div>
+
+          <p
+            v-if="item.description"
+            class="description"
+          >... {{item.description[$data.currentLocale]}}</p>
+
+          <b-tooltip
+            v-if="forCanton === 'false'"
+            multilined
+            :label="cantonsForHoliday(item.cantons)"
+            dashed
+            type="is-black"
+            position="is-right"
+            size="is-small"
+          >
+            <p>{{ item.cantons.length }} {{$t('holidays.cantons')}}</p>
+          </b-tooltip>
+
+          <div class="mobile-info-line">
+            <div v-if="forCanton === 'true'">
+              <b-icon
+                :icon="item.official ? 'check' : 'close'"
+                size="is-small"
+                :type="item.official ? 'is-success' : 'is-danger'"
+              ></b-icon>
+              <b-tooltip
+                :label="$t('holiday.officialExplanation')"
+                dashed
+                type="is-black"
+                position="is-right"
+                size="is-small"
+                multilined
+              >
+                <p class="mobile-info-item-text">{{ $t('holiday.official') }}</p>
+              </b-tooltip>
+            </div>
+
+            <div v-if="forCanton === 'true'">
+              <b-icon
+                :icon="item.allCanton ? 'check' : 'close'"
+                size="is-small"
+                :type="item.allCanton ? 'is-success' : 'is-danger'"
+              ></b-icon>
+              <b-tooltip
+                :label="$t('holiday.allCantonExplanation')"
+                dashed
+                type="is-black"
+                position="is-left"
+                size="is-small"
+                multilined
+              >
+                <p class="mobile-info-item-text">{{ $t('holiday.allCanton') }}</p>
+              </b-tooltip>
+            </div>
+          </div>
+
+          <div class="mobile-footer">
+            <a
+              class="mobile-link"
+              :href="item.link[$data.currentLocale]"
+              target="_blank"
+            >
+              <span class="icon">
+                <i class="mdi mdi-information-outline"></i>
+              </span>
+              Wikipedia
+            </a>
+
+            <button
+              class="button"
+              @click="addSingleEvent(item)"
+            >
+              <span class="icon">
+                <i class="mdi mdi-plus"></i>
+              </span>
+              <span>{{$t('holiday.addToCalendar')}}</span>
+            </button>
+          </div>
+
+        </li>
+      </ul>
+
+    </div>
+
+    <!-- TABLE FOR TABLET AND ABOVE -->
+
+    <b-table
+      :data="holidays"
+      :paginated="false"
+      default-sort-direction="asc"
+      sort-icon="chevron-up"
+      default-sort="sortDate"
+      class="is-block-tablet is-hidden-mobile"
     >
-      {{ formatDate(props.row.dateObject) }}
-    </b-table-column>
 
-    <b-table-column
-      :field="`title.${$data.currentLocale}`"
-      :label="$t('holiday.holiday')"
-      sortable
-      v-slot="props"
-    >
-      {{ props.row.title[$data.currentLocale] }}
-      <p v-if="props.row.description">({{props.row.description[$data.currentLocale]}})</p>
-    </b-table-column>
-
-    <b-table-column
-      v-if="forCanton === 'false'"
-      field="cantons.length"
-      :label="$t('holidays.cantons')"
-      v-slot="props"
-      sortable
-    >
-
-      <b-tooltip
-        multilined
-        :label="cantonsForHoliday(props.row.cantons)"
-        dashed
-        type="is-black"
+      <b-table-column
+        field="sortDate"
+        :label="$t('holiday.date')"
+        sortable
+        v-slot="props"
       >
-        <p>{{ props.row.cantons.length }}</p>
-      </b-tooltip>
+        {{ formatDate(props.row.dateObject).date }}
+        <span class="weekday">{{ formatDate(props.row.dateObject).weekday }}</span>
+      </b-table-column>
 
-    </b-table-column>
+      <b-table-column
+        :field="`title.${$data.currentLocale}`"
+        :label="$t('holiday.holiday')"
+        sortable
+        v-slot="props"
+      >
+        {{ props.row.title[$data.currentLocale] }}
+        <p
+          v-if="props.row.description"
+          class="description"
+        >({{props.row.description[$data.currentLocale]}})</p>
+      </b-table-column>
 
-    <b-table-column
-      v-if="forCanton === 'true'"
-      field="official"
-      :label="$t('holiday.official')"
-      centered
-      sortable
-    >
-      <template v-slot:header="{ column }">
+      <b-table-column
+        v-if="forCanton === 'false'"
+        field="cantons.length"
+        :label="$t('holidays.cantons')"
+        v-slot="props"
+        sortable
+        centered
+      >
+
         <b-tooltip
-          :label="$t('holiday.officialExplanation')"
+          multilined
+          :label="cantonsForHoliday(props.row.cantons)"
           dashed
           type="is-black"
         >
-          <p>{{ column.label }}</p>
+          <p>{{ props.row.cantons.length }}</p>
         </b-tooltip>
-      </template>
-      <template v-slot="props">
-        <b-icon
-          :icon="props.row.official ? 'check' : 'close'"
-          size="is-small"
-          :type="props.row.official ? 'is-success' : 'is-danger'"
-        ></b-icon>
-      </template>
-    </b-table-column>
 
-    <b-table-column
-      v-if="forCanton === 'true'"
-      field="allCanton"
-      :label="$t('holiday.allCanton')"
-      centered
-      sortable
-    >
-      <template v-slot:header="{ column }">
-        <b-tooltip
-          :label="$t('holiday.allCantonExplanation')"
-          dashed
-          type="is-black"
-        >
-          <p>{{ column.label }}</p>
-        </b-tooltip>
-      </template>
-      <template v-slot="props">
-        <b-icon
-          :icon="props.row.allCanton ? 'check' : 'close'"
-          size="is-small"
-          :type="props.row.allCanton ? 'is-success' : 'is-danger'"
-        ></b-icon>
-      </template>
-    </b-table-column>
+      </b-table-column>
 
-    <b-table-column
-      field="link"
-      :label="$t('holiday.infos')"
-      v-slot="props"
-    >
-      <a
-        :href="props.row.link[$data.currentLocale]"
-        target="_blank"
-      >Wikipedia</a>
-    </b-table-column>
-
-    <b-table-column
-      field="addToCalendar"
-      :label="$t('holiday.addToCalendar')"
-      v-slot="props"
-    >
-      <a
-        @click="addSingleEvent(props.row)"
+      <b-table-column
+        v-if="forCanton === 'true'"
+        field="official"
+        :label="$t('holiday.official')"
+        centered
+        sortable
       >
-        <b-icon
-          icon="plus"
-        >
-        </b-icon>
-      </a>
-    </b-table-column>
+        <template v-slot:header="{ column }">
+          <b-tooltip
+            :label="$t('holiday.officialExplanation')"
+            dashed
+            type="is-black"
+          >
+            <p>{{ column.label }}</p>
+          </b-tooltip>
+        </template>
+        <template v-slot="props">
+          <b-icon
+            :icon="props.row.official ? 'check' : 'close'"
+            size="is-small"
+            :type="props.row.official ? 'is-success' : 'is-danger'"
+          ></b-icon>
+        </template>
+      </b-table-column>
 
-  </b-table>
+      <b-table-column
+        v-if="forCanton === 'true'"
+        field="allCanton"
+        :label="$t('holiday.allCanton')"
+        centered
+        sortable
+      >
+        <template v-slot:header="{ column }">
+          <b-tooltip
+            :label="$t('holiday.allCantonExplanation')"
+            dashed
+            type="is-black"
+          >
+            <p>{{ column.label }}</p>
+          </b-tooltip>
+        </template>
+        <template v-slot="props">
+          <b-icon
+            :icon="props.row.allCanton ? 'check' : 'close'"
+            size="is-small"
+            :type="props.row.allCanton ? 'is-success' : 'is-danger'"
+          ></b-icon>
+        </template>
+      </b-table-column>
+
+      <b-table-column
+        field="link"
+        :label="$t('holiday.infos')"
+        v-slot="props"
+        centered
+      >
+        <a
+          :href="props.row.link[$data.currentLocale]"
+          target="_blank"
+        >Wikipedia</a>
+      </b-table-column>
+
+      <b-table-column
+        field="addToCalendar"
+        :label="$t('holiday.addToCalendar')"
+        v-slot="props"
+        centered
+      >
+        <a
+          @click="addSingleEvent(props.row)"
+        >
+          <b-icon
+            icon="plus"
+          >
+          </b-icon>
+        </a>
+      </b-table-column>
+
+    </b-table>
+  </div>
 
 </template>
 
@@ -161,3 +276,76 @@ export default {
 };
 
 </script>
+
+<style lang="scss" scoped>
+@import "../styles/bulma.scss";
+
+.weekday {
+  font-size: .8rem;
+  display: block;
+}
+
+.description {
+  font-size: .8rem;
+}
+
+.content.content {
+  .mobile-list {
+    list-style-type: none;
+    margin: 2rem 0;
+    padding: 0;
+  }
+
+  .mobile-list-item {
+    border-radius: .3rem;
+    margin-bottom: 2rem;
+    padding: .7rem;
+    box-shadow: 0px 0px 10px $grey-lighter;
+  }
+
+  .mobile-header {
+    border-bottom: 1px solid $grey-lighter;
+    padding-bottom: .6rem;
+    margin-bottom: .6rem;
+  }
+
+  .mobile-title {
+    font-weight: bold;
+    margin-bottom: .3rem;
+
+  }
+
+  .mobile-date {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+
+  .mobile-weekday {
+    padding-left: 1rem;
+    font-size: .8rem;
+  }
+
+  .mobile-info-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+  }
+
+  .mobile-info-item-text {
+    padding-left: .3rem;
+  }
+
+  .mobile-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .mobile-link {
+    display: block;
+  }
+}
+
+</style>
