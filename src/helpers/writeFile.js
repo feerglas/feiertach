@@ -18,6 +18,7 @@ const safariFileSave = (data, fileName) => {
 
   anchor.setAttribute('href', `data:text/calendar;charset=utf-8,${encodedData}`);
   anchor.setAttribute('download', fileName);
+  anchor.setAttribute('target', 'self');
 
   if (document.createEvent) {
     const event = document.createEvent('MouseEvents');
@@ -36,7 +37,13 @@ const download = (title, data) => {
 
   const fileName = getFileName(title);
 
-  if (Object.prototype.hasOwnProperty.call(window, 'safari')) {
+  /* eslint-disable prefer-named-capture-group */
+  /* eslint-disable require-unicode-regexp */
+  const newLocal = /^((?!chrome|android).)*safari/i;
+  /* eslint-enable prefer-named-capture-group */
+  /* eslint-enable require-unicode-regexp */
+
+  if (newLocal.test(navigator.userAgent)) {
     safariFileSave(data, fileName);
   } else {
     const blob = getBlob(data);
