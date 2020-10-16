@@ -82,10 +82,10 @@ const locales = {
   },
   holiday: {
     addToCalendar: {
-      de: 'In den Kalender',
-      en: 'In den Kalender',
-      fr: 'In den Kalender',
-      it: 'In den Kalender'
+      de: 'Kalender',
+      en: 'Kalender',
+      fr: 'Kalender',
+      it: 'Kalender'
     },
     addAllToCalendar: {
       de: 'Alle in den Kalender',
@@ -106,10 +106,10 @@ const locales = {
       it: 'Überall'
     },
     allCantonExplanation: {
-      de: 'Dieser Feiertag gilt im ganzen Kanton',
-      en: 'Dieser Feiertag gilt im ganzen Kanton',
-      fr: 'Dieser Feiertag gilt im ganzen Kanton',
-      it: 'Dieser Feiertag gilt im ganzen Kanton'
+      de: 'Gibt an, ob der Feiertag im ganzen Kanton gilt oder nicht',
+      en: 'Gibt an, ob der Feiertag im ganzen Kanton gilt oder nicht',
+      fr: 'Gibt an, ob der Feiertag im ganzen Kanton gilt oder nicht',
+      it: 'Gibt an, ob der Feiertag im ganzen Kanton gilt oder nicht'
     },
     official: {
       de: 'Gesetzlich',
@@ -118,10 +118,10 @@ const locales = {
       it: 'Gesetzlich'
     },
     officialExplanation: {
-      de: 'Dies ist ein gesetzlicher anerkannter Feiertag',
-      en: 'Dies ist ein gesetzlicher anerkannter Feiertag',
-      fr: 'Dies ist ein gesetzlicher anerkannter Feiertag',
-      it: 'Dies ist ein gesetzlicher anerkannter Feiertag'
+      de: 'Gibt an, ob der Feiertag gesetzlich anerkannt ist oder nicht',
+      en: 'Gibt an, ob der Feiertag gesetzlich anerkannt ist oder nicht',
+      fr: 'Gibt an, ob der Feiertag gesetzlich anerkannt ist oder nicht',
+      it: 'Gibt an, ob der Feiertag gesetzlich anerkannt ist oder nicht'
     },
     date: {
       de: 'Datum',
