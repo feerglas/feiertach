@@ -1,3 +1,11 @@
+## [1.8.7](https://github.com/feerglas/feiertach/compare/v1.8.6...v1.8.7) (2020-10-17)
+
+
+### Bug Fixes
+
+* add accidental linting issue ([23f3f2e](https://github.com/feerglas/feiertach/commit/23f3f2ed4e77ccf3daf7259e04d551a9f5d59323))
+* fix linting issue ([73b7b30](https://github.com/feerglas/feiertach/commit/73b7b300d33bf3d06bfc0923164b9a82bf62003d))
+
 ## [1.8.6](https://github.com/feerglas/feiertach/compare/v1.8.5...v1.8.6) (2020-10-17)
 
 
