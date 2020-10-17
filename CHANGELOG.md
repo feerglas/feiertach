@@ -1,3 +1,10 @@
+## [1.8.4](https://github.com/feerglas/feiertach/compare/v1.8.3...v1.8.4) (2020-10-17)
+
+
+### Bug Fixes
+
+* try replace instead of href ([d96aade](https://github.com/feerglas/feiertach/commit/d96aade28a8c2e4cc85a6a24903fd441bdb49ab4))
+
 ## [1.8.3](https://github.com/feerglas/feiertach/compare/v1.8.2...v1.8.3) (2020-10-17)
 
 
