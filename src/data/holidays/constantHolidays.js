@@ -1,4 +1,6 @@
 const holidays = [
+
+  // 01.01. Neujahrstag
   {
     cantons: {
       ag: {
@@ -123,6 +125,8 @@ const holidays = [
       it: 'Capodanno'
     }
   },
+
+  // 02.01. Berchtoldstag
   {
     cantons: {
       ag: {
@@ -203,6 +207,8 @@ const holidays = [
       it: 'San Basilio'
     }
   },
+
+  // 06.01. Heilige drei Könige
   {
     cantons: {
       gr: {
@@ -239,6 +245,8 @@ const holidays = [
       it: 'Epifania'
     }
   },
+
+  // 01.03. Jahrestag der Ausrufung der Republik
   {
     cantons: {
       ne: {
@@ -263,6 +271,8 @@ const holidays = [
       it: 'Instauration de la République Neuchâtel'
     }
   },
+
+  // 19.03. Josefstag
   {
     cantons: {
       gr: {
@@ -315,6 +325,8 @@ const holidays = [
       it: 'San Giuseppe'
     }
   },
+
+  // 01.05. Tag der Arbeit
   {
     cantons: {
       ag: {
@@ -381,6 +393,8 @@ const holidays = [
       it: 'Festa del lavoro'
     }
   },
+
+  // 23.06. Fest der Unabhängikeit
   {
     cantons: {
       ju: {
@@ -405,6 +419,8 @@ const holidays = [
       it: 'Commémoration du plébiscite jurassien'
     }
   },
+
+  // 29.06. Peter und Paul
   {
     cantons: {
       gr: {
@@ -437,6 +453,8 @@ const holidays = [
       it: 'Peter e Paul'
     }
   },
+
+  // 01.08. Bundesfeier
   {
     cantons: {
       ag: {
@@ -557,6 +575,8 @@ const holidays = [
       it: 'Festa nazionale della Svizzera'
     }
   },
+
+  // 15.08. Maria Himmelfahrt
   {
     cantons: {
       ag: {
@@ -637,6 +657,8 @@ const holidays = [
       it: 'Assunzione'
     }
   },
+
+  // 22.09. Mauritiustag
   {
     cantons: {
       ai: {
@@ -661,6 +683,8 @@ const holidays = [
       it: 'Mauritiustag'
     }
   },
+
+  // 25.09. Bruderklausenfest
   {
     cantons: {
       ow: {
@@ -685,6 +709,8 @@ const holidays = [
       it: 'Bruderklausenfest'
     }
   },
+
+  // 30.09. St. Ursentag
   {
     cantons: {
       so: {
@@ -715,6 +741,8 @@ const holidays = [
       it: 'St. Ursentag'
     }
   },
+
+  // 02.10. Schutzengelfest
   {
     cantons: {
       lu: {
@@ -745,6 +773,8 @@ const holidays = [
       it: 'Schutzengelfest'
     }
   },
+
+  // 01.11. Allerheiligen
   {
     cantons: {
       ag: {
@@ -829,6 +859,8 @@ const holidays = [
       it: 'Ognissanti'
     }
   },
+
+  // 08.12. Maria Empfängnis
   {
     cantons: {
       ag: {
@@ -901,6 +933,8 @@ const holidays = [
       it: 'Immacolata Concezione'
     }
   },
+
+  // 12.12. Escalade de Geneve
   {
     cantons: {
       ge: {
@@ -925,6 +959,8 @@ const holidays = [
       it: 'Escalade de Genève'
     }
   },
+
+  // 25.12. Weihnachtstag
   {
     cantons: {
       ag: {
@@ -1049,6 +1085,8 @@ const holidays = [
       it: 'Natale'
     }
   },
+
+  // 26.12. Stephanstag
   {
     cantons: {
       ag: {
@@ -1153,6 +1191,8 @@ const holidays = [
       it: 'Santo Stefano'
     }
   },
+
+  // 31.12. Wiederherstellung der Republik
   {
     cantons: {
       ge: {
