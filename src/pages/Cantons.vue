@@ -23,10 +23,7 @@
 
 <page-query>
   query {
-    allCanton (
-      sortBy: "sortValue"
-      order: ASC
-    ) {
+    allCanton {
       edges{
         node{
           id
@@ -49,6 +46,21 @@ export default {
     return {
       currentLocale: this.$i18n.locale
     };
+  },
+  mounted() {
+    this.$page.allCanton.edges.sort((a, b) => {
+      const aUpper = a.node.name[this.$i18n.locale].toUpperCase();
+      const bUpper = b.node.name[this.$i18n.locale].toUpperCase();
+
+      if (aUpper < bUpper) {
+        return -1;
+      }
+      if (aUpper > bUpper) {
+        return 1;
+      }
+
+      return 0;
+    });
   }
 };
 
