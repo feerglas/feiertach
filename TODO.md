@@ -1,9 +1,10 @@
+- add holiday planner
 - robots.txt
 - pwa
 - add precommit/prepush hook with husky to lint
 - add variable holidays for next years
-- add holiday planner
 - lazyload images
 - test browsers/devices
 - holidays -> if more than 1 year is selected, make separator for years
-- on  prod, js-error (could be from version file?)
+- cantons overview -> add holidays count
+- translate all strings
