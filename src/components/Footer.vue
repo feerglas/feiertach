@@ -56,14 +56,10 @@ export default {
     localeChanged () {
       const path = this.$tp(this.$route.path, this.currentLocale, true);
 
-      console.log(this.$route.path);
-      if (process.env.NODE_ENV === 'development') {
-        console.log(path);
-        window.location.replace(path);
-      } else {
-        console.log(`feiertach${path}`);
-        window.location.replace(`feiertach${path}`);
-      }
+      this.$router.push({
+        path
+      });
+
     }
   },
   async mounted() {
