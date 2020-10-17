@@ -23,7 +23,7 @@ import SocialLinks from '../components/SocialLinks.vue';
 export default {
   components: {
     SocialLinks
-  }
+  },
   metaInfo: {
     title: 'feiertaCH'
   }
