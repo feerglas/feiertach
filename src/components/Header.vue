@@ -51,7 +51,6 @@ export default {
     });
 
     return {
-      currentLocale: this.$i18n.locale,
       menuOpen: false,
       navItems
     };
