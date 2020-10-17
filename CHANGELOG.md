@@ -1,3 +1,10 @@
+## [1.8.1](https://github.com/feerglas/feiertach/compare/v1.8.0...v1.8.1) (2020-10-17)
+
+
+### Bug Fixes
+
+* add correct path for prod env ([f82a39a](https://github.com/feerglas/feiertach/commit/f82a39aecc3b6cd1851caeefd7fa72b758f5aa72))
+
 # [1.8.0](https://github.com/feerglas/feiertach/compare/v1.7.1...v1.8.0) (2020-10-17)
 
 
