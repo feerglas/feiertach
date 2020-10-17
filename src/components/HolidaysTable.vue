@@ -277,8 +277,12 @@ export default {
 
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import "../styles/bulma.scss";
+
+.b-table .table-wrapper {
+  overflow: visible;
+}
 
 .weekday {
   font-size: .8rem;
