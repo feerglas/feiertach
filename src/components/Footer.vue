@@ -17,6 +17,21 @@
           <SocialLinks />
         </div>
 
+        <b-field class="lang-switch">
+          <b-select
+            icon="web"
+            icon-pack="mdi"
+            v-model="currentLocale"
+            @change.native="localeChanged"
+          >
+            <option
+              v-for="locale in availableLocales"
+              :key="locale"
+              :value="locale"
+            >{{ locale }}</option>
+          </b-select>
+        </b-field>
+
       </div>
     </div>
   </footer>
@@ -32,8 +47,15 @@ export default {
   },
   data() {
     return {
+      availableLocales: this.$i18n.availableLocales,
+      currentLocale: this.$i18n.locale.toString(),
       version: '0.0.0'
     };
+  },
+  methods: {
+    localeChanged () {
+      window.location.href = this.$tp(this.$route.path, this.currentLocale, true);
+    }
   },
   async mounted() {
     let path = '/version.txt';
@@ -77,6 +99,10 @@ export default {
   .social-links ul {
     list-style-type: none;
     margin-left: 0;
+  }
+
+  .lang-switch {
+    display: inline-block;
   }
 }
 
