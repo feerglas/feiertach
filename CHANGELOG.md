@@ -1,3 +1,10 @@
+## [1.8.3](https://github.com/feerglas/feiertach/compare/v1.8.2...v1.8.3) (2020-10-17)
+
+
+### Bug Fixes
+
+* fix langswitch redirect path ([3ec3b6d](https://github.com/feerglas/feiertach/commit/3ec3b6daa64d4d081e829d3b805d6264eefc0c8d))
+
 ## [1.8.2](https://github.com/feerglas/feiertach/compare/v1.8.1...v1.8.2) (2020-10-17)
 
 
