@@ -15,8 +15,15 @@ const addCantonsCollection = (actions) => {
     // fix svg path
     canton.flag = iconsPath() + canton.flag;
 
+    let holidaysCount = 0;
+
     for (const year of years) {
       const holidaysForYear = allHolidays.getHolidaysForYearAndCanton(year, canton.key);
+
+      if (holidaysCount === 0) {
+        holidaysCount = holidaysForYear.length;
+      }
+
       const extractCantonInfo = holidaysForYear.map((holiday) => {
         const cantonInfo = holiday.cantons[canton.key];
         const _holiday = JSON.parse(JSON.stringify(holiday));
@@ -33,6 +40,7 @@ const addCantonsCollection = (actions) => {
 
     cantonsCollection.addNode({
       holidays,
+      holidaysCount,
       id: canton.key,
       ...canton
     });
