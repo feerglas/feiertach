@@ -59,10 +59,10 @@ export default {
       console.log(this.$route.path);
       if (process.env.NODE_ENV === 'development') {
         console.log(path);
-        window.location.href = path;
+        window.location.replace(path);
       } else {
         console.log(`feiertach${path}`);
-        window.location.href = `feiertach${path}`;
+        window.location.replace(`feiertach${path}`);
       }
     }
   },
