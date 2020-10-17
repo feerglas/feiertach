@@ -18,12 +18,6 @@ const locales = {
       en: 'Holidays',
       fr: 'Feiertage',
       it: 'Feiertage'
-    },
-    planner: {
-      de: 'Planer',
-      en: 'Planer',
-      fr: 'Planer',
-      it: 'Planer'
     }
   },
   footer: {
