@@ -19,14 +19,14 @@ const holidays = [
       it: 'il primo Giovedi nel mese di aprile'
     },
     link: {
-      de: 'http://de.m.wikipedia.org/wiki/Näfelser_Fahrt',
-      en: 'http://de.m.wikipedia.org/wiki/Näfelser_Fahrt',
-      fr: 'http://de.m.wikipedia.org/wiki/Näfelser_Fahrt',
-      it: 'http://de.m.wikipedia.org/wiki/Näfelser_Fahrt'
+      de: 'https://de.wikipedia.org/wiki/N%C3%A4felser_Fahrt',
+      en: 'https://en.wikipedia.org/wiki/Battle_of_N%C3%A4fels',
+      fr: 'https://de.m.wikipedia.org/wiki/Näfelser_Fahrt',
+      it: 'https://de.m.wikipedia.org/wiki/Näfelser_Fahrt'
     },
     title: {
       de: 'Näfelser Fahrt',
-      en: 'Näfelser Fahrt',
+      en: 'Näfels Ride',
       fr: 'Näfelser Fahrt',
       it: 'Näfelser Fahrt'
     }
@@ -143,10 +143,10 @@ const holidays = [
       it: 'il venerdì che precede la Pasqua cristiana'
     },
     link: {
-      de: 'http://de.m.wikipedia.org/wiki/Karfreitag',
-      en: 'http://en.m.wikipedia.org/wiki/Good_friday',
-      fr: 'http://fr.m.wikipedia.org/wiki/Vendredi_saint',
-      it: 'http://it.m.wikipedia.org/wiki/Venerdì_santo'
+      de: 'https://de.wikipedia.org/wiki/Karfreitag',
+      en: 'https://en.wikipedia.org/wiki/Good_Friday',
+      fr: 'https://fr.m.wikipedia.org/wiki/Vendredi_saint',
+      it: 'https://it.m.wikipedia.org/wiki/Venerdì_santo'
     },
     title: {
       de: 'Karfreitag',
@@ -275,10 +275,10 @@ const holidays = [
       it: 'la Domenica dopo la luna piena prima molla'
     },
     link: {
-      de: 'http://de.m.wikipedia.org/wiki/Ostern',
-      en: 'http://en.m.wikipedia.org/wiki/Easter',
-      fr: 'http://fr.m.wikipedia.org/wiki/Pâques',
-      it: 'http://it.m.wikipedia.org/wiki/Pasqua'
+      de: 'https://de.m.wikipedia.org/wiki/Ostern',
+      en: 'https://en.m.wikipedia.org/wiki/Easter',
+      fr: 'https://fr.m.wikipedia.org/wiki/Pâques',
+      it: 'https://it.m.wikipedia.org/wiki/Pasqua'
     },
     title: {
       de: 'Ostersonntag',
@@ -403,10 +403,10 @@ const holidays = [
       it: 'il giorno dopo la Pasqua'
     },
     link: {
-      de: 'http://de.m.wikipedia.org/wiki/Ostermontag',
-      en: 'http://en.m.wikipedia.org/wiki/Easter_Monday',
-      fr: 'http://fr.m.wikipedia.org/wiki/Lundi_de_Pâques',
-      it: 'http://it.m.wikipedia.org/wiki/Lunedì_di_Pasqua'
+      de: 'https://de.wikipedia.org/wiki/Ostermontag',
+      en: 'https://en.wikipedia.org/wiki/Easter_Monday',
+      fr: 'https://fr.m.wikipedia.org/wiki/Lundi_de_Pâques',
+      it: 'https://it.m.wikipedia.org/wiki/Lunedì_di_Pasqua'
     },
     title: {
       de: 'Ostermontag',
@@ -429,16 +429,22 @@ const holidays = [
       month: 4
     },
     description: {
-      de: 'am dritten Montag im April',
-      en: 'the thirt Monday in April',
+      de: 'meistens am dritten Montag im April',
+      en: 'the third Monday in April',
       fr: 'sur le troisième lundi d\'avril',
       it: 'sul terzo Lunedi nel mese di aprile'
     },
     link: {
-      de: 'http://de.m.wikipedia.org/wiki/Sechseläuten',
-      en: 'http://de.m.wikipedia.org/wiki/Sechseläuten',
-      fr: 'http://de.m.wikipedia.org/wiki/Sechseläuten',
-      it: 'http://de.m.wikipedia.org/wiki/Sechseläuten'
+      de: 'https://de.wikipedia.org/wiki/Sechsel%C3%A4uten',
+      en: 'https://de.wikipedia.org/wiki/Sechsel%C3%A4uten',
+      fr: 'https://de.wikipedia.org/wiki/Sechsel%C3%A4uten',
+      it: 'https://de.wikipedia.org/wiki/Sechsel%C3%A4uten'
+    },
+    memo: {
+      de: 'Stadt Zürich und Schlieren',
+      en: 'Stadt Zürich und Schlieren',
+      fr: 'Stadt Zürich und Schlieren',
+      it: 'Stadt Zürich und Schlieren'
     },
     title: {
       de: 'Sechseläuten',
@@ -561,20 +567,20 @@ const holidays = [
       month: 5
     },
     description: {
-      de: '40 Tage nach Ostern',
-      en: '40 days past easter',
-      fr: '40 jours après Pâques',
-      it: '40 giorni dopo Pasqua'
+      de: '39 Tage nach Ostern',
+      en: '39 days past easter',
+      fr: '39 jours après Pâques',
+      it: '39 giorni dopo Pasqua'
     },
     link: {
-      de: 'http://de.m.wikipedia.org/wiki/Christi_Himmelfahrt',
-      en: 'http://de.m.wikipedia.org/wiki/Christi_Himmelfahrt',
-      fr: 'https://fr.m.wikipedia.org/wiki/Ascension_(f%C3%AAte)',
-      it: 'http://it.m.wikipedia.org/wiki/Ascensione'
+      de: 'https://de.wikipedia.org/wiki/Christi_Himmelfahrt',
+      en: 'https://en.wikipedia.org/wiki/Ascension_Day',
+      fr: 'https://fr.wikipedia.org/wiki/Ascension_(f%C3%AAte)',
+      it: 'https://it.m.wikipedia.org/wiki/Ascensione'
     },
     title: {
       de: 'Auffahrt',
-      en: 'Auffahrt',
+      en: 'Ascension Day',
       fr: 'Ascension',
       it: 'Ascensione'
     }
@@ -689,20 +695,20 @@ const holidays = [
       month: 6
     },
     description: {
-      de: 'am Montag nach Pfingsten',
-      en: 'on Monday after Pentecost',
-      fr: 'le lundi après la Pentecôte',
-      it: 'il Lunedi dopo la Pentecoste'
+      de: '50 Tage nach Ostern',
+      en: '50 days past easter',
+      fr: '50 jours après Pâques',
+      it: '50 giorni dopo Pasqua'
     },
     link: {
-      de: 'http://de.m.wikipedia.org/wiki/Pfingsten',
-      en: 'http://en.m.wikipedia.org/wiki/Pentecost',
-      fr: 'http://fr.m.wikipedia.org/wiki/Pentecôte',
-      it: 'http://it.m.wikipedia.org/wiki/Pentecoste'
+      de: 'https://de.wikipedia.org/wiki/Pfingsten',
+      en: 'https://en.wikipedia.org/wiki/Whit_Monday',
+      fr: 'https://fr.wikipedia.org/wiki/Pentec%C3%B4te',
+      it: 'https://it.m.wikipedia.org/wiki/Pentecoste'
     },
     title: {
       de: 'Pfingstmontag',
-      en: 'Monday of Pentecost',
+      en: 'Whit Monday',
       fr: 'Lundi de Pentecôte',
       it: 'Lunedì di Pentecoste'
     }
@@ -787,10 +793,10 @@ const holidays = [
       it: '60 giorni dopo Pasqua'
     },
     link: {
-      de: 'http://de.m.wikipedia.org/wiki/Fronleichnam',
-      en: 'http://en.m.wikipedia.org/wiki/Corpus_Christi_(feast)',
-      fr: 'http://fr.m.wikipedia.org/wiki/Fête-Dieu',
-      it: 'http://it.m.wikipedia.org/wiki/Corpus_Domini'
+      de: 'https://de.wikipedia.org/wiki/Fronleichnam',
+      en: 'https://en.wikipedia.org/wiki/Corpus_Christi_(feast)',
+      fr: 'https://fr.wikipedia.org/wiki/F%C3%AAte-Dieu',
+      it: 'https://it.m.wikipedia.org/wiki/Corpus_Domini'
     },
     title: {
       de: 'Fronleichnam',
@@ -819,10 +825,10 @@ const holidays = [
       it: 'il Giovedi dopo la prima Domenica di settembre'
     },
     link: {
-      de: 'http://de.m.wikipedia.org/wiki/Genfer_Bettag',
-      en: 'http://de.m.wikipedia.org/wiki/Genfer_Bettag',
-      fr: 'http://de.m.wikipedia.org/wiki/Genfer_Bettag',
-      it: 'http://de.m.wikipedia.org/wiki/Genfer_Bettag'
+      de: 'https://de.wikipedia.org/wiki/Genfer_Bettag',
+      en: 'https://en.wikipedia.org/wiki/Je%C3%BBne_genevois',
+      fr: 'https://de.m.wikipedia.org/wiki/Genfer_Bettag',
+      it: 'https://de.m.wikipedia.org/wiki/Genfer_Bettag'
     },
     title: {
       de: 'Genfer Bettag',
@@ -851,10 +857,16 @@ const holidays = [
       it: 'il secondo fine settimana di settembre'
     },
     link: {
-      de: 'http://de.m.wikipedia.org/wiki/Knabenschiessen',
-      en: 'http://de.m.wikipedia.org/wiki/Knabenschiessen',
-      fr: 'http://de.m.wikipedia.org/wiki/Knabenschiessen',
-      it: 'http://de.m.wikipedia.org/wiki/Knabenschiessen'
+      de: 'https://de.wikipedia.org/wiki/Knabenschiessen',
+      en: 'https://de.m.wikipedia.org/wiki/Knabenschiessen',
+      fr: 'https://de.m.wikipedia.org/wiki/Knabenschiessen',
+      it: 'https://de.m.wikipedia.org/wiki/Knabenschiessen'
+    },
+    memo: {
+      de: 'Stadt Zürich und Agglomeration',
+      en: 'City of Zürich and agglomeration',
+      fr: 'Ville de Zurich et agglomération',
+      it: 'Città di Zurigo e agglomerato urbano'
     },
     title: {
       de: 'Knabenschiessen',
@@ -895,14 +907,14 @@ const holidays = [
       it: 'il Lunedi dopo che  Eidgenössischer Dank-, Buss- und Bettag'
     },
     link: {
-      de: 'http://de.m.wikipedia.org/wiki/Eidgenössischer_Dank-,_Buss-_und_Bettag',
-      en: 'http://de.m.wikipedia.org/wiki/Eidgenössischer_Dank-,_Buss-_und_Bettag',
-      fr: 'http://de.m.wikipedia.org/wiki/Eidgenössischer_Dank-,_Buss-_und_Bettag',
-      it: 'http://de.m.wikipedia.org/wiki/Eidgenössischer_Dank-,_Buss-_und_Bettag'
+      de: 'https://de.m.wikipedia.org/wiki/Eidgenössischer_Dank-,_Buss-_und_Bettag',
+      en: 'https://en.wikipedia.org/wiki/Federal_Day_of_Thanksgiving,_Repentance_and_Prayer',
+      fr: 'https://de.m.wikipedia.org/wiki/Eidgenössischer_Dank-,_Buss-_und_Bettag',
+      it: 'https://de.m.wikipedia.org/wiki/Eidgenössischer_Dank-,_Buss-_und_Bettag'
     },
     title: {
       de: 'Bettagsmontag',
-      en: 'Bettagsmontag',
+      en: 'Lundi du Jeûne',
       fr: 'Lundi du Jeûne fédéral',
       it: 'Bettagsmontag'
     }
