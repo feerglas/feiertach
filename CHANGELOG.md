@@ -1,3 +1,11 @@
+## [1.8.5](https://github.com/feerglas/feiertach/compare/v1.8.4...v1.8.5) (2020-10-17)
+
+
+### Bug Fixes
+
+* use computed properties for data ([6682cf0](https://github.com/feerglas/feiertach/commit/6682cf03fb0b046681c9339058bde6e9148b2e06))
+* use router for lang change ([366002d](https://github.com/feerglas/feiertach/commit/366002d7a88807c0d0f9ccef0d7733fa4f655e80))
+
 ## [1.8.4](https://github.com/feerglas/feiertach/compare/v1.8.3...v1.8.4) (2020-10-17)
 
 
