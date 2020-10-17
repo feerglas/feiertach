@@ -6,10 +6,10 @@
 import { addEventsForHolidays } from '../helpers/calendar';
 
 export default {
-  data() {
-    return {
-      currentLocale: this.$i18n.locale
-    };
+  computed: {
+    currentLocale() {
+      return this.$i18n.locale;
+    }
   },
   methods: {
     addAllEvents(holidays, canton) {

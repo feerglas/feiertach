@@ -9,7 +9,7 @@
       <g-link
         class="nav-item"
         v-bind:class="{'is-active': item.isActive}"
-        v-for="(item, index) in $data.navItems"
+        v-for="(item, index) in navItems"
         :key="index"
         :to="item.path"
       >
@@ -23,36 +23,41 @@
 import locales from '../locales/locales';
 
 export default {
+  computed: {
+    navItems() {
+      const _navItems = Object.keys(locales.navigation);
+      const currentRoute = this.$route.path;
+      const homeRoute = `/${this.$i18n.locale}/`;
+      const isHomeRoute = currentRoute === homeRoute;
+      const navItems = _navItems.map((item) => {
+        const navItem = {
+          isActive: false,
+          path: this.$tp(`/${item}/`),
+          text: this.$t(`navigation.${item}`)
+        };
+
+        if (item === 'home') {
+          navItem.path = this.$tp(homeRoute);
+
+          if (isHomeRoute) {
+            navItem.isActive = true;
+          }
+        } else {
+          if (currentRoute.indexOf(`/${item}/`) !== -1) {
+            navItem.isActive = true;
+          }
+        }
+
+        return navItem;
+      });
+
+      return navItems;
+    }
+  },
   data() {
-    const _navItems = Object.keys(locales.navigation);
-    const currentRoute = this.$route.path;
-    const homeRoute = `/${this.$i18n.locale}/`;
-    const isHomeRoute = currentRoute === homeRoute;
-    const navItems = _navItems.map((item) => {
-      const navItem = {
-        isActive: false,
-        path: this.$tp(`/${item}/`),
-        text: this.$t(`navigation.${item}`)
-      };
-
-      if (item === 'home') {
-        navItem.path = this.$tp(homeRoute);
-
-        if (isHomeRoute) {
-          navItem.isActive = true;
-        }
-      } else {
-        if (currentRoute.indexOf(`/${item}/`) !== -1) {
-          navItem.isActive = true;
-        }
-      }
-
-      return navItem;
-    });
 
     return {
-      menuOpen: false,
-      navItems
+      menuOpen: false
     };
   },
   methods: {

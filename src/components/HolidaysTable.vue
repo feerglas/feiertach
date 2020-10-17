@@ -13,7 +13,7 @@
         >
 
           <div class="mobile-header">
-            <p class="mobile-title">{{ item.title[$data.currentLocale] }}</p>
+            <p class="mobile-title">{{ item.title[currentLocale] }}</p>
             <div class="mobile-date">
               {{ formatDate(item.dateObject).date }}
               <span class="mobile-weekday">{{ formatDate(item.dateObject).weekday }}</span>
@@ -23,7 +23,7 @@
           <p
             v-if="item.description"
             class="description"
-          >... {{item.description[$data.currentLocale]}}</p>
+          >... {{item.description[currentLocale]}}</p>
 
           <b-tooltip
             v-if="forCanton === 'false'"
@@ -78,7 +78,7 @@
           <div class="mobile-footer">
             <a
               class="mobile-link"
-              :href="item.link[$data.currentLocale]"
+              :href="item.link[currentLocale]"
               target="_blank"
             >
               <span class="icon">
@@ -125,16 +125,16 @@
       </b-table-column>
 
       <b-table-column
-        :field="`title.${$data.currentLocale}`"
+        :field="`title.${currentLocale}`"
         :label="$t('holiday.holiday')"
         sortable
         v-slot="props"
       >
-        {{ props.row.title[$data.currentLocale] }}
+        {{ props.row.title[currentLocale] }}
         <p
           v-if="props.row.description"
           class="description"
-        >({{props.row.description[$data.currentLocale]}})</p>
+        >({{props.row.description[currentLocale]}})</p>
       </b-table-column>
 
       <b-table-column
@@ -214,7 +214,7 @@
         centered
       >
         <a
-          :href="props.row.link[$data.currentLocale]"
+          :href="props.row.link[currentLocale]"
           target="_blank"
         >Wikipedia</a>
       </b-table-column>
@@ -245,11 +245,13 @@ import { addEventForHoliday } from '../helpers/calendar';
 import dateHelper from '../helpers/date';
 
 export default {
-  data() {
-    return {
-      currentLocale: this.$i18n.locale,
-      currentLocaleString: `${this.$i18n.locale}-${this.$i18n.locale.toUpperCase()}`
-    };
+  computed: {
+    currentLocale() {
+      return this.$i18n.locale;
+    },
+    currentLocaleString() {
+      return `${this.$i18n.locale}-${this.$i18n.locale.toUpperCase()}`;
+    }
   },
   methods: {
     addSingleEvent(holiday) {
