@@ -3,18 +3,18 @@
     <ul class="list">
       <li
         class="list-item"
-        v-for="(item, index) in $page.allCanton.edges"
+        v-for="(item, index) in sortedCantons"
         :key="index"
       >
         <g-link
           class="link"
-          :to="`${$data.currentLocale}/cantons/${item.node.id}`"
+          :to="`${currentLocale}/cantons/${item.node.id}`"
         >
           <g-image
             class="image"
             :src="item.node.flag"
           />
-          <span class="name">{{item.node.name[$data.currentLocale]}}</span>
+          <span class="name">{{item.node.name[currentLocale]}}</span>
         </g-link>
       </li>
     </ul>
@@ -42,25 +42,30 @@
 
 <script>
 export default {
-  data() {
-    return {
-      currentLocale: this.$i18n.locale
-    };
-  },
-  mounted() {
-    this.$page.allCanton.edges.sort((a, b) => {
-      const aUpper = a.node.name[this.$i18n.locale].toUpperCase();
-      const bUpper = b.node.name[this.$i18n.locale].toUpperCase();
+  computed: {
+    currentLocale() {
+      return this.$i18n.locale;
+    },
+    sortedCantons() {
+      const cantons = this.$page.allCanton.edges;
 
-      if (aUpper < bUpper) {
-        return -1;
-      }
-      if (aUpper > bUpper) {
-        return 1;
-      }
+      cantons.sort((a, b) => {
+        const aUpper = a.node.name[this.$i18n.locale].toUpperCase();
+        const bUpper = b.node.name[this.$i18n.locale].toUpperCase();
 
-      return 0;
-    });
+        if (aUpper < bUpper) {
+          return -1;
+        }
+
+        if (aUpper > bUpper) {
+          return 1;
+        }
+
+        return 0;
+      });
+
+      return cantons;
+    }
   }
 };
 
