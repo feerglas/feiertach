@@ -1,3 +1,17 @@
+# [1.7.0](https://github.com/feerglas/feiertach/compare/v1.6.3...v1.7.0) (2020-10-16)
+
+
+### Bug Fixes
+
+* add leading zeroes, split output ([3bc2a35](https://github.com/feerglas/feiertach/commit/3bc2a3576f5ecd5461e5553e9f5078c778ed8678))
+* fix some messages ([fcb7d7c](https://github.com/feerglas/feiertach/commit/fcb7d7c14ffceb5473845b55c03ab2eea072d962))
+* linting issue ([7f4b65b](https://github.com/feerglas/feiertach/commit/7f4b65b706a950bd7079692e444b4ea3730f63d1))
+
+
+### Features
+
+* add dedicated view for mobile ([dce8262](https://github.com/feerglas/feiertach/commit/dce82627d4e810f316e8724e703987479e450af4))
+
 ## [1.6.3](https://github.com/feerglas/feiertach/compare/v1.6.2...v1.6.3) (2020-10-16)
 
 
