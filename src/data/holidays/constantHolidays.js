@@ -115,7 +115,7 @@ const holidays = [
     link: {
       de: 'http://de.m.wikipedia.org/wiki/Neujahr',
       en: 'http://en.m.wikipedia.org/wiki/New_Year%27s_Day',
-      fr: 'http://fr.m.wikipedia.org/wiki/Nouvel_An',
+      fr: 'https://fr.wikipedia.org/wiki/Jour_de_l%27an',
       it: 'http://it.m.wikipedia.org/wiki/Capodanno'
     },
     title: {
@@ -196,13 +196,13 @@ const holidays = [
     },
     link: {
       de: 'http://de.m.wikipedia.org/wiki/Berchtoldstag',
-      en: 'http://de.m.wikipedia.org/wiki/Berchtoldstag',
-      fr: 'http://fr.m.wikipedia.org/wiki/Jours_fériés_en_Suisse',
+      en: 'https://en.wikipedia.org/wiki/Berchtold%27s_Day',
+      fr: 'https://fr.wikipedia.org/wiki/Saint-Berchtold',
       it: 'http://it.m.wikipedia.org/wiki/San_Basilio'
     },
     title: {
       de: 'Berchtoldstag',
-      en: 'Berchtoldstag',
+      en: 'Berchtold\'s Day',
       fr: 'Saint-Berchtold',
       it: 'San Basilio'
     }
@@ -234,13 +234,13 @@ const holidays = [
     },
     link: {
       de: 'http://de.m.wikipedia.org/wiki/Heilige_Drei_Könige',
-      en: 'http://de.m.wikipedia.org/wiki/Heilige_Drei_Könige',
-      fr: 'http://fr.m.wikipedia.org/wiki/Epiphanie',
+      en: 'https://en.wikipedia.org/wiki/Epiphany_(holiday)',
+      fr: 'https://fr.wikipedia.org/wiki/%C3%89piphanie',
       it: 'http://it.m.wikipedia.org/wiki/Epifania'
     },
     title: {
       de: 'Heilige Drei Könige',
-      en: 'Heilige Drei Könige',
+      en: 'Epiphany',
       fr: 'Epiphanie',
       it: 'Epifania'
     }
@@ -260,14 +260,14 @@ const holidays = [
     },
     link: {
       de: 'http://de.m.wikipedia.org/wiki/Kanton_Neuenburg#Republikanische_Verfassung',
-      en: 'http://de.m.wikipedia.org/wiki/Kanton_Neuenburg#Republikanische_Verfassung',
-      fr: 'http://de.m.wikipedia.org/wiki/Kanton_Neuenburg#Republikanische_Verfassung',
-      it: 'http://de.m.wikipedia.org/wiki/Kanton_Neuenburg#Republikanische_Verfassung'
+      en: 'https://en.wikipedia.org/wiki/Republic_Day',
+      fr: 'https://fr.wikipedia.org/wiki/Canton_de_Neuch%C3%A2tel',
+      it: 'https://it.wikipedia.org/wiki/Neuch%C3%A2tel'
     },
     title: {
       de: 'Jahrestag der Ausrufung der Republik',
-      en: 'Instauration de la République Neuchâtel',
-      fr: 'Instauration de la République Neuchâtel',
+      en: 'Republic Day',
+      fr: 'L\'indépendance du Canton de Neuchâtel',
       it: 'Instauration de la République Neuchâtel'
     }
   },
@@ -314,13 +314,13 @@ const holidays = [
     },
     link: {
       de: 'http://de.m.wikipedia.org/wiki/Josefstag',
-      en: 'http://de.m.wikipedia.org/wiki/Josefstag',
-      fr: 'http://fr.m.wikipedia.org/wiki/Joseph_(Nouveau_Testament)',
+      en: 'https://en.wikipedia.org/wiki/St_Joseph%27s_Day',
+      fr: 'https://fr.wikipedia.org/wiki/Joseph_(Nouveau_Testament)',
       it: 'http://it.m.wikipedia.org/wiki/San_Giuseppe'
     },
     title: {
       de: 'Josefstag',
-      en: 'Josefstag',
+      en: 'Saint Joseph\'s Day',
       fr: 'Saint Joseph',
       it: 'San Giuseppe'
     }
@@ -382,8 +382,8 @@ const holidays = [
     },
     link: {
       de: 'http://de.m.wikipedia.org/wiki/Tag_der_Arbeit',
-      en: 'http://en.m.wikipedia.org/wiki/Labor_day',
-      fr: 'http://fr.m.wikipedia.org/wiki/Fête_du_Travail',
+      en: 'https://en.wikipedia.org/wiki/International_Workers%27_Day#Switzerland',
+      fr: 'https://fr.wikipedia.org/wiki/F%C3%AAte_du_Travail',
       it: 'http://it.m.wikipedia.org/wiki/Festa_del_lavoro'
     },
     title: {
@@ -408,15 +408,15 @@ const holidays = [
     },
     link: {
       de: 'http://de.m.wikipedia.org/wiki/Kanton_Jura',
-      en: 'http://de.m.wikipedia.org/wiki/Kanton_Jura',
-      fr: 'http://de.m.wikipedia.org/wiki/Kanton_Jura',
+      en: 'https://en.wikipedia.org/wiki/Independence_Day',
+      fr: 'https://fr.wikipedia.org/wiki/Canton_du_Jura',
       it: 'http://de.m.wikipedia.org/wiki/Kanton_Jura'
     },
     title: {
       de: 'Fest der Unabhängigkeit',
-      en: 'Commémoration du plébiscite jurassien',
-      fr: 'Commémoration du plébiscite jurassien',
-      it: 'Commémoration du plébiscite jurassien'
+      en: 'Independence Day',
+      fr: 'La commémoration du plébiscite du Canton du Jura',
+      it: 'Fest der Unabhängigkeit'
     }
   },
 
@@ -442,14 +442,14 @@ const holidays = [
     },
     link: {
       de: 'http://de.m.wikipedia.org/wiki/Peter_und_Paul',
-      en: 'http://de.m.wikipedia.org/wiki/Peter_und_Paul',
+      en: 'https://en.wikipedia.org/wiki/Feast_of_Saints_Peter_and_Paul',
       fr: 'http://de.m.wikipedia.org/wiki/Peter_und_Paul',
       it: 'http://de.m.wikipedia.org/wiki/Peter_und_Paul'
     },
     title: {
       de: 'Peter und Paul',
-      en: 'Peter and Paul',
-      fr: 'Peter et Paul',
+      en: 'Saints Peter and Paul',
+      fr: 'Saint-Pierre et Paul',
       it: 'Peter e Paul'
     }
   },
@@ -564,13 +564,13 @@ const holidays = [
     },
     link: {
       de: 'http://de.m.wikipedia.org/wiki/Bundesfeier',
-      en: 'http://de.m.wikipedia.org/wiki/Bundesfeier',
-      fr: 'http://fr.m.wikipedia.org/wiki/Fête_nationale_suisse',
+      en: 'https://en.wikipedia.org/wiki/Swiss_National_Day',
+      fr: 'https://fr.wikipedia.org/wiki/F%C3%AAte_nationale_suisse',
       it: 'http://it.m.wikipedia.org/wiki/Festa_nazionale_svizzera'
     },
     title: {
       de: 'Bundesfeier',
-      en: 'National Holiday',
+      en: 'Swiss National Day',
       fr: 'Fête nationale Suisse',
       it: 'Festa nazionale della Svizzera'
     }
@@ -646,8 +646,8 @@ const holidays = [
     },
     link: {
       de: 'http://de.m.wikipedia.org/wiki/Maria_Himmelfahrt',
-      en: 'http://en.m.wikipedia.org/wiki/Assumption_of_Mary',
-      fr: 'http://fr.m.wikipedia.org/wiki/Assomption',
+      en: 'https://en.wikipedia.org/wiki/Assumption_of_Mary',
+      fr: 'https://fr.wikipedia.org/wiki/Assomption',
       it: 'http://it.m.wikipedia.org/wiki/Assunzione'
     },
     title: {
@@ -698,14 +698,14 @@ const holidays = [
     },
     link: {
       de: 'http://de.m.wikipedia.org/wiki/Niklaus_von_Flüe',
-      en: 'http://de.m.wikipedia.org/wiki/Niklaus_von_Flüe',
-      fr: 'http://de.m.wikipedia.org/wiki/Niklaus_von_Flüe',
+      en: 'https://en.wikipedia.org/wiki/Nicholas_of_Fl%C3%BCe',
+      fr: 'https://fr.wikipedia.org/wiki/Nicolas_de_Flue',
       it: 'http://de.m.wikipedia.org/wiki/Niklaus_von_Flüe'
     },
     title: {
       de: 'Bruderklausenfest',
-      en: 'Bruderklausenfest',
-      fr: 'Bruderklausenfest',
+      en: 'Saint Nicholas of Flüe Day',
+      fr: 'Fête de Saint-Nicolas de Flue',
       it: 'Bruderklausenfest'
     }
   },
@@ -848,8 +848,8 @@ const holidays = [
     },
     link: {
       de: 'http://de.m.wikipedia.org/wiki/Allerheiligen',
-      en: 'http://en.m.wikipedia.org/wiki/All_Saints_Day',
-      fr: 'http://fr.m.wikipedia.org/wiki/Toussaint',
+      en: 'https://en.wikipedia.org/wiki/All_Saints_Day',
+      fr: 'https://fr.wikipedia.org/wiki/Toussaint',
       it: 'http://it.m.wikipedia.org/wiki/Ognissanti'
     },
     title: {
@@ -922,8 +922,8 @@ const holidays = [
     },
     link: {
       de: 'http://de.m.wikipedia.org/wiki/Maria_Empfängnis',
-      en: 'http://en.m.wikipedia.org/wiki/Immaculate_Conception',
-      fr: 'http://fr.m.wikipedia.org/wiki/Immaculée_Conception',
+      en: 'https://en.wikipedia.org/wiki/Immaculate_Conception',
+      fr: 'https://fr.wikipedia.org/wiki/Immacul%C3%A9e_conception',
       it: 'http://it.m.wikipedia.org/wiki/Immacolata_Concezione'
     },
     title: {
@@ -1074,7 +1074,7 @@ const holidays = [
     },
     link: {
       de: 'http://de.m.wikipedia.org/wiki/Weihnachtstag',
-      en: 'http://en.m.wikipedia.org/wiki/Christmas',
+      en: 'https://en.wikipedia.org/wiki/Christmas_Day',
       fr: 'http://fr.m.wikipedia.org/wiki/Noël',
       it: 'http://it.m.wikipedia.org/wiki/Natale'
     },
@@ -1180,13 +1180,13 @@ const holidays = [
     },
     link: {
       de: 'http://de.m.wikipedia.org/wiki/Stephanstag',
-      en: 'http://de.m.wikipedia.org/wiki/Stephanstag',
-      fr: 'http://fr.m.wikipedia.org/wiki/Étienne_(premier_martyr)',
+      en: 'https://en.wikipedia.org/wiki/St_Stephen%27s_Day',
+      fr: 'https://fr.wikipedia.org/wiki/%C3%89tienne_(premier_martyr)',
       it: 'http://it.m.wikipedia.org/wiki/Santo_Stefano'
     },
     title: {
       de: 'Stephanstag',
-      en: 'Stephanstag',
+      en: 'St Stephen\'s Day',
       fr: 'Saint Etienne',
       it: 'Santo Stefano'
     }
@@ -1207,13 +1207,13 @@ const holidays = [
     link: {
       de: 'http://de.m.wikipedia.org/wiki/Kanton_Genf',
       en: 'http://de.m.wikipedia.org/wiki/Kanton_Genf',
-      fr: 'http://de.m.wikipedia.org/wiki/Kanton_Genf',
+      fr: 'https://fr.wikipedia.org/wiki/Canton_de_Gen%C3%A8ve',
       it: 'http://de.m.wikipedia.org/wiki/Kanton_Genf'
     },
     title: {
       de: 'Wiederherstellung der Republik',
-      en: 'Restauration de la République Genève',
-      fr: 'Restauration de la République Genève',
+      en: 'Restoration Day',
+      fr: 'La restauration de la République à Genève',
       it: 'Restauration de la République Genève'
     }
   }
