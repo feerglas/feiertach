@@ -1,3 +1,10 @@
+## [1.8.6](https://github.com/feerglas/feiertach/compare/v1.8.5...v1.8.6) (2020-10-17)
+
+
+### Bug Fixes
+
+* fix issues with current locale data, make it computed property ([73dc247](https://github.com/feerglas/feiertach/commit/73dc2479df9a8f050506b35f46a3da7f050ee47c))
+
 ## [1.8.5](https://github.com/feerglas/feiertach/compare/v1.8.4...v1.8.5) (2020-10-17)
 
 
