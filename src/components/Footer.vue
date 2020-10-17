@@ -54,10 +54,15 @@ export default {
   },
   methods: {
     localeChanged () {
+      const path = this.$tp(this.$route.path, this.currentLocale, true);
+
+      console.log(this.$route.path);
       if (process.env.NODE_ENV === 'development') {
-        window.location.href = this.$tp(this.$route.path, this.currentLocale, true);
+        console.log(path);
+        window.location.href = path;
       } else {
-        window.location.href = this.$tp(`feiertach${this.$route.path}`, this.currentLocale, true);
+        console.log(`feiertach${path}`);
+        window.location.href = `feiertach${path}`;
       }
     }
   },
