@@ -3,7 +3,6 @@
 - add precommit/prepush hook with husky to lint
 - add variable holidays for next years
 - add holiday planner
-- add lang switch
 - lazyload images
 - test browsers/devices
 - holidays -> if more than 1 year is selected, make separator for years
