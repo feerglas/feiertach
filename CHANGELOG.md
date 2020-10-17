@@ -1,3 +1,11 @@
+## [1.7.1](https://github.com/feerglas/feiertach/compare/v1.7.0...v1.7.1) (2020-10-17)
+
+
+### Bug Fixes
+
+* issue with tooltip overflow ([c64536c](https://github.com/feerglas/feiertach/commit/c64536c1e76bd2ab342a967100e76896504bc02e))
+* sort by localized canton name ([1a9b752](https://github.com/feerglas/feiertach/commit/1a9b752fc37e7e08e02fc743afcf776bb2756764))
+
 # [1.7.0](https://github.com/feerglas/feiertach/compare/v1.6.3...v1.7.0) (2020-10-16)
 
 
