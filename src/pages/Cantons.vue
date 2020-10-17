@@ -14,7 +14,7 @@
             class="image"
             :src="item.node.flag"
           />
-          <span class="name">{{item.node.name[currentLocale]}}</span>
+          <span class="name">{{item.node.name[currentLocale]}} ({{item.node.holidaysCount}})</span>
         </g-link>
       </li>
     </ul>
@@ -28,6 +28,7 @@
         node{
           id
           flag
+          holidaysCount
           name {
             de
             en
