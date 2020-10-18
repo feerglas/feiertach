@@ -8,5 +8,7 @@
 - translate all strings
 - gitGuardian/dependabot
 - favicon
-- holiday->include memo, in ics as well
 - check wiki links
+- cleanup svg icons
+- include icons directly as markup
+- subpixel rendering issue with icons and borders
