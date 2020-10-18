@@ -17,4 +17,37 @@ const getFormattedDate = (dateObject, localeString) => {
   };
 };
 
-export default getFormattedDate;
+const getNextHolidayAfterDate = (holidays, date) => {
+
+  const today = date || new Date();
+  const thisYear = today.getFullYear();
+  const thisMonth = today.getMonth() + 1;
+  const thisDay = today.getDate();
+
+  let nextHoliday = false;
+  let lastHoliday = false;
+
+  holidays.forEach((holiday) => {
+    const {
+      year
+    } = holiday.date;
+    const month = parseInt(holiday.date.month, 10);
+    const day = parseInt(holiday.date.day, 10);
+
+    if (year >= thisYear && month >= thisMonth && day >= thisDay) {
+      lastHoliday = holiday;
+
+      if (!nextHoliday) {
+        nextHoliday = lastHoliday;
+      }
+    }
+  });
+
+  return nextHoliday;
+
+};
+
+export {
+  getFormattedDate,
+  getNextHolidayAfterDate
+};
