@@ -1,6 +1,6 @@
 const cantons = [
   {
-    flag: 'aargau.svg',
+    flag: 'aargau',
     key: 'ag',
     name: {
       de: 'Aargau',
@@ -11,7 +11,7 @@ const cantons = [
     sortValue: 'aargau'
   },
   {
-    flag: 'appenzell_ausserrhoden.svg',
+    flag: 'appenzell_ausserrhoden',
     key: 'ar',
     name: {
       de: 'Appenzell Ausserrhoden',
@@ -22,7 +22,7 @@ const cantons = [
     sortValue: 'appenzell_ausserrhoden'
   },
   {
-    flag: 'appenzell_innerrhoden.svg',
+    flag: 'appenzell_innerrhoden',
     key: 'ai',
     name: {
       de: 'Appenzell Innerrhoden',
@@ -33,7 +33,7 @@ const cantons = [
     sortValue: 'appenzell_innerrhoden'
   },
   {
-    flag: 'basel_land.svg',
+    flag: 'basel_land',
     key: 'bl',
     name: {
       de: 'Basel-Land',
@@ -44,7 +44,7 @@ const cantons = [
     sortValue: 'basel_land'
   },
   {
-    flag: 'basel.svg',
+    flag: 'basel',
     key: 'bs',
     name: {
       de: 'Basel-Stadt',
@@ -55,7 +55,7 @@ const cantons = [
     sortValue: 'basel'
   },
   {
-    flag: 'bern.svg',
+    flag: 'bern',
     key: 'be',
     name: {
       de: 'Bern',
@@ -66,7 +66,7 @@ const cantons = [
     sortValue: 'bern'
   },
   {
-    flag: 'fribourg.svg',
+    flag: 'fribourg',
     key: 'fr',
     name: {
       de: 'Freiburg',
@@ -77,7 +77,7 @@ const cantons = [
     sortValue: 'fribourg'
   },
   {
-    flag: 'geneva.svg',
+    flag: 'geneva',
     key: 'ge',
     name: {
       de: 'Genf',
@@ -88,7 +88,7 @@ const cantons = [
     sortValue: 'geneva'
   },
   {
-    flag: 'glarus.svg',
+    flag: 'glarus',
     key: 'gl',
     name: {
       de: 'Glarus',
@@ -99,7 +99,7 @@ const cantons = [
     sortValue: 'glarus'
   },
   {
-    flag: 'graubuenden.svg',
+    flag: 'graubuenden',
     key: 'gr',
     name: {
       de: 'Graubünden',
@@ -110,7 +110,7 @@ const cantons = [
     sortValue: 'graubünden'
   },
   {
-    flag: 'jura.svg',
+    flag: 'jura',
     key: 'ju',
     name: {
       de: 'Jura',
@@ -121,7 +121,7 @@ const cantons = [
     sortValue: 'jura'
   },
   {
-    flag: 'lucerne.svg',
+    flag: 'lucerne',
     key: 'lu',
     name: {
       de: 'Luzern',
@@ -132,7 +132,7 @@ const cantons = [
     sortValue: 'lucerne'
   },
   {
-    flag: 'neuchatel.svg',
+    flag: 'neuchatel',
     key: 'ne',
     name: {
       de: 'Neuenburg',
@@ -143,7 +143,7 @@ const cantons = [
     sortValue: 'neuchatel'
   },
   {
-    flag: 'nidwalden.svg',
+    flag: 'nidwalden',
     key: 'nw',
     name: {
       de: 'Nidwalden',
@@ -154,7 +154,7 @@ const cantons = [
     sortValue: 'nidwalden'
   },
   {
-    flag: 'obwalden.svg',
+    flag: 'obwalden',
     key: 'ow',
     name: {
       de: 'Obwalden',
@@ -165,7 +165,7 @@ const cantons = [
     sortValue: 'obwalden'
   },
   {
-    flag: 'sankt_gallen.svg',
+    flag: 'sankt_gallen',
     key: 'sg',
     name: {
       de: 'Sankt Gallen',
@@ -176,7 +176,7 @@ const cantons = [
     sortValue: 'sankt_gallen'
   },
   {
-    flag: 'schaffhausen.svg',
+    flag: 'schaffhausen',
     key: 'sh',
     name: {
       de: 'Schaffhausen',
@@ -187,7 +187,7 @@ const cantons = [
     sortValue: 'schaffhausen'
   },
   {
-    flag: 'schwyz.svg',
+    flag: 'schwyz',
     key: 'sz',
     name: {
       de: 'Schwyz',
@@ -198,7 +198,7 @@ const cantons = [
     sortValue: 'schwyz'
   },
   {
-    flag: 'solothurn.svg',
+    flag: 'solothurn',
     key: 'so',
     name: {
       de: 'Solothurn',
@@ -209,7 +209,7 @@ const cantons = [
     sortValue: 'solothurn'
   },
   {
-    flag: 'tessin.svg',
+    flag: 'tessin',
     key: 'ti',
     name: {
       de: 'Tessin',
@@ -220,7 +220,7 @@ const cantons = [
     sortValue: 'tessin'
   },
   {
-    flag: 'thurgau.svg',
+    flag: 'thurgau',
     key: 'tg',
     name: {
       de: 'Thurgau',
@@ -231,7 +231,7 @@ const cantons = [
     sortValue: 'thurgau'
   },
   {
-    flag: 'uri.svg',
+    flag: 'uri',
     key: 'ur',
     name: {
       de: 'Uri',
@@ -242,7 +242,7 @@ const cantons = [
     sortValue: 'uri'
   },
   {
-    flag: 'valais.svg',
+    flag: 'valais',
     key: 'vs',
     name: {
       de: 'Wallis',
@@ -253,7 +253,7 @@ const cantons = [
     sortValue: 'valais'
   },
   {
-    flag: 'vaud.svg',
+    flag: 'vaud',
     key: 'vd',
     name: {
       de: 'Waadt',
@@ -264,7 +264,7 @@ const cantons = [
     sortValue: 'vaud'
   },
   {
-    flag: 'zug.svg',
+    flag: 'zug',
     key: 'zg',
     name: {
       de: 'Zug',
@@ -275,7 +275,7 @@ const cantons = [
     sortValue: 'zug'
   },
   {
-    flag: 'zuerich.svg',
+    flag: 'zuerich',
     key: 'zh',
     name: {
       de: 'Zürich',
