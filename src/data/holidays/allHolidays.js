@@ -16,6 +16,21 @@ const addYearToHolidays = (holidays, year) => {
   return holidaysWithYear;
 };
 
+const setDateForVariableHoliday = (holidays, year) => {
+  const holidaysWithYear = holidays.map((day) => {
+    const newDay = day;
+    const date = day.dates[year];
+
+    date.year = year;
+
+    newDay.date = date;
+
+    return newDay;
+  });
+
+  return holidaysWithYear;
+};
+
 const addLeadingZeroesToDate = (holidays) => {
   const holidaysWithZeroes = holidays.map((day) => {
     const dayWithZeroes = JSON.parse(JSON.stringify(day));
@@ -70,18 +85,13 @@ const addType = (holidays, isFix) => {
  * Public
  */
 const getHolidaysForYear = (year) => {
-  let variableHolidaysForYear = [];
-  const yearKey = `holidays${year}`;
-  const variableHolidaysHasYear = Object.keys(variableHolidays)
-    .includes(yearKey);
-
-  if (variableHolidaysHasYear) {
-    variableHolidaysForYear = variableHolidays[yearKey];
-  }
+  const variableHolidaysForYear = variableHolidays
+    .filter((holiday) => Object.keys(holiday.dates)
+      .includes(year.toString()));
 
   // add year
   const constantHolidaysWithYear = addYearToHolidays(constantHolidays, year);
-  const variableHolidaysWithYear = addYearToHolidays(variableHolidaysForYear, year);
+  const variableHolidaysWithYear = setDateForVariableHoliday(variableHolidaysForYear, year);
 
   // add leading zeroes to date and stringify
   const constantWithLeadingZeroDates = addLeadingZeroesToDate(constantHolidaysWithYear);
