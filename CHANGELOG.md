@@ -1,3 +1,28 @@
+# [1.10.0](https://github.com/feerglas/feiertach/compare/v1.9.0...v1.10.0) (2020-10-18)
+
+
+### Bug Fixes
+
+* fix issue with higlighting the next holiday ([00be449](https://github.com/feerglas/feiertach/commit/00be44906acbcbe4cbc3122c734f2b5bddbb1c16))
+* fix issue with higlighting the next holiday ([ea37b0b](https://github.com/feerglas/feiertach/commit/ea37b0b4a152d756af501f633a4e557d6f34ddf8))
+* fix issue with higlighting the next holiday ([7b7acc4](https://github.com/feerglas/feiertach/commit/7b7acc49af6d678a5a1aa2c035bce61d52634525))
+* fix typo ([c9a6b19](https://github.com/feerglas/feiertach/commit/c9a6b195905cbb3f7570c45fbaba2c5b585bc567))
+* remove extension from file path ([96ac6b6](https://github.com/feerglas/feiertach/commit/96ac6b6d79c8cb73bfc67581b03ea23455dc2134))
+* remove flags svgs ([545d1ac](https://github.com/feerglas/feiertach/commit/545d1ac172f6d0181bc3b015939538198f6bf831))
+
+
+### Features
+
+* add border ([1c94568](https://github.com/feerglas/feiertach/commit/1c945680af5d7e0b7e1f1c83c7debc6aa73933b1))
+* add border radius ([cefd7fc](https://github.com/feerglas/feiertach/commit/cefd7fc53da213ae786dd625a271de27543098d7))
+* add favicon ([b52d8a3](https://github.com/feerglas/feiertach/commit/b52d8a3918db65777b553fb1fd0b54f860e86895))
+* add flags as vue templates ([51643b2](https://github.com/feerglas/feiertach/commit/51643b2e544730d51d0974c6fceb6d1d09b1cd56))
+* add flags component ([5ad9acc](https://github.com/feerglas/feiertach/commit/5ad9acc693003c06f88bc6f2a66f931fe638f6c9))
+* add helper to highlight next holiday ([7bddc9f](https://github.com/feerglas/feiertach/commit/7bddc9faaed131a5ac7a10699e3d5136c70880ce))
+* add property to have layout full bleed ([e7fff44](https://github.com/feerglas/feiertach/commit/e7fff446be4e2a6d3f4aa5585e19f3718f945510))
+* restructure content ([38fc7c6](https://github.com/feerglas/feiertach/commit/38fc7c6ef1db08d9f57724de8048bf0e48ef35bd))
+* use flags component ([d8c19ba](https://github.com/feerglas/feiertach/commit/d8c19ba156a42304725d9b60fb020f8f54caebbd))
+
 # [1.9.0](https://github.com/feerglas/feiertach/compare/v1.8.7...v1.9.0) (2020-10-18)
 
 
