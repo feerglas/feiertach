@@ -1,3 +1,10 @@
+## [1.10.1](https://github.com/feerglas/feiertach/compare/v1.10.0...v1.10.1) (2020-10-18)
+
+
+### Bug Fixes
+
+* fix various svg issues ([18167ca](https://github.com/feerglas/feiertach/commit/18167ca4f318bde78fef122e80d2452770251745))
+
 # [1.10.0](https://github.com/feerglas/feiertach/compare/v1.9.0...v1.10.0) (2020-10-18)
 
 
