@@ -1,3 +1,3 @@
 <template>
-  <svg xmlns="http://www.w3.org/2000/svg" width="600" height="600"><path fill="#fff" d="M0 0h600v600h-600z"/><path d="M0 0h600v300h-600z"/></svg>
+  <svg viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" width="600" height="600"><path fill="#fff" d="M0 0h600v600H0z"/><path d="M0 0h600v300H0z"/></svg>
 </template>
