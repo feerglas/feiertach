@@ -381,8 +381,8 @@ const holidays = [
       month: 5
     },
     link: {
-      de: 'https://de.m.wikipedia.org/wiki/Tag_der_Arbeit',
-      en: 'https://en.wikipedia.org/wiki/International_Workers%27_Day#Switzerland',
+      de: 'https://de.m.wikipedia.org/wiki/Erster_Mai',
+      en: 'https://en.wikipedia.org/wiki/International_Workers%27_Day',
       fr: 'https://fr.wikipedia.org/wiki/F%C3%AAte_du_Travail',
       it: 'https://it.m.wikipedia.org/wiki/Festa_del_lavoro'
     },
@@ -921,7 +921,7 @@ const holidays = [
       month: 12
     },
     link: {
-      de: 'https://de.m.wikipedia.org/wiki/Maria_Empfängnis',
+      de: 'https://de.m.wikipedia.org/wiki/Unbefleckte_Empf%C3%A4ngnis',
       en: 'https://en.wikipedia.org/wiki/Immaculate_Conception',
       fr: 'https://fr.wikipedia.org/wiki/Immacul%C3%A9e_conception',
       it: 'https://it.m.wikipedia.org/wiki/Immacolata_Concezione'

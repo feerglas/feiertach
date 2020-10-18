@@ -41,10 +41,10 @@ const holidays = [
       it: 'il primo Giovedi nel mese di aprile'
     },
     link: {
-      de: 'https://de.wikipedia.org/wiki/N%C3%A4felser_Fahrt',
+      de: 'https://de.wikipedia.org/wiki/Schlacht_bei_N%C3%A4fels',
       en: 'https://en.wikipedia.org/wiki/Battle_of_N%C3%A4fels',
-      fr: 'https://de.m.wikipedia.org/wiki/Näfelser_Fahrt',
-      it: 'https://de.m.wikipedia.org/wiki/Näfelser_Fahrt'
+      fr: 'https://de.wikipedia.org/wiki/Schlacht_bei_N%C3%A4fels',
+      it: 'https://de.wikipedia.org/wiki/Schlacht_bei_N%C3%A4fels'
     },
     title: {
       de: 'Näfelser Fahrt',
