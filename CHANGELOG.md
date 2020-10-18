@@ -1,3 +1,28 @@
+# [1.9.0](https://github.com/feerglas/feiertach/compare/v1.8.7...v1.9.0) (2020-10-18)
+
+
+### Bug Fixes
+
+* add translations for cantons ([f82303f](https://github.com/feerglas/feiertach/commit/f82303fa76b7455e27acf0c32f529697c78548b1))
+* add translations for cantons ([afc5b87](https://github.com/feerglas/feiertach/commit/afc5b87f1b524fc4a4dcadbe170ae1d0271caf5c))
+* adopt to new variable holidays structure ([8fe2ec5](https://github.com/feerglas/feiertach/commit/8fe2ec546b0cb2b84195fa3016dca710ffdf29d8))
+* fix translation for lucerne ([6d9d836](https://github.com/feerglas/feiertach/commit/6d9d836f2984d4b502e459d24e72da1e0888b3ce))
+* fix various links and names ([1f96ba5](https://github.com/feerglas/feiertach/commit/1f96ba58d4bb20b183317847f5174f0a4a8ccff9))
+* fix various translations and links ([3ff3c76](https://github.com/feerglas/feiertach/commit/3ff3c76a7ac068635bd769080c67a6b0c7a3713d))
+* use https links to wikipedia ([3761e26](https://github.com/feerglas/feiertach/commit/3761e26104d5cf7101ba75100b13ab24324d8fab))
+
+
+### Features
+
+* add additional holidays, sort holidays by date ([56a8aa6](https://github.com/feerglas/feiertach/commit/56a8aa6d10d87cee5bd316ccfea48e8a5e49e449))
+* add holidays count for cantons ([1d9c182](https://github.com/feerglas/feiertach/commit/1d9c182dc78220a42e83e99276da58078c0d55b5))
+* add holidays count for cantons ([a38fd18](https://github.com/feerglas/feiertach/commit/a38fd18c61b6c60264618d9bba90e6deaa4b69ae))
+* add memo ([a72d69d](https://github.com/feerglas/feiertach/commit/a72d69d14e59f59de671f35570222ad41caccb60))
+* add memo ([debcd3a](https://github.com/feerglas/feiertach/commit/debcd3a78d6e2ec8bdd8a4f29a8408a5247523ca))
+* add memo ([2301019](https://github.com/feerglas/feiertach/commit/2301019fec1578cbc0db12f798247ded531ee62f))
+* add variable holidays until 2025 ([f2a1caf](https://github.com/feerglas/feiertach/commit/f2a1caf203cd6bee7b2afd053f219b9cee747a8f))
+* mark next holiday ([9cd655e](https://github.com/feerglas/feiertach/commit/9cd655edcdea9097eee7a16bf4157bd3978975e3))
+
 ## [1.8.7](https://github.com/feerglas/feiertach/compare/v1.8.6...v1.8.7) (2020-10-17)
 
 
