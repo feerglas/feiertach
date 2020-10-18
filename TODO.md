@@ -3,8 +3,13 @@
 - pwa
 - test browsers/devices
 - holidays -> if more than 1 year is selected, make separator for years
-- translate all strings
 - gitGuardian/dependabot
 - subpixel rendering issue with icons and borders
 - proper styling
 - on cantons and holidays page -> style counter
+- css: indent everywhere the same
+- remove unneded classes and empty styles
+- css: unify styles, like flag
+- cantons: links are block -> clickable in whole row
+- holiday table: vertically center items in row
+- locales: move feiertach link as string literal
