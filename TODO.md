@@ -9,5 +9,4 @@
 - gitGuardian/dependabot
 - favicon
 - holiday->include memo, in ics as well
-- translations for cantons
 - check wiki links
