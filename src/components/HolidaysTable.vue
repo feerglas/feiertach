@@ -10,7 +10,7 @@
           class="mobile-list-item"
           v-for="(item, index) in holidays"
           :key="index"
-          v-bind:class="{'mobile-list-item-next': item.title[currentLocale] === $data.nextHoliday}"
+          v-bind:class="{'mobile-list-item-next': areSameHolidays(item, nextHoliday)}"
         >
 
           <div class="mobile-header">
@@ -129,7 +129,7 @@
         sortable
         v-slot="props"
       >
-        <span v-bind:class="{'is-next': props.row.title[currentLocale] === $data.nextHoliday}">
+        <span v-bind:class="{'is-next': areSameHolidays(props.row, nextHoliday)}">
           {{ formatDate(props.row.dateObject).date }}
           <span class="weekday">{{ formatDate(props.row.dateObject).weekday }}</span>
         </span>
@@ -141,7 +141,7 @@
         sortable
         v-slot="props"
       >
-        <span v-bind:class="{'is-next': props.row.title[currentLocale] === $data.nextHoliday}">
+        <span v-bind:class="{'is-next': areSameHolidays(props.row, nextHoliday)}">
           {{ props.row.title[currentLocale] }}
 
           <p
@@ -267,7 +267,7 @@
 
 <script>
 import { addEventForHoliday } from '../helpers/calendar';
-import dateHelper from '../helpers/date';
+import { getFormattedDate } from '../helpers/date';
 
 export default {
   computed: {
@@ -278,41 +278,6 @@ export default {
       return `${this.$i18n.locale}-${this.$i18n.locale.toUpperCase()}`;
     }
   },
-  data() {
-
-    // get next Holiday
-    const today = new Date();
-    const thisYear = today.getFullYear();
-    const thisMonth = today.getMonth() + 1;
-    const thisDay = today.getDate();
-
-    let nextHoliday = false;
-    let lastHoliday = false;
-
-    this.holidays.forEach((holiday) => {
-      const {
-        year
-      } = holiday.date;
-      const month = parseInt(holiday.date.month, 10);
-      const day = parseInt(holiday.date.day, 10);
-
-      if (year >= thisYear && month >= thisMonth && day >= thisDay) {
-        lastHoliday = holiday;
-
-        if (!nextHoliday) {
-          nextHoliday = lastHoliday;
-        }
-      }
-    });
-
-    const nextHolidayTitle = nextHoliday
-      ? nextHoliday.title[this.$i18n.locale]
-      : '';
-
-    return {
-      nextHoliday: nextHolidayTitle
-    };
-  },
   methods: {
     addSingleEvent(holiday) {
       const canton = this.forCanton === 'true'
@@ -321,19 +286,35 @@ export default {
 
       addEventForHoliday(holiday, this.currentLocale, this.$t('holiday.copyright'), canton);
     },
+    areSameHolidays(holiday1, holiday2) {
+      if (holiday1.date.year !== holiday2.date.year) {
+        return false;
+      }
+
+      if (holiday1.date.month !== holiday2.date.month) {
+        return false;
+      }
+
+      if (holiday1.date.day !== holiday2.date.day) {
+        return false;
+      }
+
+      return true;
+    },
     cantonsForHoliday(cantons) {
       const cantonsUpperCase = cantons.map((canton) => canton.toUpperCase());
 
       return cantonsUpperCase.join(', ');
     },
     formatDate(dateObject) {
-      return dateHelper(dateObject, this.currentLocaleString);
+      return getFormattedDate(dateObject, this.currentLocaleString);
     }
   },
   name: 'HolidaysTable',
   props: [
     'holidays',
-    'forCanton'
+    'forCanton',
+    'nextHoliday'
   ]
 };
 
