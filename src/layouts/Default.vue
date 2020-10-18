@@ -64,6 +64,8 @@ export default {
 .image {
   height: 3rem;
   width: auto;
+  flex-shrink: 0;
+  flex-grow: 0;
   border: 1px solid black;
   margin-left: 1rem;
   border-radius: .5rem;
