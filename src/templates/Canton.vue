@@ -46,6 +46,12 @@ query ($id: ID!) {
       sortDate
       dateObject
       isFix
+      memo {
+        en
+        it
+        de
+        fr
+      }
       title {
         en
         it
