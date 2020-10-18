@@ -10,10 +10,12 @@
           class="mobile-list-item"
           v-for="(item, index) in holidays"
           :key="index"
+          v-bind:class="{'mobile-list-item-next': item.title[currentLocale] === $data.nextHoliday}"
         >
 
           <div class="mobile-header">
             <p class="mobile-title">{{ item.title[currentLocale] }}</p>
+
             <div class="mobile-date">
               {{ formatDate(item.dateObject).date }}
               <span class="mobile-weekday">{{ formatDate(item.dateObject).weekday }}</span>
@@ -127,8 +129,10 @@
         sortable
         v-slot="props"
       >
-        {{ formatDate(props.row.dateObject).date }}
-        <span class="weekday">{{ formatDate(props.row.dateObject).weekday }}</span>
+        <span v-bind:class="{'is-next': props.row.title[currentLocale] === $data.nextHoliday}">
+          {{ formatDate(props.row.dateObject).date }}
+          <span class="weekday">{{ formatDate(props.row.dateObject).weekday }}</span>
+        </span>
       </b-table-column>
 
       <b-table-column
@@ -137,22 +141,24 @@
         sortable
         v-slot="props"
       >
-        {{ props.row.title[currentLocale] }}
+        <span v-bind:class="{'is-next': props.row.title[currentLocale] === $data.nextHoliday}">
+          {{ props.row.title[currentLocale] }}
 
-        <p
-          v-if="props.row.memo"
-          class="description"
-        >
-          <span class="icon">
-            <i class="mdi mdi-alert"></i>
-          </span>
-          {{props.row.memo[currentLocale]}}
-        </p>
+          <p
+            v-if="props.row.memo"
+            class="description"
+          >
+            <span class="icon">
+              <i class="mdi mdi-alert"></i>
+            </span>
+            {{props.row.memo[currentLocale]}}
+          </p>
 
-        <p
-          v-if="props.row.description"
-          class="description"
-        >({{props.row.description[currentLocale]}})</p>
+          <p
+            v-if="props.row.description"
+            class="description"
+          >({{props.row.description[currentLocale]}})</p>
+        </span>
 
       </b-table-column>
 
@@ -272,6 +278,41 @@ export default {
       return `${this.$i18n.locale}-${this.$i18n.locale.toUpperCase()}`;
     }
   },
+  data() {
+
+    // get next Holiday
+    const today = new Date();
+    const thisYear = today.getFullYear();
+    const thisMonth = today.getMonth() + 1;
+    const thisDay = today.getDate();
+
+    let nextHoliday = false;
+    let lastHoliday = false;
+
+    this.holidays.forEach((holiday) => {
+      const {
+        year
+      } = holiday.date;
+      const month = parseInt(holiday.date.month, 10);
+      const day = parseInt(holiday.date.day, 10);
+
+      if (year >= thisYear && month >= thisMonth && day >= thisDay) {
+        lastHoliday = holiday;
+
+        if (!nextHoliday) {
+          nextHoliday = lastHoliday;
+        }
+      }
+    });
+
+    const nextHolidayTitle = nextHoliday
+      ? nextHoliday.title[this.$i18n.locale]
+      : '';
+
+    return {
+      nextHoliday: nextHolidayTitle
+    };
+  },
   methods: {
     addSingleEvent(holiday) {
       const canton = this.forCanton === 'true'
@@ -305,6 +346,10 @@ export default {
   overflow: visible;
 }
 
+.is-next {
+  font-weight: bold;
+}
+
 .weekday {
   font-size: .8rem;
   display: block;
@@ -326,6 +371,10 @@ export default {
     margin-bottom: 2rem;
     padding: .7rem;
     box-shadow: 0px 0px 10px $grey-lighter;
+  }
+
+  .mobile-list-item-next {
+    border: 1px solid $black;
   }
 
   .mobile-header {
