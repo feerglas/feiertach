@@ -16,10 +16,10 @@
               class="title is-1"
             >
               {{title}}
-              <g-image
+              <Flag
+                :name="image"
                 v-if="image"
                 class="image"
-                :src="image"
               />
             </h1>
 
@@ -35,11 +35,13 @@
 </template>
 
 <script>
+import Flag from '../assets/flags/Index.vue';
 import Footer from '../components/Footer.vue';
 import Header from '../components/Header.vue';
 
 export default {
   components: {
+    Flag,
     Footer,
     Header
   },
@@ -61,6 +63,7 @@ export default {
 
 .image {
   height: 3rem;
+  width: auto;
   border: 1px solid black;
   margin-left: 1rem;
   border-radius: .5rem;

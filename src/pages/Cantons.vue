@@ -10,9 +10,10 @@
           class="link"
           :to="`${currentLocale}/cantons/${item.node.id}`"
         >
-          <g-image
+          <Flags
+            v-if="item.node.flag"
             class="image"
-            :src="item.node.flag"
+            :name="item.node.flag"
           />
           <span class="name">{{item.node.name[currentLocale]}} ({{item.node.holidaysCount}})</span>
         </g-link>
@@ -42,7 +43,12 @@
 </page-query>
 
 <script>
+import Flags from '../assets/flags/Index.vue';
+
 export default {
+  components: {
+    Flags
+  },
   computed: {
     currentLocale() {
       return this.$i18n.locale;
@@ -88,6 +94,7 @@ export default {
 
   .image {
     width: 3rem;
+    height: auto;
     border: 1px solid black;
     border-radius: .5rem;
   }
