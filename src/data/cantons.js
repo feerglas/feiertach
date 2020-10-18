@@ -5,8 +5,8 @@ const cantons = [
     name: {
       de: 'Aargau',
       en: 'Aargau',
-      fr: 'Aargau',
-      it: 'Aargau'
+      fr: 'Argovie',
+      it: 'Argovia'
     },
     sortValue: 'aargau'
   },
@@ -16,8 +16,8 @@ const cantons = [
     name: {
       de: 'Appenzell Ausserrhoden',
       en: 'Appenzell Ausserrhoden',
-      fr: 'Appenzell Ausserrhoden',
-      it: 'Appenzell Ausserrhoden'
+      fr: 'Appenzell Rh.-Ext.',
+      it: 'Appenzello Esterno'
     },
     sortValue: 'appenzell_ausserrhoden'
   },
@@ -27,8 +27,8 @@ const cantons = [
     name: {
       de: 'Appenzell Innerrhoden',
       en: 'Appenzell Innerrhoden',
-      fr: 'Appenzell Innerrhoden',
-      it: 'Appenzell Innerrhoden'
+      fr: 'Appenzell Rh.-Int.',
+      it: 'Appenzello Interno'
     },
     sortValue: 'appenzell_innerrhoden'
   },
@@ -36,10 +36,10 @@ const cantons = [
     flag: 'basel_land.svg',
     key: 'bl',
     name: {
-      de: 'Basel Land',
-      en: 'Basel Land',
+      de: 'Basel-Land',
+      en: 'Basel-Land',
       fr: 'Bâle-Campagne',
-      it: 'Basel Land'
+      it: 'Basilea Campagna'
     },
     sortValue: 'basel_land'
   },
@@ -47,10 +47,10 @@ const cantons = [
     flag: 'basel.svg',
     key: 'bs',
     name: {
-      de: 'Basel',
-      en: 'Basel',
+      de: 'Basel-Stadt',
+      en: 'Basel-Stadt',
       fr: 'Bâle-Ville',
-      it: 'Basel'
+      it: 'Basilea Città'
     },
     sortValue: 'basel'
   },
@@ -61,7 +61,7 @@ const cantons = [
       de: 'Bern',
       en: 'Bern',
       fr: 'Berne',
-      it: 'Bern'
+      it: 'Berna'
     },
     sortValue: 'bern'
   },
@@ -72,7 +72,7 @@ const cantons = [
       de: 'Freiburg',
       en: 'Fribourg',
       fr: 'Fribourg',
-      it: 'Fribourg'
+      it: 'Friburgo'
     },
     sortValue: 'fribourg'
   },
@@ -80,10 +80,10 @@ const cantons = [
     flag: 'geneva.svg',
     key: 'ge',
     name: {
-      de: 'Geneva',
+      de: 'Genf',
       en: 'Geneva',
-      fr: 'Geneva',
-      it: 'Geneva'
+      fr: 'Genève',
+      it: 'Ginevra'
     },
     sortValue: 'geneva'
   },
@@ -94,7 +94,7 @@ const cantons = [
       de: 'Glarus',
       en: 'Glarus',
       fr: 'Glaris',
-      it: 'Glarus'
+      it: 'Glarona'
     },
     sortValue: 'glarus'
   },
@@ -102,10 +102,10 @@ const cantons = [
     flag: 'graubuenden.svg',
     key: 'gr',
     name: {
-      de: 'Graubuenden',
-      en: 'Graubuenden',
-      fr: 'Graubuenden',
-      it: 'Graubuenden'
+      de: 'Graubünden',
+      en: 'Graubünden',
+      fr: 'Grisons',
+      it: 'Grigioni'
     },
     sortValue: 'graubünden'
   },
@@ -116,7 +116,7 @@ const cantons = [
       de: 'Jura',
       en: 'Jura',
       fr: 'Jura',
-      it: 'Jura'
+      it: 'Giura'
     },
     sortValue: 'jura'
   },
@@ -125,9 +125,9 @@ const cantons = [
     key: 'lu',
     name: {
       de: 'Luzern',
-      en: 'Lucerne',
+      en: 'Luzern',
       fr: 'Lucerne',
-      it: 'Lucerne'
+      it: 'Lucerna'
     },
     sortValue: 'lucerne'
   },
@@ -135,7 +135,7 @@ const cantons = [
     flag: 'neuchatel.svg',
     key: 'ne',
     name: {
-      de: 'Neuchâtel',
+      de: 'Neuenburg',
       en: 'Neuchâtel',
       fr: 'Neuchâtel',
       it: 'Neuchâtel'
@@ -149,7 +149,7 @@ const cantons = [
       de: 'Nidwalden',
       en: 'Nidwalden',
       fr: 'Nidwald',
-      it: 'Nidwalden'
+      it: 'Nidvaldo'
     },
     sortValue: 'nidwalden'
   },
@@ -160,7 +160,7 @@ const cantons = [
       de: 'Obwalden',
       en: 'Obwalden',
       fr: 'Obwald',
-      it: 'Obwalden'
+      it: 'Obvaldo'
     },
     sortValue: 'obwalden'
   },
@@ -170,8 +170,8 @@ const cantons = [
     name: {
       de: 'Sankt Gallen',
       en: 'Sankt Gallen',
-      fr: 'Sankt Gallen',
-      it: 'Sankt Gallen'
+      fr: 'Saint-Gall',
+      it: 'San Gallo'
     },
     sortValue: 'sankt_gallen'
   },
@@ -182,7 +182,7 @@ const cantons = [
       de: 'Schaffhausen',
       en: 'Schaffhausen',
       fr: 'Schaffhouse',
-      it: 'Schaffhausen'
+      it: 'Sciaffusa'
     },
     sortValue: 'schaffhausen'
   },
@@ -193,7 +193,7 @@ const cantons = [
       de: 'Schwyz',
       en: 'Schwyz',
       fr: 'Schwyz',
-      it: 'Schwyz'
+      it: 'Svitto'
     },
     sortValue: 'schwyz'
   },
@@ -204,7 +204,7 @@ const cantons = [
       de: 'Solothurn',
       en: 'Solothurn',
       fr: 'Soleure',
-      it: 'Solothurn'
+      it: 'Soletta'
     },
     sortValue: 'solothurn'
   },
@@ -213,9 +213,9 @@ const cantons = [
     key: 'ti',
     name: {
       de: 'Tessin',
-      en: 'Tessin',
+      en: 'Ticino',
       fr: 'Tessin',
-      it: 'Tessin'
+      it: 'Ticino'
     },
     sortValue: 'tessin'
   },
@@ -225,8 +225,8 @@ const cantons = [
     name: {
       de: 'Thurgau',
       en: 'Thurgau',
-      fr: 'Thurgau',
-      it: 'Thurgau'
+      fr: 'Turgovie',
+      it: 'Turgovia'
     },
     sortValue: 'thurgau'
   },
@@ -245,10 +245,10 @@ const cantons = [
     flag: 'valais.svg',
     key: 'vs',
     name: {
-      de: 'Valais',
+      de: 'Wallis',
       en: 'Valais',
       fr: 'Valais',
-      it: 'Valais'
+      it: 'Vallese'
     },
     sortValue: 'valais'
   },
@@ -256,7 +256,7 @@ const cantons = [
     flag: 'vaud.svg',
     key: 'vd',
     name: {
-      de: 'Vaud',
+      de: 'Waadt',
       en: 'Vaud',
       fr: 'Vaud',
       it: 'Vaud'
@@ -270,7 +270,7 @@ const cantons = [
       de: 'Zug',
       en: 'Zug',
       fr: 'Zoug',
-      it: 'Zug'
+      it: 'Zugo'
     },
     sortValue: 'zug'
   },
@@ -281,7 +281,7 @@ const cantons = [
       de: 'Zürich',
       en: 'Zürich',
       fr: 'Zürich',
-      it: 'Zürich'
+      it: 'Zurigo'
     },
     sortValue: 'zürich'
   }
