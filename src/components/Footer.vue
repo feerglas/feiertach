@@ -89,6 +89,7 @@ export default {
   padding-left: 0;
   padding-right: 0;
   text-align: center;
+  border-top: 2px solid $grey-lightest;
 }
 
 .container {
