@@ -79,6 +79,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  @import "../styles/bulma.scss";
   .list {
 
   }
@@ -93,12 +94,7 @@ export default {
   }
 
   .image {
-    width: 3rem;
-    flex-shrink: 0;
-    flex-grow: 0;
-    height: auto;
-    border: 1px solid black;
-    border-radius: .5rem;
+
   }
 
   .name {

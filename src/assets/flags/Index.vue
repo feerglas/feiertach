@@ -1,5 +1,5 @@
 <template>
-  <component v-bind:is="name" />
+  <component class="flag-icon" v-bind:is="name" />
 </template>
 
 <script>
@@ -64,3 +64,17 @@ export default {
   props: ['name']
 };
 </script>
+
+<style lang="scss" scoped>
+@import "../../styles/bulma.scss";
+
+.flag-icon {
+  width: 3rem;
+  flex-shrink: 0;
+  flex-grow: 0;
+  height: auto;
+  border: 2px solid $grey;
+  border-radius: .5rem;
+}
+
+</style>
