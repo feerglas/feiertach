@@ -32,7 +32,6 @@ const addCantonsCollection = (actions) => {
         _holiday.official = cantonInfo.official;
         _holiday.half = cantonInfo.half;
         _holiday.memo = cantonInfo.memo;
-        console.log(cantonInfo.memo);
 
         return _holiday;
       });
