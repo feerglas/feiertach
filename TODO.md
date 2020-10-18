@@ -10,6 +10,4 @@
 - favicon
 - holiday->include memo, in ics as well
 - translations for cantons
-- change wiki links from http to https.
 - check wiki links
-- mark the next upcoming holiday
