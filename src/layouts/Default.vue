@@ -3,12 +3,18 @@
 
     <Header />
 
-    <div class="container">
+    <div
+      class="container"
+      v-bind:class="{'no-padding': noPadding}"
+    >
 
         <transition name="fade" appear>
           <main>
 
-            <h1 class="title is-1">
+            <h1
+              v-if="title"
+              class="title is-1"
+            >
               {{title}}
               <g-image
                 v-if="image"
@@ -39,7 +45,8 @@ export default {
   },
   props: [
     'title',
-    'image'
+    'image',
+    'noPadding'
   ]
 };
 </script>
@@ -67,20 +74,12 @@ export default {
   opacity: 0;
 }
 
-.container {
+.container:not(.no-padding) {
+  @include defaultLayoutBleed();
+}
 
-  @include until($tablet) {
-    padding: 2rem;
-  }
-
-  @include from($tablet) {
-    padding: 2.5rem;
-  }
-
-  @include from($desktop) {
-    max-width: calc(960px - (2 * #{$gap}));
-    padding: 3rem 0 4rem;
-  }
+.container.no-padding {
+  max-width: 100%;
 }
 
 </style>
