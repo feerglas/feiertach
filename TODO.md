@@ -1,10 +1,15 @@
 - add holiday planner
 - robots.txt
 - pwa
-- add precommit/prepush hook with husky to lint
 - add variable holidays for next years
 - lazyload images
 - test browsers/devices
 - holidays -> if more than 1 year is selected, make separator for years
-- cantons overview -> add holidays count
 - translate all strings
+- gitGuardian/dependabot
+- favicon
+- holiday->include memo, in ics as well
+- translations for cantons
+- change wiki links from http to https.
+- check wiki links
+- mark the next upcoming holiday
