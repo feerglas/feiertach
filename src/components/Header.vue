@@ -6,15 +6,17 @@
       role="navigation"
       aria-label="main navigation"
     >
-      <g-link
-        class="nav-item"
-        v-bind:class="{'is-active': item.isActive}"
-        v-for="(item, index) in navItems"
-        :key="index"
-        :to="item.path"
-      >
-        {{item.text}}
-      </g-link>
+      <div class="navigation-inner">
+        <g-link
+          class="nav-item"
+          v-bind:class="{'is-active': item.isActive}"
+          v-for="(item, index) in navItems"
+          :key="index"
+          :to="item.path"
+        >
+          {{item.text}}
+        </g-link>
+      </div>
     </nav>
   </header>
 </template>
@@ -74,10 +76,15 @@ export default {
 @import "../styles/bulma.scss";
 
 .navigation {
-  display: flex;
-  flex-wrap: wrap;
   background-color: $primary;
   border: .3rem solid $primary;
+}
+
+.navigation-inner {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: calc(960px - (2 * #{$gap}));
+  margin: 0 auto;
 }
 
 .nav-item {
