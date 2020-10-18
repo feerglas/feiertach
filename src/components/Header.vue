@@ -87,6 +87,7 @@ export default {
   color: white;
   border: 1px solid $primary;
   transition: border-color 150ms ease-in;
+  border-radius: .5rem;
 }
 
 .nav-item:hover:not(.is-active) {
