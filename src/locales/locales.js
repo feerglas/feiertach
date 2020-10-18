@@ -48,7 +48,7 @@ const locales = {
       it: 'Trommelwirbel'
     },
     content1: {
-      de: 'Diese App ist werbefrei, und du kannst sie umsonst benutzen. Wenn du mir "Merci" sagen willst, wenn du Verbesserungsvorschläge hast oder Fehler gefunden hast, kannst du dich gerne via Twitter, Facebook oder Insta bei mir melden:',
+      de: 'Diese App ist werbefrei, und du kannst sie gratis benutzen. Wenn du mir "Merci" sagen willst, wenn du Verbesserungsvorschläge hast oder Fehler gefunden hast, kannst du dich gerne via Twitter, Facebook oder Insta bei mir melden:',
       en: 'Diese App ist werbefrei, und du kannst sie umsonst benutzen. Wenn du mir "Merci" sagen willst, wenn du Verbesserungsvorschläge hast oder Fehler gefunden hast, kannst du dich gerne via Twitter, Facebook oder Insta bei mir melden:',
       fr: 'Diese App ist werbefrei, und du kannst sie umsonst benutzen. Wenn du mir "Merci" sagen willst, wenn du Verbesserungsvorschläge hast oder Fehler gefunden hast, kannst du dich gerne via Twitter, Facebook oder Insta bei mir melden:',
       it: 'Diese App ist werbefrei, und du kannst sie umsonst benutzen. Wenn du mir "Merci" sagen willst, wenn du Verbesserungsvorschläge hast oder Fehler gefunden hast, kannst du dich gerne via Twitter, Facebook oder Insta bei mir melden:'
