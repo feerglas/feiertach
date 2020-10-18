@@ -75,6 +75,13 @@
             </div>
           </div>
 
+          <p v-if="item.memo">
+            <span class="icon">
+              <i class="mdi mdi-alert"></i>
+            </span>
+            {{item.memo[currentLocale]}}
+          </p>
+
           <div class="mobile-footer">
             <a
               class="mobile-link"
@@ -131,10 +138,22 @@
         v-slot="props"
       >
         {{ props.row.title[currentLocale] }}
+
+        <p
+          v-if="props.row.memo"
+          class="description"
+        >
+          <span class="icon">
+            <i class="mdi mdi-alert"></i>
+          </span>
+          {{props.row.memo[currentLocale]}}
+        </p>
+
         <p
           v-if="props.row.description"
           class="description"
         >({{props.row.description[currentLocale]}})</p>
+
       </b-table-column>
 
       <b-table-column
