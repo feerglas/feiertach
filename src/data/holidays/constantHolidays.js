@@ -715,6 +715,12 @@ const holidays = [
     cantons: {
       so: {
         allCanton: false,
+        memo: {
+          de: 'Nur in der Stadt Solothurn',
+          en: 'Nur in der Stadt Solothurn',
+          fr: 'Nur in der Stadt Solothurn',
+          it: 'Nur in der Stadt Solothurn'
+        },
         official: true
       }
     },
@@ -727,12 +733,6 @@ const holidays = [
       en: 'https://de.wikipedia.org/wiki/Ursus_von_Solothurn',
       fr: 'https://de.wikipedia.org/wiki/Ursus_von_Solothurn',
       it: 'https://de.wikipedia.org/wiki/Ursus_von_Solothurn'
-    },
-    memo: {
-      de: 'Nur in der Stadt Solothurn',
-      en: 'Nur in der Stadt Solothurn',
-      fr: 'Nur in der Stadt Solothurn',
-      it: 'Nur in der Stadt Solothurn'
     },
     title: {
       de: 'St. Ursentag',
@@ -747,6 +747,12 @@ const holidays = [
     cantons: {
       lu: {
         allCanton: false,
+        memo: {
+          de: 'Nur Stadt Luzern',
+          en: 'Nur Stadt Luzern',
+          fr: 'Nur Stadt Luzern',
+          it: 'Nur Stadt Luzern'
+        },
         official: true
       }
     },
@@ -759,12 +765,6 @@ const holidays = [
       en: 'https://de.wikipedia.org/wiki/Schutzengelfest',
       fr: 'https://de.wikipedia.org/wiki/Schutzengelfest',
       it: 'https://de.wikipedia.org/wiki/Schutzengelfest'
-    },
-    memo: {
-      de: 'Nur Stadt Luzern',
-      en: 'Nur Stadt Luzern',
-      fr: 'Nur Stadt Luzern',
-      it: 'Nur Stadt Luzern'
     },
     title: {
       de: 'Schutzengelfest',
