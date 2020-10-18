@@ -38,7 +38,7 @@ const cantons = [
     name: {
       de: 'Basel Land',
       en: 'Basel Land',
-      fr: 'Basel Land',
+      fr: 'Bâle-Campagne',
       it: 'Basel Land'
     },
     sortValue: 'basel_land'
@@ -49,7 +49,7 @@ const cantons = [
     name: {
       de: 'Basel',
       en: 'Basel',
-      fr: 'Basel',
+      fr: 'Bâle-Ville',
       it: 'Basel'
     },
     sortValue: 'basel'
@@ -60,7 +60,7 @@ const cantons = [
     name: {
       de: 'Bern',
       en: 'Bern',
-      fr: 'Bern',
+      fr: 'Berne',
       it: 'Bern'
     },
     sortValue: 'bern'
@@ -69,7 +69,7 @@ const cantons = [
     flag: 'fribourg.svg',
     key: 'fr',
     name: {
-      de: 'Fribourg',
+      de: 'Freiburg',
       en: 'Fribourg',
       fr: 'Fribourg',
       it: 'Fribourg'
@@ -93,7 +93,7 @@ const cantons = [
     name: {
       de: 'Glarus',
       en: 'Glarus',
-      fr: 'Glarus',
+      fr: 'Glaris',
       it: 'Glarus'
     },
     sortValue: 'glarus'
@@ -124,7 +124,7 @@ const cantons = [
     flag: 'lucerne.svg',
     key: 'lu',
     name: {
-      de: 'Lucerne',
+      de: 'Luzern',
       en: 'Lucerne',
       fr: 'Lucerne',
       it: 'Lucerne'
@@ -148,7 +148,7 @@ const cantons = [
     name: {
       de: 'Nidwalden',
       en: 'Nidwalden',
-      fr: 'Nidwalden',
+      fr: 'Nidwald',
       it: 'Nidwalden'
     },
     sortValue: 'nidwalden'
@@ -159,7 +159,7 @@ const cantons = [
     name: {
       de: 'Obwalden',
       en: 'Obwalden',
-      fr: 'Obwalden',
+      fr: 'Obwald',
       it: 'Obwalden'
     },
     sortValue: 'obwalden'
@@ -181,7 +181,7 @@ const cantons = [
     name: {
       de: 'Schaffhausen',
       en: 'Schaffhausen',
-      fr: 'Schaffhausen',
+      fr: 'Schaffhouse',
       it: 'Schaffhausen'
     },
     sortValue: 'schaffhausen'
@@ -203,7 +203,7 @@ const cantons = [
     name: {
       de: 'Solothurn',
       en: 'Solothurn',
-      fr: 'Solothurn',
+      fr: 'Soleure',
       it: 'Solothurn'
     },
     sortValue: 'solothurn'
@@ -269,7 +269,7 @@ const cantons = [
     name: {
       de: 'Zug',
       en: 'Zug',
-      fr: 'Zug',
+      fr: 'Zoug',
       it: 'Zug'
     },
     sortValue: 'zug'
