@@ -1,11 +1,10 @@
 - add holiday planner
 - robots.txt
 - pwa
-- add variable holidays for next years
-- lazyload images
 - test browsers/devices
 - holidays -> if more than 1 year is selected, make separator for years
 - translate all strings
 - gitGuardian/dependabot
-- check wiki links
 - subpixel rendering issue with icons and borders
+- proper styling
+- on cantons and holidays page -> style counter
