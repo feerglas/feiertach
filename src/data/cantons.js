@@ -125,7 +125,7 @@ const cantons = [
     key: 'lu',
     name: {
       de: 'Luzern',
-      en: 'Luzern',
+      en: 'Lucerne',
       fr: 'Lucerne',
       it: 'Lucerna'
     },
