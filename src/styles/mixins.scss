@@ -1,0 +1,15 @@
+@mixin defaultLayoutBleed() {
+  @include until($tablet) {
+    padding: 2rem;
+  }
+
+  @include from($tablet) {
+    padding: 2.5rem;
+  }
+
+  @include from($desktop) {
+    max-width: calc(960px - (2 * #{$gap}));
+    padding: 3rem 0 4rem;
+    margin: 0 auto;
+  }
+}
