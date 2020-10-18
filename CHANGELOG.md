@@ -1,3 +1,10 @@
+# [1.11.0](https://github.com/feerglas/feiertach/compare/v1.10.2...v1.11.0) (2020-10-18)
+
+
+### Features
+
+* add translations for en, it, fr ([d74a8b8](https://github.com/feerglas/feiertach/commit/d74a8b8c14e6a155d0ff93a0fe171509a97ca857))
+
 ## [1.10.2](https://github.com/feerglas/feiertach/compare/v1.10.1...v1.10.2) (2020-10-18)
 
 
