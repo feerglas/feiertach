@@ -4,6 +4,7 @@
 /dist/
 /src/.temp
 .eslintrc.js
+/src/assets/flags/icons/
 
 # not ignored folders/files
 !.travis.yml
