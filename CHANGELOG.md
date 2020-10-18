@@ -1,3 +1,12 @@
+## [1.10.2](https://github.com/feerglas/feiertach/compare/v1.10.1...v1.10.2) (2020-10-18)
+
+
+### Bug Fixes
+
+* fix wiki links ([77ee145](https://github.com/feerglas/feiertach/commit/77ee145102651a6101d9273f921c30875a286877))
+* make nav max-width ([bf3ac9a](https://github.com/feerglas/feiertach/commit/bf3ac9a80177a92d20f3b0b6d1b43113d160770b))
+* make sure flags do not grow and shrink ([ae49b3e](https://github.com/feerglas/feiertach/commit/ae49b3eff5b0b381d87bb2aa38f9b3e309b629e6))
+
 ## [1.10.1](https://github.com/feerglas/feiertach/compare/v1.10.0...v1.10.1) (2020-10-18)
 
 
