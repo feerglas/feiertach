@@ -88,10 +88,10 @@ const locales = {
       it: 'Tutto nel calendario'
     },
     copyright: {
-      de: 'Hinzugefügt mit feiertaCH: https://feerglas.github.io/feiertach/',
-      en: 'Added with feiertaCH: https://feerglas.github.io/feiertach/',
-      fr: 'Ajouté avec feiertaCH: https://feerglas.github.io/feiertach/',
-      it: 'Aggiunto con feiertaCH: https://feerglas.github.io/feiertach/'
+      de: 'Hinzugefügt mit feiertaCH',
+      en: 'Added with feiertaCH',
+      fr: 'Ajouté avec feiertaCH',
+      it: 'Aggiunto con feiertaCH'
     },
     allCanton: {
       de: 'Überall',
