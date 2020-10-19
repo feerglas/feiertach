@@ -1,3 +1,10 @@
+## [1.12.2](https://github.com/feerglas/feiertach/compare/v1.12.1...v1.12.2) (2020-10-19)
+
+
+### Bug Fixes
+
+* make sure that netlify always deploys ([f9fb6aa](https://github.com/feerglas/feiertach/commit/f9fb6aaa36b8281c222aa52c7df4cb2ed9f18d99))
+
 ## [1.12.1](https://github.com/feerglas/feiertach/compare/v1.12.0...v1.12.1) (2020-10-19)
 
 
