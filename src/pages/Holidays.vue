@@ -10,7 +10,7 @@
       @filter="handleFilter"
     />
 
-    <AddHolidays
+    <HolidaysInfoLine
       :holidays="$data.filteredHolidays"
       :canton="false"
     />
@@ -72,13 +72,13 @@ import {
   getLastHolidayOfEachYear,
   getNextHolidayAfterDate
 } from '../helpers/date';
-import AddHolidays from '../components/AddHolidays.vue';
+import HolidaysInfoLine from '../components/HolidaysInfoLine.vue';
 import HolidaysTable from '../components/HolidaysTable.vue';
 import YearsSelector from '../components/YearsSelector.vue';
 
 export default {
   components: {
-    AddHolidays,
+    HolidaysInfoLine,
     HolidaysTable,
     YearsSelector
   },

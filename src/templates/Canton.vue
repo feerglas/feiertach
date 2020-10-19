@@ -11,17 +11,17 @@
         class="image"
         />
 
-      <h1 class="title">{{$page.canton.name[this.$i18n.locale]}}</h1>
+      <h1 class="title">
+        {{$page.canton.name[this.$i18n.locale]}}
+      </h1>
     </div>
-
-    <span>{{$data.filteredHolidays.length}}</span>
 
     <YearsSelector
       :holidays="this.$page.canton.holidays"
       @filter="handleFilter"
     />
 
-    <AddHolidays
+    <HolidaysInfoLine
       :holidays="$data.filteredHolidays"
       :canton="this.$page.canton.key.toUpperCase()"
     />
@@ -94,15 +94,15 @@ import {
   getLastHolidayOfEachYear,
   getNextHolidayAfterDate
 } from '../helpers/date';
-import AddHolidays from '../components/AddHolidays.vue';
 import Flag from '../assets/flags/Index.vue';
+import HolidaysInfoLine from '../components/HolidaysInfoLine.vue';
 import HolidaysTable from '../components/HolidaysTable.vue';
 import YearsSelector from '../components/YearsSelector.vue';
 
 export default {
   components: {
-    AddHolidays,
     Flag,
+    HolidaysInfoLine,
     HolidaysTable,
     YearsSelector
   },
@@ -137,7 +137,7 @@ export default {
     }
 
     .title {
-
+      margin-bottom: 0;
     }
   }
 }
