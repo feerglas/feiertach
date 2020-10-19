@@ -10,13 +10,5 @@ jobs:
     - npm run build || travis_terminate 1
     after_success:
     - npm run semantic-release || travis_terminate 1
-
-deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $GH_TOKEN
-  keep_history: true
-  local_dir: ./dist
-  repo: feerglas/feiertach
-  on:
-    branch: master
+    - netlify deploy --prod --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --dir
+      ./dist/ || travis_terminate 1
