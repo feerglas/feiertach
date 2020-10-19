@@ -73,7 +73,7 @@ export default {
   flex-shrink: 0;
   flex-grow: 0;
   height: auto;
-  border: 2px solid $grey;
+  box-shadow: 0px 0px 2px $grey;
   border-radius: .5rem;
 }
 
