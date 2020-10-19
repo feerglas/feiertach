@@ -1,6 +1,6 @@
 <template>
 
-  <header>
+  <header class="comp-header">
     <nav
       class="navigation"
       role="navigation"
@@ -72,38 +72,39 @@ export default {
 
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import "../styles/bulma.scss";
+.comp-header {
+  .navigation {
+    background-color: $primary;
+    border: .3rem solid $primary;
+  }
 
-.navigation {
-  background-color: $primary;
-  border: .3rem solid $primary;
-}
+  .navigation-inner {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: calc(960px - (2 * #{$gap}));
+    margin: 0 auto;
+  }
 
-.navigation-inner {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: calc(960px - (2 * #{$gap}));
-  margin: 0 auto;
-}
+  .nav-item {
+    display: block;
+    padding: .7rem;
+    margin: 0 .2rem;
+    color: white;
+    border: 1px solid $primary;
+    transition: border-color 150ms ease-in;
+    border-radius: .5rem;
+  }
 
-.nav-item {
-  display: block;
-  padding: .7rem;
-  margin: 0 .2rem;
-  color: white;
-  border: 1px solid $primary;
-  transition: border-color 150ms ease-in;
-  border-radius: .5rem;
-}
+  .nav-item:hover:not(.is-active) {
+    border: 1px solid $grey-lightest;
+    color: white;
+  }
 
-.nav-item:hover:not(.is-active) {
-  border: 1px solid $grey-lightest;
-  color: white;
-}
-
-.nav-item.is-active {
-  background-color: white;
-  color: $primary;
+  .nav-item.is-active {
+    background-color: white;
+    color: $primary;
+  }
 }
 </style>
