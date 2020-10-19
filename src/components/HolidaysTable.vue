@@ -372,10 +372,6 @@ export default {
     overflow: visible;
   }
 
-  .table tr:nth-child(3) {
-    border-bottom: 4px solid red;
-  }
-
   .table td {
     vertical-align: middle;
   }
