@@ -41,6 +41,8 @@
 <script>
 import SocialLinks from './SocialLinks.vue';
 
+const documentationPackageJson = require('../../package.json');
+
 export default {
   components: {
     SocialLinks
@@ -69,7 +71,13 @@ export default {
       throw new Error('Version file not found');
     }
 
-    this.version = await versionData.text();
+    let versionNumber = await versionData.text();
+
+    if (versionNumber.trim() === '0.0.0') {
+      versionNumber = documentationPackageJson.version;
+    }
+
+    this.version = versionNumber;
   },
   name: 'Footer'
 };
