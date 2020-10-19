@@ -83,7 +83,7 @@ export default {
   .navigation-inner {
     display: flex;
     flex-wrap: wrap;
-    max-width: calc(960px - (2 * #{$gap}));
+    @include maxWidth;
     margin: 0 auto;
   }
 

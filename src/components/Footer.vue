@@ -98,7 +98,7 @@ export default {
     }
 
     @include from($desktop) {
-      max-width: calc(960px - (2 * #{$gap}));
+      @include maxWidth;
       padding: 0;
     }
 

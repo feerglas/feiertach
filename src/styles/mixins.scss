@@ -13,3 +13,7 @@
     margin: 0 auto;
   }
 }
+
+@mixin maxWidth() {
+  max-width: calc(960px - (2 * #{$gap}));
+}
