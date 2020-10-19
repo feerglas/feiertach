@@ -1,8 +1,19 @@
 <template>
   <Layout
-    :title="$page.canton.name[this.$i18n.locale]"
     :image="$page.canton.flag"
-    >
+    class="page-canton"
+  >
+
+    <div class="header">
+      <Flag
+        :name="$page.canton.flag"
+        v-if="$page.canton.flag"
+        class="image"
+        />
+
+      <h1 class="title">{{$page.canton.name[this.$i18n.locale]}}</h1>
+    </div>
+
     <span>{{$data.filteredHolidays.length}}</span>
 
     <YearsSelector
@@ -84,12 +95,14 @@ import {
   getNextHolidayAfterDate
 } from '../helpers/date';
 import AddHolidays from '../components/AddHolidays.vue';
+import Flag from '../assets/flags/Index.vue';
 import HolidaysTable from '../components/HolidaysTable.vue';
 import YearsSelector from '../components/YearsSelector.vue';
 
 export default {
   components: {
     AddHolidays,
+    Flag,
     HolidaysTable,
     YearsSelector
   },
@@ -109,3 +122,23 @@ export default {
   }
 };
 </script>
+
+<style lang="scss">
+.page-canton {
+  .header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    .image {
+      margin-right: 1rem;
+      height: 3rem;
+      width: 3rem;
+    }
+
+    .title {
+
+    }
+  }
+}
+</style>
