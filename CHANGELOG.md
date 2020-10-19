@@ -1,3 +1,10 @@
+# [1.13.0](https://github.com/feerglas/feiertach/compare/v1.12.8...v1.13.0) (2020-10-19)
+
+
+### Features
+
+* use button instead of link ([a4fd7cd](https://github.com/feerglas/feiertach/commit/a4fd7cd60822667ba5862f1273f54718a12a3e43))
+
 ## [1.12.8](https://github.com/feerglas/feiertach/compare/v1.12.7...v1.12.8) (2020-10-19)
 
 
