@@ -10,16 +10,15 @@
 set -e
 
 # version file name written by .releaserc
-VERSION_FILE=./dist/.version
+VERSION_FILE=./dist/version.txt
+VERSION=""
 
 if [ -f "$VERSION_FILE" ];
 then
-
   VERSION="$(cat .version)"
-
-  # Deploy  on Netlify
-  netlify deploy --prod --message "::$VERSION::" --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --dir ./dist/
-
 else
-  echo "-->> Skipping netlify depoly"
+  VERSION="Deploy without new version"
 fi
+
+# Deploy  on Netlify
+netlify deploy --prod --message "::$VERSION::" --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --dir ./dist/
