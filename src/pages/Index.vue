@@ -1,5 +1,8 @@
 <template>
-  <Layout :no-padding="true">
+  <Layout
+    class="page-home"
+    :no-padding="true"
+  >
     <div class="content is-medium">
 
       <div class="hero">
@@ -40,46 +43,48 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import "../styles/bulma.scss";
 
-.hero {
-  text-align: center;
-  background-color: $white-bis;
-  padding: 4rem 3rem;
-  border-bottom: 2px solid $grey-lightest;
-
-  @include until($tablet) {
-    padding: 2rem;
-  }
-
-  @include from($tablet) {
+.page-home {
+  .hero {
+    text-align: center;
+    background-color: $white-bis;
     padding: 4rem 3rem;
+    border-bottom: 2px solid $grey-lightest;
+
+    @include until($tablet) {
+      padding: 2rem;
+    }
+
+    @include from($tablet) {
+      padding: 4rem 3rem;
+    }
+
+    @include from($desktop) {
+      padding: 4rem 0;
+    }
   }
 
-  @include from($desktop) {
-    padding: 4rem 0;
+  .image {
+    border-radius: 1rem;
+    width: 6rem;
+    margin: 0 auto;
+    box-shadow: 0px 0px 3rem $grey-light;
   }
-}
 
-.image {
-  border-radius: 1rem;
-  width: 6rem;
-  margin: 0 auto;
-  box-shadow: 0px 0px 3rem $grey-light;
-}
+  .title {
+    display: block;
+  }
 
-.title {
+  .lead {
+    display: block;
+    max-width: 500px;
+    margin: 0 auto;
+  }
 
-}
-
-.lead {
-  display: block;
-  max-width: 500px;
-  margin: 0 auto;
-}
-
-.custom-container {
-  @include defaultLayoutBleed;
+  .custom-container {
+    @include defaultLayoutBleed;
+  }
 }
 </style>
