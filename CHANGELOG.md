@@ -1,3 +1,10 @@
+## [1.12.7](https://github.com/feerglas/feiertach/compare/v1.12.6...v1.12.7) (2020-10-19)
+
+
+### Bug Fixes
+
+* fix icon issues ([309e34c](https://github.com/feerglas/feiertach/commit/309e34c49615d4cc0c5d169e2e4412e7273c1fa6))
+
 ## [1.12.6](https://github.com/feerglas/feiertach/compare/v1.12.5...v1.12.6) (2020-10-19)
 
 
