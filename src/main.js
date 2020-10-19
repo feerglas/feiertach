@@ -5,7 +5,6 @@ import extractLocale from './locales/extractLocale';
 import locales from './locales/locales';
 import VueFeatherIconPack from './components/VueFeatherIconPack.vue';
 
-
 export default (Vue, {
   head,
   appOptions
