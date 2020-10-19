@@ -34,10 +34,12 @@ const getCalendarEventForHoliday = (holiday, locale, copyright, canton) => {
     event.title += ` (${canton})`;
   }
 
+  const copyrightWithLink = `${copyright}: https://feerglas.github.io/feiertach/`;
+
   if (holiday.description) {
-    event.description = `${holiday.description[locale]}\n\n${copyright}`;
+    event.description = `${holiday.description[locale]}\n\n${copyrightWithLink}`;
   } else {
-    event.description = copyright;
+    event.description = copyrightWithLink;
   }
 
   return event;
