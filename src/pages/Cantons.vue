@@ -1,5 +1,8 @@
 <template>
-  <Layout :title="$t('navigation.cantons')">
+  <Layout class="page-cantons">
+
+    <h1 class="title">{{$t('navigation.cantons')}}</h1>
+
     <ul class="list">
       <li
         class="list-item"
@@ -78,8 +81,10 @@ export default {
 
 </script>
 
-<style lang="scss" scoped>
-  @import "../styles/bulma.scss";
+<style lang="scss">
+@import "../styles/bulma.scss";
+
+.page-cantons {
   .list {
 
   }
@@ -100,5 +105,6 @@ export default {
   .name {
     padding-left: 1rem;
   }
+}
 
 </style>
