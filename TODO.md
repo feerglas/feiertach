@@ -11,4 +11,3 @@
 - check ressources and optimize. for example, strip out unneeded characters from mdi font
 - app.js and main css rather big, most probably from buefy
 - infinite loop -> open holidays page of a canton?
-- if netlify deploys withouth new verison, there is no version.txt. in that case, use package version
