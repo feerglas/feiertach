@@ -1,6 +1,6 @@
 <template>
 
-  <div>
+  <div class="comp-table">
 
     <!-- CUSTOM LAYOUT FOR MOBILE -->
     <div class="is-block-mobile is-hidden-tablet content">
@@ -367,121 +367,121 @@ export default {
 
 <style lang="scss">
 @import "../styles/bulma.scss";
-
-.b-table .table-wrapper {
-  overflow: visible;
-}
-
-.table tr:nth-child(3) {
-  border-bottom: 4px solid red;
-}
-
-.table td {
-  vertical-align: middle;
-}
-
-.icon.table-icon.is-small {
-  float: none;
-  margin: 0 auto;
-}
-
-.content-icon {
-  padding-right: .5rem;
-}
-
-.button-icon {
-  padding-right: .7rem;
-}
-
-.is-next {
-  font-weight: bold;
-}
-
-.weekday {
-  font-size: .8rem;
-  display: block;
-}
-
-.description {
-  font-size: .8rem;
-}
-
-.content.content {
-  .mobile-list {
-    list-style-type: none;
-    margin: 2rem 0;
-    padding: 0;
+.comp-table {
+  .b-table .table-wrapper {
+    overflow: visible;
   }
 
-  .mobile-list-item {
-    border-radius: .3rem;
-    margin-bottom: 2rem;
-    padding: .7rem;
-    box-shadow: 0px 0px 10px $grey-lighter;
+  .table tr:nth-child(3) {
+    border-bottom: 4px solid red;
   }
 
-  .mobile-list-item-next {
-    border: 1px solid $black;
+  .table td {
+    vertical-align: middle;
   }
 
-  .mobile-list-item-last-of-year {
-    position: relative;
-    margin-bottom: 5rem;
+  .icon.table-icon.is-small {
+    float: none;
+    margin: 0 auto;
   }
 
-  .mobile-year-separator {
-    position: absolute;
-    bottom: -3.7rem;
-    background-color: $grey;
-    left: 0;
-    right: 0;
-    padding: .5rem;
-    color: $white;
+  .content-icon {
+    padding-right: .5rem;
   }
 
-  .mobile-header {
-    border-bottom: 1px solid $grey-lighter;
-    padding-bottom: .6rem;
-    margin-bottom: .6rem;
+  .button-icon {
+    padding-right: .7rem;
   }
 
-  .mobile-title {
+  .is-next {
     font-weight: bold;
-    margin-bottom: .3rem;
-
   }
 
-  .mobile-date {
-    display: flex;
-    align-items: baseline;
-    flex-wrap: wrap;
+  .weekday {
+    font-size: .8rem;
+    display: block;
   }
 
-  .mobile-weekday {
-    padding-left: 1rem;
+  .description {
     font-size: .8rem;
   }
 
-  .mobile-info-line {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 1rem;
-  }
+  .content.content {
+    .mobile-list {
+      list-style-type: none;
+      margin: 2rem 0;
+      padding: 0;
+    }
 
-  .mobile-info-item-text {
-    padding-left: .3rem;
-  }
+    .mobile-list-item {
+      border-radius: .3rem;
+      margin-bottom: 2rem;
+      padding: .7rem;
+      box-shadow: 0px 0px 10px $grey-lighter;
+    }
 
-  .mobile-footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+    .mobile-list-item-next {
+      border: 1px solid $black;
+    }
 
-  .mobile-link {
-    display: block;
+    .mobile-list-item-last-of-year {
+      position: relative;
+      margin-bottom: 5rem;
+    }
+
+    .mobile-year-separator {
+      position: absolute;
+      bottom: -3.7rem;
+      background-color: $grey;
+      left: 0;
+      right: 0;
+      padding: .5rem;
+      color: $white;
+    }
+
+    .mobile-header {
+      border-bottom: 1px solid $grey-lighter;
+      padding-bottom: .6rem;
+      margin-bottom: .6rem;
+    }
+
+    .mobile-title {
+      font-weight: bold;
+      margin-bottom: .3rem;
+
+    }
+
+    .mobile-date {
+      display: flex;
+      align-items: baseline;
+      flex-wrap: wrap;
+    }
+
+    .mobile-weekday {
+      padding-left: 1rem;
+      font-size: .8rem;
+    }
+
+    .mobile-info-line {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 1rem;
+    }
+
+    .mobile-info-item-text {
+      padding-left: .3rem;
+    }
+
+    .mobile-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .mobile-link {
+      display: block;
+    }
   }
 }
-
 </style>
