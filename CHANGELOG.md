@@ -1,3 +1,10 @@
+## [1.12.3](https://github.com/feerglas/feiertach/compare/v1.12.2...v1.12.3) (2020-10-19)
+
+
+### Bug Fixes
+
+* use correct version file ([6108321](https://github.com/feerglas/feiertach/commit/6108321dcc8dbf299710881f2690786e944ba5e0))
+
 ## [1.12.2](https://github.com/feerglas/feiertach/compare/v1.12.1...v1.12.2) (2020-10-19)
 
 
