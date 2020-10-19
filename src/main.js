@@ -1,14 +1,16 @@
-import '@mdi/font/css/materialdesignicons.css';
 import './styles/bulma.scss';
 import Buefy from 'buefy';
 import DefaultLayout from './layouts/Default.vue';
 import extractLocale from './locales/extractLocale';
 import locales from './locales/locales';
+import VueFeatherIconPack from './components/VueFeatherIconPack.vue';
+
 
 export default (Vue, {
   head,
   appOptions
 }) => {
+  Vue.component('vue-feather-icon-pack', VueFeatherIconPack);
 
   // add <html> attributes
   /* eslint-disable no-param-reassign */
@@ -27,7 +29,19 @@ export default (Vue, {
 
   // Register Bulma
   Vue.use(Buefy, {
-    defaultIconPack: 'mdi'
+    customIconPacks: {
+      ft: {
+        iconPrefix: '',
+        sizes: {
+          default: '1.5x',
+          'is-small': '1x',
+          'is-medium': '2x',
+          'is-large': '3x'
+        }
+      }
+    },
+    defaultIconComponent: 'vue-feather-icon-pack',
+    defaultIconPack: 'ft'
   });
 
   // Set Locales Messages
