@@ -12,6 +12,7 @@
     "semantic-release": "semantic-release"
   },
   "dependencies": {
+    "@mdi/font": "~5.7.55",
     "buefy": "~0.9.3",
     "file-saver": "~2.0.2",
     "gridsome": "^0.7.0",

@@ -1,3 +1,4 @@
+import '@mdi/font/css/materialdesignicons.css';
 import './styles/bulma.scss';
 import Buefy from 'buefy';
 import DefaultLayout from './layouts/Default.vue';
@@ -18,11 +19,6 @@ export default (Vue, {
 
   // define layout component
   Vue.component('Layout', DefaultLayout);
-
-  head.link.push({
-    href: 'https://cdn.materialdesignicons.com/5.5.55/css/materialdesignicons.min.css',
-    rel: 'stylesheet'
-  });
 
   head.meta.push({
     content: 'viewport',
