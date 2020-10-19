@@ -10,7 +10,10 @@
           class="mobile-list-item"
           v-for="(item, index) in holidays"
           :key="index"
-          v-bind:class="{'mobile-list-item-next': areSameHolidays(item, nextHoliday)}"
+          v-bind:class="{
+            'mobile-list-item-next': areSameHolidays(item, nextHoliday),
+            'mobile-list-item-last-of-year': isLastHolidayOfYear(item)
+          }"
         >
 
           <div class="mobile-header">
@@ -105,6 +108,13 @@
               </span>
               <span>{{$t('holiday.addToCalendar')}}</span>
             </button>
+          </div>
+
+          <div
+            v-if="isLastHolidayOfYear(item)"
+            class="mobile-year-separator"
+          >
+            {{parseInt(isLastHolidayOfYear(item), 10) + 1}}
           </div>
 
         </li>
@@ -308,13 +318,32 @@ export default {
     },
     formatDate(dateObject) {
       return getFormattedDate(dateObject, this.currentLocaleString);
+    },
+    isLastHolidayOfYear(holiday) {
+      if (!Object.keys(this.lastHolidayForEachYear)
+        .includes(holiday.date.year.toString())) {
+        return false;
+      }
+
+      const lastHolidayDate = this.lastHolidayForEachYear[holiday.date.year];
+
+      if (lastHolidayDate.date.month !== holiday.date.month) {
+        return false;
+      }
+
+      if (lastHolidayDate.date.day !== holiday.date.day) {
+        return false;
+      }
+
+      return holiday.date.year;
     }
   },
   name: 'HolidaysTable',
   props: [
     'holidays',
     'forCanton',
-    'nextHoliday'
+    'nextHoliday',
+    'lastHolidayForEachYear'
   ]
 };
 
@@ -325,6 +354,10 @@ export default {
 
 .b-table .table-wrapper {
   overflow: visible;
+}
+
+.table tr:nth-child(3) {
+  border-bottom: 4px solid red;
 }
 
 .is-next {
@@ -356,6 +389,21 @@ export default {
 
   .mobile-list-item-next {
     border: 1px solid $black;
+  }
+
+  .mobile-list-item-last-of-year {
+    position: relative;
+    margin-bottom: 5rem;
+  }
+
+  .mobile-year-separator {
+    position: absolute;
+    bottom: -3.7rem;
+    background-color: $grey;
+    left: 0;
+    right: 0;
+    padding: .5rem;
+    color: $white;
   }
 
   .mobile-header {

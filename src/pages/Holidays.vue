@@ -15,8 +15,9 @@
 
     <HolidaysTable
       :holidays="$data.filteredHolidays"
-      for-canton="false"
+      :last-holiday-for-each-year="$data.lastHolidayOfEachYear"
       :next-holiday="$data.nextHoliday"
+      for-canton="false"
     />
 
   </Layout>
@@ -65,8 +66,11 @@
 </page-query>
 
 <script>
+import {
+  getLastHolidayOfEachYear,
+  getNextHolidayAfterDate
+} from '../helpers/date';
 import AddHolidays from '../components/AddHolidays.vue';
-import { getNextHolidayAfterDate } from '../helpers/date';
 import HolidaysTable from '../components/HolidaysTable.vue';
 import YearsSelector from '../components/YearsSelector.vue';
 
@@ -79,6 +83,7 @@ export default {
   data() {
     return {
       filteredHolidays: [],
+      lastHolidayOfEachYear: {},
       nextHoliday: false
     };
   },
@@ -86,6 +91,7 @@ export default {
     handleFilter(holidays) {
       this.filteredHolidays = holidays;
       this.nextHoliday = getNextHolidayAfterDate(this.filteredHolidays);
+      this.lastHolidayOfEachYear = getLastHolidayOfEachYear(this.filteredHolidays);
     }
   }
 };
