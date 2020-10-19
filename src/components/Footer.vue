@@ -83,7 +83,7 @@ export default {
 
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import "../styles/bulma.scss";
 
 .footer.footer {
@@ -91,25 +91,25 @@ export default {
   padding-right: 0;
   text-align: center;
   border-top: 2px solid $grey-lightest;
-}
 
-.container {
-  @include until($desktop) {
-    padding: 0 1rem;
-  }
+  .container {
+    @include until($desktop) {
+      padding: 0 1rem;
+    }
 
-  @include from($desktop) {
-    max-width: calc(960px - (2 * #{$gap}));
-    padding: 0;
-  }
+    @include from($desktop) {
+      max-width: calc(960px - (2 * #{$gap}));
+      padding: 0;
+    }
 
-  .social-links ul {
-    list-style-type: none;
-    margin-left: 0;
-  }
+    .social-links ul {
+      list-style-type: none;
+      margin-left: 0;
+    }
 
-  .lang-switch {
-    display: inline-block;
+    .lang-switch {
+      display: inline-block;
+    }
   }
 }
 
