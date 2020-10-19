@@ -52,7 +52,7 @@ export default {
   }
 
   .container:not(.no-padding) {
-    @include defaultLayoutBleed();
+    @include defaultLayout;
   }
 
   .container.no-padding {

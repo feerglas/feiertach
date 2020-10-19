@@ -1,17 +1,42 @@
-@mixin defaultLayoutBleed() {
+@mixin defaultLayoutHorizontal() {
   @include until($tablet) {
-    padding: 2rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
 
   @include from($tablet) {
-    padding: 2.5rem;
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
   }
 
   @include from($desktop) {
-    max-width: calc(960px - (2 * #{$gap}));
-    padding: 3rem 0 4rem;
+    @include maxWidth;
     margin: 0 auto;
+    padding-right: 0;
+    padding-left: 0;
   }
+}
+
+@mixin defaultLayoutVetical() {
+  @include until($tablet) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  @include from($tablet) {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  @include from($desktop) {
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+  }
+}
+
+@mixin defaultLayout() {
+  @include defaultLayoutVetical;
+  @include defaultLayoutHorizontal;
 }
 
 @mixin maxWidth() {

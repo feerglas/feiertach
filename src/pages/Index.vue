@@ -84,7 +84,7 @@ export default {
   }
 
   .custom-container {
-    @include defaultLayoutBleed;
+    @include defaultLayout;
   }
 }
 </style>
