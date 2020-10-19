@@ -81,11 +81,14 @@ export default {
 <style lang="scss" scoped>
   @import "../styles/bulma.scss";
   .list {
-
+    overflow: auto;
   }
 
   .list-item {
     margin-bottom: 1rem;
+    display: block;
+    float: left;
+    clear: both;
   }
 
   .link {
