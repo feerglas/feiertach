@@ -1,5 +1,16 @@
 <template>
-  <a @click="addAllEvents(holidays, canton)">{{$t('holiday.addAllToCalendar')}}</a>
+  <button
+    class="button"
+    @click="addAllEvents(holidays, canton)"
+  >
+    <span class="button-icon">
+      <b-icon
+        icon="plus"
+        size="is-small"
+      ></b-icon>
+    </span>
+    <span>{{$t('holiday.addAllToCalendar')}}</span>
+  </button>
 </template>
 
 <script>
@@ -24,3 +35,9 @@ export default {
 };
 
 </script>
+
+<style lang="scss">
+.button-icon {
+  padding-right: .7rem;
+}
+</style>
