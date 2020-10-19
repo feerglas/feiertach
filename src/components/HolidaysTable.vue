@@ -81,8 +81,11 @@
           </div>
 
           <p v-if="item.memo">
-            <span class="icon">
-              <b-icon icon="alertTriangle"></b-icon>
+            <span class="content-icon">
+              <b-icon
+                icon="alertTriangle"
+                size="is-small"
+              ></b-icon>
             </span>
             {{item.memo[currentLocale]}}
           </p>
@@ -93,8 +96,11 @@
               :href="item.link[currentLocale]"
               target="_blank"
             >
-              <span class="icon">
-                <b-icon icon="info"></b-icon>
+              <span class="content-icon">
+                <b-icon
+                  icon="info"
+                  size="is-small"
+                ></b-icon>
               </span>
               Wikipedia
             </a>
@@ -103,8 +109,11 @@
               class="button"
               @click="addSingleEvent(item)"
             >
-              <span class="icon">
-                <b-icon icon="plus"></b-icon>
+              <span class="button-icon">
+                <b-icon
+                  icon="plus"
+                  size="is-small"
+                ></b-icon>
               </span>
               <span>{{$t('holiday.addToCalendar')}}</span>
             </button>
@@ -158,8 +167,11 @@
             v-if="props.row.memo"
             class="description"
           >
-            <span class="icon">
-              <b-icon icon="alertTriangle"></b-icon>
+            <span class="content-icon">
+              <b-icon
+                icon="alertTriangle"
+                size="is-small"
+              ></b-icon>
             </span>
             {{props.row.memo[currentLocale]}}
           </p>
@@ -213,6 +225,7 @@
             :icon="props.row.official ? 'check' : 'x'"
             size="is-small"
             :type="props.row.official ? 'is-success' : 'is-danger'"
+            class="table-icon"
           ></b-icon>
         </template>
       </b-table-column>
@@ -238,6 +251,7 @@
             :icon="props.row.allCanton ? 'check' : 'x'"
             size="is-small"
             :type="props.row.allCanton ? 'is-success' : 'is-danger'"
+            class="table-icon"
           ></b-icon>
         </template>
       </b-table-column>
@@ -265,6 +279,8 @@
         >
           <b-icon
             icon="plus"
+            size="is-small"
+            class="table-icon"
           >
           </b-icon>
         </a>
@@ -362,6 +378,19 @@ export default {
 
 .table td {
   vertical-align: middle;
+}
+
+.icon.table-icon.is-small {
+  float: none;
+  margin: 0 auto;
+}
+
+.content-icon {
+  padding-right: .5rem;
+}
+
+.button-icon {
+  padding-right: .7rem;
 }
 
 .is-next {
