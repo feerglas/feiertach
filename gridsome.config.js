@@ -11,7 +11,6 @@ module.exports = {
       .use('vue-svg-loader')
       .loader('vue-svg-loader');
   },
-  pathPrefix: '/feiertach/',
   plugins: [
     {
       options: {
@@ -38,7 +37,7 @@ module.exports = {
   ],
   siteDescription: 'List holidays from Switzerland',
   siteName: 'Swiss Holidays',
-  siteUrl: 'https://feerglas.github.io',
+  siteUrl: 'https://feiertach.ch',
   templates: {
     Canton: '/cantons/:id'
   }
