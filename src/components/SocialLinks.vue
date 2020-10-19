@@ -36,7 +36,3 @@ export default {
   name: 'SocialLinks'
 };
 </script>
-
-<style lang="scss" scoped>
-
-</style>
