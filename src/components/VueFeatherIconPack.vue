@@ -37,9 +37,9 @@ export default {
 </script>
 
 <style  lang="scss">
-  .icon .custom-feather-icon {
-    fill: none;
-    stroke: currentColor;
-    stroke-width: 2px;
-  }
+.icon .custom-feather-icon {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2px;
+}
 </style>
