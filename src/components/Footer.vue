@@ -63,13 +63,7 @@ export default {
     }
   },
   async mounted() {
-    let path = '/version.txt';
-
-    if (process.env.NODE_ENV !== 'development') {
-      path = `/feiertach${path}`;
-    }
-
-    const versionData = await fetch(path);
+    const versionData = await fetch('/version.txt');
 
     if (!versionData.ok) {
       throw new Error('Version file not found');
