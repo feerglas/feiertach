@@ -37,18 +37,6 @@ export default {
 </script>
 
 <style  lang="scss">
-  .icon.icon, .icon.icon.is-small {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    float: left;
-    height: 100%;
-  }
-
-  .button .icon.icon, .button .icon.icon.is-small {
-    width: 1rem;
-  }
-
   .icon .custom-feather-icon {
     fill: none;
     stroke: currentColor;
