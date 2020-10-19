@@ -47,7 +47,31 @@ const getNextHolidayAfterDate = (holidays, date) => {
 
 };
 
+const getLastHolidayOfEachYear = (holidays) => {
+  const years = {};
+  let currentYear = false;
+  let lastHoliday = false;
+
+  holidays.forEach((holiday) => {
+    if (currentYear) {
+      if (currentYear !== holiday.date.year) {
+        years[currentYear] = lastHoliday;
+        currentYear = false;
+        lastHoliday = false;
+      }
+    } else {
+      currentYear = holiday.date.year;
+    }
+
+    lastHoliday = holiday;
+  });
+
+  return years;
+
+};
+
 export {
   getFormattedDate,
+  getLastHolidayOfEachYear,
   getNextHolidayAfterDate
 };
