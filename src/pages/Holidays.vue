@@ -1,5 +1,7 @@
 <template>
-  <Layout :title="$t('navigation.holidays')">
+  <Layout>
+
+    <h1 class="title">{{$t('navigation.holidays')}}</h1>
 
     <span>{{$data.filteredHolidays.length}}</span>
 
@@ -96,6 +98,3 @@ export default {
   }
 };
 </script>
-
-<style lang="scss" scoped>
-</style>
