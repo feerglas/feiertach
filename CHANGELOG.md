@@ -1,3 +1,19 @@
+# [1.12.0](https://github.com/feerglas/feiertach/compare/v1.11.0...v1.12.0) (2020-10-19)
+
+
+### Bug Fixes
+
+* align vertically centered ([284893f](https://github.com/feerglas/feiertach/commit/284893f09c192de1194e3ef882758cb03e6be212))
+* make sure links don't span the whole width ([2a16e1b](https://github.com/feerglas/feiertach/commit/2a16e1b4716d28c4f7b746b46fa03b483cc3dff9))
+* remove tap highlight color ([d7934df](https://github.com/feerglas/feiertach/commit/d7934dfeb2f79403a996072e586f9da0ec8f5432))
+* use box-shadow ([d081d93](https://github.com/feerglas/feiertach/commit/d081d93e7cf16c849057d4fc164bacc6d4041497))
+
+
+### Features
+
+* add helper to determine last holiday of each year ([05f62a5](https://github.com/feerglas/feiertach/commit/05f62a58453dc58e70bb292b04dc2792fb3a2ff0))
+* on mobile, mark year separation if multiple years selected ([1b33bef](https://github.com/feerglas/feiertach/commit/1b33bef3e07461729cbef06710e53be94ae2927b))
+
 # [1.11.0](https://github.com/feerglas/feiertach/compare/v1.10.2...v1.11.0) (2020-10-18)
 
 
