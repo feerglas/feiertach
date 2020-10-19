@@ -1,3 +1,11 @@
+## [1.12.5](https://github.com/feerglas/feiertach/compare/v1.12.4...v1.12.5) (2020-10-19)
+
+
+### Bug Fixes
+
+* make sure that cantons links use whole width again ([f37b765](https://github.com/feerglas/feiertach/commit/f37b765fbe07d5b03b4176517397a90fa565b0c0))
+* try to use mdi locally ([a2b2f62](https://github.com/feerglas/feiertach/commit/a2b2f62ff51f91fcdd5fc194f547d6333e9a65b6))
+
 ## [1.12.4](https://github.com/feerglas/feiertach/compare/v1.12.3...v1.12.4) (2020-10-19)
 
 
