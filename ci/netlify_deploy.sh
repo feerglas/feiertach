@@ -15,7 +15,7 @@ VERSION=""
 
 if [ -f "$VERSION_FILE" ];
 then
-  VERSION="$(cat .version)"
+  VERSION="$(cat $VERSION_FILE)"
 else
   VERSION="Deploy without new version"
 fi
