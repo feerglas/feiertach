@@ -11,13 +11,15 @@ set -e
 
 # version file name written by .releaserc
 VERSION_FILE=./dist/version.txt
-VERSION=""
+VERSION="Deploy without new version"
 
 if [ -f "$VERSION_FILE" ];
 then
-  VERSION="$(cat $VERSION_FILE)"
-else
-  VERSION="Deploy without new version"
+  RAW_VERSION="$(cat $VERSION_FILE)"
+  if [ $RAW_VERSION != '0.0.0' ]
+  then
+    VERSION=$RAW_VERSION
+  fi
 fi
 
 # Deploy  on Netlify
