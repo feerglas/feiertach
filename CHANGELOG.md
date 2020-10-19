@@ -1,3 +1,11 @@
+## [1.12.4](https://github.com/feerglas/feiertach/compare/v1.12.3...v1.12.4) (2020-10-19)
+
+
+### Bug Fixes
+
+* check if version is 0.0.0 ([b1addef](https://github.com/feerglas/feiertach/commit/b1addeffc71d0c6185a8470fc57a4fc76c3541f3))
+* make sure version number has fallback to package version ([ee61056](https://github.com/feerglas/feiertach/commit/ee61056fb32bf8317e65457c95e5abfe29341da7))
+
 ## [1.12.3](https://github.com/feerglas/feiertach/compare/v1.12.2...v1.12.3) (2020-10-19)
 
 
