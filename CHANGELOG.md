@@ -1,3 +1,18 @@
+## [1.12.8](https://github.com/feerglas/feiertach/compare/v1.12.7...v1.12.8) (2020-10-19)
+
+
+### Bug Fixes
+
+* remove scss scope ([dc649ff](https://github.com/feerglas/feiertach/commit/dc649ff087261360685394fd81f649db51721dcc))
+* remove scss scope, make class scope ([ce0bfcd](https://github.com/feerglas/feiertach/commit/ce0bfcd51e90b8522b124b4b115958824c17fa6b))
+* remove scss scope, make class scope ([94292c0](https://github.com/feerglas/feiertach/commit/94292c089cab2ec952e7312feb03e29274b97c20))
+* remove scss scope, make class scope ([368306d](https://github.com/feerglas/feiertach/commit/368306d82d8268558a72d913c11f78aea66fd711))
+* remove scss scope, make class scope ([3ecc5ec](https://github.com/feerglas/feiertach/commit/3ecc5ecbf5e654b24403311aeb853fe2f6657869))
+* remove scss scope, make class scope ([b05fa45](https://github.com/feerglas/feiertach/commit/b05fa4529f1ff20d08de46f2647f5ccd2b441a0a))
+* remove scss scope, make class scope ([ca5740e](https://github.com/feerglas/feiertach/commit/ca5740e119c1d077d7d262bc38950e9c1d24aaeb))
+* remove style tag ([99fcf62](https://github.com/feerglas/feiertach/commit/99fcf62fb0a3326ab3e629392d4f02524bbbd5f4))
+* remove style tags ([b89a96b](https://github.com/feerglas/feiertach/commit/b89a96ba5468fa30fcb5d7f609496aeecefefb09))
+
 ## [1.12.7](https://github.com/feerglas/feiertach/compare/v1.12.6...v1.12.7) (2020-10-19)
 
 
