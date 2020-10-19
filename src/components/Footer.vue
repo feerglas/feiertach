@@ -19,8 +19,7 @@
 
         <b-field class="lang-switch">
           <b-select
-            icon="web"
-            icon-pack="mdi"
+            icon="globe"
             v-model="currentLocale"
             @change.native="localeChanged"
           >
