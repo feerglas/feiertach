@@ -1,3 +1,15 @@
+## [1.12.6](https://github.com/feerglas/feiertach/compare/v1.12.5...v1.12.6) (2020-10-19)
+
+
+### Bug Fixes
+
+* add component to use feather icons ([67e2519](https://github.com/feerglas/feiertach/commit/67e2519bb3bce9ae63cbba17e297232abaf1ccae))
+* fix linting issue ([4504ce9](https://github.com/feerglas/feiertach/commit/4504ce96a23a5cb2ea2c6d341f57203edb4b1d2d))
+* fix linting issue ([acfc36a](https://github.com/feerglas/feiertach/commit/acfc36a0fe72acde3d67107c63e689ffeacbf233))
+* remove mdi, use feather icons ([e39c073](https://github.com/feerglas/feiertach/commit/e39c0739291faafde18f55cf8522ecc7d29a25f9))
+* use feather icon ([be611d6](https://github.com/feerglas/feiertach/commit/be611d61b234b4c2eab48dc62331c39e72e9dffc))
+* use feather icon ([02faa57](https://github.com/feerglas/feiertach/commit/02faa578f5f1524e80e75736e480af154b79ac6b))
+
 ## [1.12.5](https://github.com/feerglas/feiertach/compare/v1.12.4...v1.12.5) (2020-10-19)
 
 
