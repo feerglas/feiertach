@@ -93,15 +93,6 @@ export default {
   border-top: 2px solid $grey-lightest;
 
   .container {
-    @include until($desktop) {
-      padding: 0 1rem;
-    }
-
-    @include from($desktop) {
-      @include maxWidth;
-      padding: 0;
-    }
-
     .social-links ul {
       list-style-type: none;
       margin-left: 0;
