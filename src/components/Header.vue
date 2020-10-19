@@ -6,17 +6,15 @@
       role="navigation"
       aria-label="main navigation"
     >
-      <div class="navigation-inner">
-        <g-link
-          class="nav-item"
-          v-bind:class="{'is-active': item.isActive}"
-          v-for="(item, index) in navItems"
-          :key="index"
-          :to="item.path"
-        >
-          {{item.text}}
-        </g-link>
-      </div>
+      <g-link
+        class="nav-item"
+        v-bind:class="{'is-active': item.isActive}"
+        v-for="(item, index) in navItems"
+        :key="index"
+        :to="item.path"
+      >
+        {{item.text}}
+      </g-link>
     </nav>
   </header>
 </template>
@@ -75,16 +73,13 @@ export default {
 <style lang="scss">
 @import "../styles/bulma.scss";
 .comp-header {
-  .navigation {
-    background-color: $primary;
-    border: .3rem solid $primary;
-  }
+  background-color: $primary;
+  border: .3rem solid $primary;
 
-  .navigation-inner {
+  .navigation {
+    @include defaultLayoutHorizontal;
     display: flex;
     flex-wrap: wrap;
-    @include maxWidth;
-    margin: 0 auto;
   }
 
   .nav-item {
@@ -95,6 +90,10 @@ export default {
     border: 1px solid $primary;
     transition: border-color 150ms ease-in;
     border-radius: .5rem;
+  }
+
+  .nav-item:first-child {
+    margin-left: 0;
   }
 
   .nav-item:hover:not(.is-active) {
