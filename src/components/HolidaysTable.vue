@@ -360,6 +360,10 @@ export default {
   border-bottom: 4px solid red;
 }
 
+.table td {
+  vertical-align: middle;
+}
+
 .is-next {
   font-weight: bold;
 }
