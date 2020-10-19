@@ -45,7 +45,7 @@
           <div class="mobile-info-line">
             <div v-if="forCanton === 'true'">
               <b-icon
-                :icon="item.official ? 'check' : 'close'"
+                :icon="item.official ? 'check' : 'x'"
                 size="is-small"
                 :type="item.official ? 'is-success' : 'is-danger'"
               ></b-icon>
@@ -63,7 +63,7 @@
 
             <div v-if="forCanton === 'true'">
               <b-icon
-                :icon="item.allCanton ? 'check' : 'close'"
+                :icon="item.allCanton ? 'check' : 'x'"
                 size="is-small"
                 :type="item.allCanton ? 'is-success' : 'is-danger'"
               ></b-icon>
@@ -82,7 +82,7 @@
 
           <p v-if="item.memo">
             <span class="icon">
-              <i class="mdi mdi-alert"></i>
+              <b-icon icon="alertTriangle"></b-icon>
             </span>
             {{item.memo[currentLocale]}}
           </p>
@@ -94,7 +94,7 @@
               target="_blank"
             >
               <span class="icon">
-                <i class="mdi mdi-information-outline"></i>
+                <b-icon icon="info"></b-icon>
               </span>
               Wikipedia
             </a>
@@ -104,7 +104,7 @@
               @click="addSingleEvent(item)"
             >
               <span class="icon">
-                <i class="mdi mdi-plus"></i>
+                <b-icon icon="plus"></b-icon>
               </span>
               <span>{{$t('holiday.addToCalendar')}}</span>
             </button>
@@ -128,7 +128,7 @@
       :data="holidays"
       :paginated="false"
       default-sort-direction="asc"
-      sort-icon="chevron-up"
+      sort-icon="chevronUp"
       default-sort="sortDate"
       class="is-block-tablet is-hidden-mobile"
     >
@@ -159,7 +159,7 @@
             class="description"
           >
             <span class="icon">
-              <i class="mdi mdi-alert"></i>
+              <b-icon icon="alertTriangle"></b-icon>
             </span>
             {{props.row.memo[currentLocale]}}
           </p>
@@ -210,7 +210,7 @@
         </template>
         <template v-slot="props">
           <b-icon
-            :icon="props.row.official ? 'check' : 'close'"
+            :icon="props.row.official ? 'check' : 'x'"
             size="is-small"
             :type="props.row.official ? 'is-success' : 'is-danger'"
           ></b-icon>
@@ -235,7 +235,7 @@
         </template>
         <template v-slot="props">
           <b-icon
-            :icon="props.row.allCanton ? 'check' : 'close'"
+            :icon="props.row.allCanton ? 'check' : 'x'"
             size="is-small"
             :type="props.row.allCanton ? 'is-success' : 'is-danger'"
           ></b-icon>
