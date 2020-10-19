@@ -1,3 +1,10 @@
+## [1.12.1](https://github.com/feerglas/feiertach/compare/v1.12.0...v1.12.1) (2020-10-19)
+
+
+### Bug Fixes
+
+* fake commit to trigger release ([7e5800c](https://github.com/feerglas/feiertach/commit/7e5800cf0264397c39114cc2f039b0a644e92ab3))
+
 # [1.12.0](https://github.com/feerglas/feiertach/compare/v1.11.0...v1.12.0) (2020-10-19)
 
 
