@@ -33,10 +33,10 @@ export default (Vue, {
       ft: {
         iconPrefix: '',
         sizes: {
-          default: '1.5x',
-          'is-small': '1x',
+          'default': '1.5x',
+          'is-large': '3x',
           'is-medium': '2x',
-          'is-large': '3x'
+          'is-small': '1x'
         }
       }
     },
