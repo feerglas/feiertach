@@ -3,7 +3,7 @@
 
     <h1 class="title">{{$t('navigation.cantons')}}</h1>
 
-    <ul class="list">
+    <ul>
       <li
         class="list-item"
         v-for="(item, index) in sortedCantons"
@@ -15,7 +15,6 @@
         >
           <Flags
             v-if="item.node.flag"
-            class="image"
             :name="item.node.flag"
           />
           <span class="name">{{item.node.name[currentLocale]}} ({{item.node.holidaysCount}})</span>
@@ -85,10 +84,6 @@ export default {
 @import "../styles/bulma.scss";
 
 .page-cantons {
-  .list {
-
-  }
-
   .list-item {
     margin-bottom: 1rem;
   }
@@ -96,10 +91,6 @@ export default {
   .link {
     display: flex;
     align-items: center;
-  }
-
-  .image {
-
   }
 
   .name {
