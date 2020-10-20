@@ -1,6 +1,6 @@
 <template>
   <div class="comp-info-line">
-    <span class="holidays-counter tag is-primary">{{holidays.length}} {{$t('navigation.holidays')}}</span>
+    <span class="holidays-counter tag is-light">{{holidays.length}} {{$t('navigation.holidays')}}</span>
 
     <AddHolidays
       :holidays="holidays"
@@ -37,11 +37,13 @@ export default {
   .holidays-counter {
     margin-top: 1rem;
     margin-right: 1rem;
+    margin-bottom: 1rem;
     font-size: 1rem;
   }
 
   .add-all-button {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
   }
 }
 </style>
