@@ -1,3 +1,14 @@
+## [1.14.10](https://github.com/feerglas/feiertach/compare/v1.14.9...v1.14.10) (2020-10-20)
+
+
+### Bug Fixes
+
+* add colon ([69b6982](https://github.com/feerglas/feiertach/commit/69b69828c1677fee12ef32079b152934bcc261f3))
+* change order of element, fix minor style issues ([9f105a7](https://github.com/feerglas/feiertach/commit/9f105a7337c7fc1aff2e1ee152fb3dadf2f47986))
+* install netlify-cli as devDep instead of dep ([f2ef28d](https://github.com/feerglas/feiertach/commit/f2ef28dbf2af20492fac10b8ad87476dfa809b85))
+* make sure block styles are imported ([b89535d](https://github.com/feerglas/feiertach/commit/b89535d00bd12b310c02c73c8ddd853de08f2345))
+* remove dots ([fe206ba](https://github.com/feerglas/feiertach/commit/fe206ba1293c59ef4e7656bc6293db181ea7942b))
+
 ## [1.14.9](https://github.com/feerglas/feiertach/compare/v1.14.8...v1.14.9) (2020-10-20)
 
 
