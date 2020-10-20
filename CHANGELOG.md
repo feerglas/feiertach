@@ -1,3 +1,10 @@
+## [1.14.4](https://github.com/feerglas/feiertach/compare/v1.14.3...v1.14.4) (2020-10-20)
+
+
+### Bug Fixes
+
+* try to import only needed buefy components ([14f1674](https://github.com/feerglas/feiertach/commit/14f16743f1d1b029a235755609d04bb13ac0b601))
+
 ## [1.14.3](https://github.com/feerglas/feiertach/compare/v1.14.2...v1.14.3) (2020-10-20)
 
 
