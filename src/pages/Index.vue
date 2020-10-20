@@ -20,7 +20,7 @@
         <SocialLinks />
 
         <h2 class="title is-2">{{$t("home.title2")}}</h2>
-        <p>{{$t("home.content2")}}</p>
+        <p>{{$t("home.content2")}}:</p>
         <ul>
           <li><g-link to="/cantons/">{{$t("navigation.cantons")}}</g-link></li>
           <li><g-link to="/holidays/">{{$t("navigation.holidays")}}</g-link></li>
