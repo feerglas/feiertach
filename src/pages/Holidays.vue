@@ -3,8 +3,6 @@
 
     <h1 class="title">{{$t('navigation.holidays')}}</h1>
 
-    <span>{{$data.filteredHolidays.length}}</span>
-
     <YearsSelector
       :holidays="this.$page.allHoliday.edges[0].node.holidays"
       @filter="handleFilter"
