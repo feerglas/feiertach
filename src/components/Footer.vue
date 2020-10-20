@@ -1,6 +1,6 @@
 <template>
 
-  <footer class="footer">
+  <footer class="custom-footer">
     <div class="container">
       <div class="content is-small">
 
@@ -88,11 +88,12 @@ export default {
 <style lang="scss">
 @import "../styles/styles.scss";
 
-.footer.footer {
+.custom-footer {
   padding-left: 0;
   padding-right: 0;
   text-align: center;
-  border-top: 2px solid $grey-lightest;
+  border-top: 2px solid $footer-border;
+  background-color: $footer-background;
 
   .container {
     .control.has-icons-left {
@@ -114,7 +115,7 @@ export default {
         left: 0;
         top: 0;
         float: none;
-        color: $grey-lighter;
+        color: currentColor;
         pointer-events: none;
       }
     }
