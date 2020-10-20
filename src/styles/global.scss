@@ -1,5 +1,13 @@
 body {
+  background-color: $background;
+  color: $text;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  &.title {
+    color: $text;
+  }
 }
 
 .icon.icon, .icon.icon.is-small {
@@ -14,7 +22,29 @@ body {
   width: 1rem;
 }
 
-a:focus,
-button.button:focus {
+a:focus {
   color: $link-hover;
+}
+
+.button {
+  background-color: $button-background;
+  border-color: $button-border;
+  color: $button-text;
+}
+
+button.button:hover,
+button.button:focus {
+  color: $button-text-hover;
+  border-color: $button-border-hover;
+  background-color: $button-background-hover;
+}
+
+.control {
+  color: $select-text;
+}
+
+.select select {
+  background-color: $select-background;
+  border-color: $select-border;
+  color: currentColor;
 }
