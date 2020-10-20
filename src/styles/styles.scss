@@ -1,31 +1,7 @@
-@import "./variables.scss";
+@import "./variables";
 
-// Bulma utilities
-@import "~bulma/sass/utilities/_all";
-@import "~bulma/sass/base/_all";
-
-// Bulma elements
-@import "~bulma/sass/elements/button";
-@import "~bulma/sass/elements/container";
-@import "~bulma/sass/elements/content";
-@import "~bulma/sass/elements/icon";
-@import "~bulma/sass/elements/image";
-@import "~bulma/sass/elements/table";
-@import "~bulma/sass/elements/tag";
-@import "~bulma/sass/elements/title";
-
-// Bulma form
-@import "~bulma/sass/form/shared";
-@import "~bulma/sass/form/checkbox-radio";
-@import "~bulma/sass/form/select";
-
-// Bulma helpers
-@import "~bulma/sass/helpers/_all";
-
-// Bulma layout
-@import "~bulma/sass/layout/_all";
-
+@import "./bulma";
 @import "./buefy";
 
-@import "./global.scss";
-@import "./mixins.scss";
+@import "./global";
+@import "./mixins";
