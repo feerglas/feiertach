@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="year-selector">
     <b-checkbox
       class="is-medium"
       v-for="(year, index) in $data.years"
@@ -48,3 +48,9 @@ export default {
 };
 
 </script>
+
+<style lang="scss">
+.year-selector {
+  margin: 2rem 0;
+}
+</style>
