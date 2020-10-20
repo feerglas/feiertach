@@ -72,6 +72,7 @@ export default {
 
 <style lang="scss">
 @import "../styles/bulma.scss";
+
 .comp-header {
   background-color: $primary;
   border: .3rem solid $primary;
@@ -96,7 +97,8 @@ export default {
     margin-left: 0;
   }
 
-  .nav-item:hover:not(.is-active) {
+  .nav-item:hover:not(.is-active),
+  .nav-item:focus:not(.is-active) {
     border: 1px solid $grey-lightest;
     color: white;
   }

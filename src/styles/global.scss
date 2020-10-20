@@ -13,3 +13,8 @@ body {
 .button .icon.icon, .button .icon.icon.is-small {
   width: 1rem;
 }
+
+a:focus,
+button.button:focus {
+  color: $link-hover;
+}
