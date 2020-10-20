@@ -1,17 +1,10 @@
 $red-dark: #e85a4f;
 $red-light: #e98074;
 $brown-light: lighten(#eae7dc, 10%);
-
-$brown-dark: #d8c3a5;
 $grey: #8e8d8a;
-
-
-
+// $brown-dark: #d8c3a5;
 
 $primary: $red-dark;
-
-
-
 
 $link: $primary;
 $link-hover: darken($red-light, 25%);
@@ -42,3 +35,5 @@ $hero-border: darken($background, 10%);
 
 $footer-background: darken($background, 5%);
 $footer-border: darken($background, 10%);
+
+$list-item-background-hover: darken($background, 7%);

@@ -3,7 +3,7 @@
 
     <h1 class="title">{{$t('navigation.cantons')}}</h1>
 
-    <ul>
+    <ul class="list">
       <li
         class="list-item"
         v-for="(item, index) in sortedCantons"
@@ -91,15 +91,27 @@ export default {
 @import "../styles/styles.scss";
 
 .page-cantons {
-  .list-item:not(:last-child) {
-    margin-bottom: 1.3rem;
-    padding-bottom: 1.3rem;
+  .list {
+    margin-top: -1.3rem;
+  }
+
+  .list-item {
     border-bottom: 1px solid $shadow-over-background;
+  }
+
+  .list-item:last-child {
+    border-bottom: none;
+  }
+
+  .link:hover,
+  .link:focus {
+    background-color: $list-item-background-hover;
   }
 
   .link {
     display: flex;
     align-items: center;
+    padding: 1.3rem;
   }
 
   .flag-icon {
