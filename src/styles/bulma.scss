@@ -1,117 +1,43 @@
 @import "./bulma-custom.scss";
 
-// @import "~bulma";
-
-
-
-
-
-
-
-
-
-
-
-
-
+// Bulma utilities
 @import "~bulma/sass/utilities/_all";
 @import "~bulma/sass/base/_all";
 
-
-
-
-// @import "~bulma/sass/elements/_all";
 // Bulma elements
 @import "~bulma/sass/elements/button";
 @import "~bulma/sass/elements/container";
 @import "~bulma/sass/elements/content";
 @import "~bulma/sass/elements/icon";
 @import "~bulma/sass/elements/image";
-//@import "~bulma/sass/elements/progress";
 @import "~bulma/sass/elements/table";
 @import "~bulma/sass/elements/tag";
 @import "~bulma/sass/elements/title";
 
-
-
-// @import "~bulma/sass/form/_all";
+// Bulma form
 @import "~bulma/sass/form/shared";
-//@import "~bulma/sass/form/input-textarea";
 @import "~bulma/sass/form/checkbox-radio";
 @import "~bulma/sass/form/select";
 
-
-
-
-
-// @import "~bulma/sass/components/_all";
-@import "~bulma/sass/components/dropdown";
-//@import "~bulma/sass/components/modal";
-//@import "~bulma/sass/components/tabs";
-
-
-//@import "~bulma/sass/grid/_all";
+// Bulma helpers
 @import "~bulma/sass/helpers/_all";
+
+// Bulma layout
 @import "~bulma/sass/layout/_all";
 
-
-
-
-
-
-
-
-
-// @import "~buefy/src/scss/buefy";
+// Buefy utils
 @import "~buefy/src/scss/utils/_all";
 
-//@import "~buefy/src/scss/components/_autocomplete";
-//@import "~buefy/src/scss/components/_carousel";
+// Buefy components
 @import "~buefy/src/scss/components/_checkbox";
-//@import "~buefy/src/scss/components/_clockpicker";
-//@import "~buefy/src/scss/components/_collapse";
-//@import "~buefy/src/scss/components/_datepicker";
-//@import "~buefy/src/scss/components/_dialog";
 @import "~buefy/src/scss/components/_dropdown";
 @import "~buefy/src/scss/components/_form";
 @import "~buefy/src/scss/components/_icon";
 @import "~buefy/src/scss/components/_image";
-//@import "~buefy/src/scss/components/_loading";
-//@import "~buefy/src/scss/components/_menu";
-//@import "~buefy/src/scss/components/_message";
-//@import "~buefy/src/scss/components/_modal";
-//@import "~buefy/src/scss/components/_navbar";
-//@import "~buefy/src/scss/components/_notices";
-//@import "~buefy/src/scss/components/_numberinput";
-//@import "~buefy/src/scss/components/_pagination";
-//@import "~buefy/src/scss/components/_progress";
 @import "~buefy/src/scss/components/_radio";
-//@import "~buefy/src/scss/components/_rate";
 @import "~buefy/src/scss/components/_select";
-//@import "~buefy/src/scss/components/_skeleton";
-//@import "~buefy/src/scss/components/_sidebar";
-//@import "~buefy/src/scss/components/_slider";
-//@import "~buefy/src/scss/components/_steps";
-//@import "~buefy/src/scss/components/_switch";
 @import "~buefy/src/scss/components/_table";
-//@import "~buefy/src/scss/components/_tabs";
-//@import "~buefy/src/scss/components/_tag";
-//@import "~buefy/src/scss/components/_taginput";
-//@import "~buefy/src/scss/components/_timepicker";
 @import "~buefy/src/scss/components/_tooltip";
-//@import "~buefy/src/scss/components/_upload";
-
-
-
-
-
-
-
-
-
-
-
-
 
 @import "./global.scss";
 @import "./mixins.scss";
