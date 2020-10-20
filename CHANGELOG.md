@@ -1,3 +1,10 @@
+## [1.14.2](https://github.com/feerglas/feiertach/compare/v1.14.1...v1.14.2) (2020-10-20)
+
+
+### Bug Fixes
+
+* remove bulma utilities import ([ff60783](https://github.com/feerglas/feiertach/commit/ff607830787b5f5046735f1f4ed7659d35f1f6b0))
+
 ## [1.14.1](https://github.com/feerglas/feiertach/compare/v1.14.0...v1.14.1) (2020-10-20)
 
 
