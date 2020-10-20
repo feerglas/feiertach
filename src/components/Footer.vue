@@ -109,13 +109,13 @@ export default {
       }
 
       .icon.is-left {
-        height: 40px;
-        width: 40px;
+        height: 1.3rem;
+        width: 1.3rem;
         position: absolute;
-        left: 0;
-        top: 0;
+        left: .6rem;
+        top: .6rem;
         float: none;
-        color: currentColor;
+        color: $select-icon-color;
         pointer-events: none;
       }
     }
