@@ -17,7 +17,14 @@
             v-if="item.node.flag"
             :name="item.node.flag"
           />
-          <span class="name">{{item.node.name[currentLocale]}} ({{item.node.holidaysCount}})</span>
+          <span class="name-wrapper">
+            <span class="name">
+              {{item.node.name[currentLocale]}}
+            </span>
+            <span class="tag is-light">
+              {{item.node.holidaysCount}}
+            </span>
+          </span>
         </g-link>
       </li>
     </ul>
@@ -84,8 +91,10 @@ export default {
 @import "../styles/styles.scss";
 
 .page-cantons {
-  .list-item {
-    margin-bottom: 1rem;
+  .list-item:not(:last-child) {
+    margin-bottom: 1.3rem;
+    padding-bottom: 1.3rem;
+    border-bottom: 1px solid $shadow-over-background;
   }
 
   .link {
@@ -93,8 +102,32 @@ export default {
     align-items: center;
   }
 
-  .name {
+  .flag-icon {
+    width: 2rem;
+  }
+
+  .name-wrapper {
     padding-left: 1rem;
+    width: 100%;
+
+    @include until($tablet) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  .name-wrapper .name {
+    @include until($tablet) {
+      display: block;
+    }
+  }
+
+  .name-wrapper .tag.is-light {
+    @include from($tablet) {
+      margin-left: 1rem;
+    }
   }
 }
 
