@@ -1,3 +1,10 @@
+## [1.14.5](https://github.com/feerglas/feiertach/compare/v1.14.4...v1.14.5) (2020-10-20)
+
+
+### Bug Fixes
+
+* only import necessary buefy styles ([6a4377b](https://github.com/feerglas/feiertach/commit/6a4377baba43e88cbca1714027a425145cb57e3d))
+
 ## [1.14.4](https://github.com/feerglas/feiertach/compare/v1.14.3...v1.14.4) (2020-10-20)
 
 
