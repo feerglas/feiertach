@@ -2,8 +2,3 @@ $primary: #8c67ef;
 
 $link: $primary;
 $link-hover: red;
-
-// Include Bulma's variables
-@import "bulma/sass/utilities/initial-variables.sass";
-@import "bulma/sass/utilities/functions.sass";
-@import "bulma/sass/utilities/derived-variables.scss";
