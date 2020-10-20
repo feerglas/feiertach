@@ -60,10 +60,10 @@ const locales = {
       it: 'Andiamo'
     },
     content2: {
-      de: 'Wähle einen Kanton oder schau dir die Feiertage sämtlicher Kantone an.',
-      en: 'Choose a canton or look at the public holidays of all cantons.',
-      fr: 'Choisi un canton ou regarde les jours fériés de tous les cantons.',
-      it: 'Scegli un cantone o guarda i giorni festivi di tutti i cantoni.'
+      de: 'Wähle einen Kanton oder schau dir die Feiertage sämtlicher Kantone an',
+      en: 'Choose a canton or look at the public holidays of all cantons',
+      fr: 'Choisi un canton ou regarde les jours fériés de tous les cantons',
+      it: 'Scegli un cantone o guarda i giorni festivi di tutti i cantoni'
     }
   },
   holidays: {
