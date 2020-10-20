@@ -1,3 +1,10 @@
+## [1.14.8](https://github.com/feerglas/feiertach/compare/v1.14.7...v1.14.8) (2020-10-20)
+
+
+### Bug Fixes
+
+* fix styles for lang switch ([12fe5c4](https://github.com/feerglas/feiertach/commit/12fe5c4c01433e0733aed02be21fed6c58d8fc12))
+
 ## [1.14.7](https://github.com/feerglas/feiertach/compare/v1.14.6...v1.14.7) (2020-10-20)
 
 
