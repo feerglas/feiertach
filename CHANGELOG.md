@@ -1,3 +1,10 @@
+## [1.14.6](https://github.com/feerglas/feiertach/compare/v1.14.5...v1.14.6) (2020-10-20)
+
+
+### Bug Fixes
+
+* remove unneded bulma scss files ([c9903bd](https://github.com/feerglas/feiertach/commit/c9903bd76fe9cb37b43ed39e120b75806780090c))
+
 ## [1.14.5](https://github.com/feerglas/feiertach/compare/v1.14.4...v1.14.5) (2020-10-20)
 
 
