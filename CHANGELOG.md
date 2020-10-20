@@ -1,3 +1,11 @@
+## [1.14.12](https://github.com/feerglas/feiertach/compare/v1.14.11...v1.14.12) (2020-10-20)
+
+
+### Bug Fixes
+
+* fix title margin bottom ([8fd44a4](https://github.com/feerglas/feiertach/commit/8fd44a4fdfb9ead2954e50cb95049b6f35f572d0))
+* make sure correct next date is marked if year in the future is selected ([15caa19](https://github.com/feerglas/feiertach/commit/15caa19ea2ec7f4c1d64bf13ea7a7c4cf28c8f07))
+
 ## [1.14.11](https://github.com/feerglas/feiertach/compare/v1.14.10...v1.14.11) (2020-10-20)
 
 
