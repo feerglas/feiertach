@@ -1,3 +1,10 @@
+## [1.14.1](https://github.com/feerglas/feiertach/compare/v1.14.0...v1.14.1) (2020-10-20)
+
+
+### Bug Fixes
+
+* remove scope ([2be47a7](https://github.com/feerglas/feiertach/commit/2be47a791ee7ea93f2b457de8c0b91478fdf028c))
+
 # [1.14.0](https://github.com/feerglas/feiertach/compare/v1.13.1...v1.14.0) (2020-10-20)
 
 
