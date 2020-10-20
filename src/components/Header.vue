@@ -81,12 +81,17 @@ export default {
     @include defaultLayoutHorizontal;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+
+    @media (min-width: 420px) {
+      justify-content: flex-start;
+    }
   }
 
   .nav-item {
     display: block;
-    padding: .7rem;
-    margin: 0 .2rem;
+    padding: .5rem .7rem;
+    margin: .2rem;
     color: $navigation-text;
     border: 1px solid $navigation-background;
     transition: border-color 150ms ease-in;
