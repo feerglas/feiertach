@@ -1,3 +1,10 @@
+# [1.14.0](https://github.com/feerglas/feiertach/compare/v1.13.1...v1.14.0) (2020-10-20)
+
+
+### Features
+
+* add focus styles ([f556e9a](https://github.com/feerglas/feiertach/commit/f556e9a32d37ed7c245231f5bfdb84cbb9391150))
+
 ## [1.13.1](https://github.com/feerglas/feiertach/compare/v1.13.0...v1.13.1) (2020-10-19)
 
 
