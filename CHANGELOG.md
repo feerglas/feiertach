@@ -1,3 +1,10 @@
+## [1.14.3](https://github.com/feerglas/feiertach/compare/v1.14.2...v1.14.3) (2020-10-20)
+
+
+### Bug Fixes
+
+* customize input of bulma styles ([238c695](https://github.com/feerglas/feiertach/commit/238c695a6e17ce0b900cb9a9312ed42d1f3b2ee2))
+
 ## [1.14.2](https://github.com/feerglas/feiertach/compare/v1.14.1...v1.14.2) (2020-10-20)
 
 
