@@ -5,31 +5,33 @@
       <div class="content is-small">
 
         <div class="block">
+          <b-field class="lang-switch">
+            <b-select
+              icon="globe"
+              v-model="currentLocale"
+              @change.native="localeChanged"
+            >
+              <option
+                v-for="locale in availableLocales"
+                :key="locale"
+                :value="locale"
+              >{{ locale }}</option>
+            </b-select>
+          </b-field>
+        </div>
+
+        <div class="block social-links">
           <p>©2020 Yves Tscherry</p>
+          <p>{{$t('footer.findOnSocial')}}:</p>
+          <SocialLinks />
+        </div>
+
+        <div class="block github">
           <a
             href="https://github.com/feerglas/feiertach"
             target="_blank"
           >{{$t('footer.findOnGithub')}} <span class="tag">Version {{$data.version}}</span></a>
         </div>
-
-        <div class="block social-links">
-          <p>{{$t('footer.findOnSocial')}}</p>
-          <SocialLinks />
-        </div>
-
-        <b-field class="lang-switch">
-          <b-select
-            icon="globe"
-            v-model="currentLocale"
-            @change.native="localeChanged"
-          >
-            <option
-              v-for="locale in availableLocales"
-              :key="locale"
-              :value="locale"
-            >{{ locale }}</option>
-          </b-select>
-        </b-field>
 
       </div>
     </div>
@@ -92,31 +94,31 @@ export default {
   text-align: center;
   border-top: 2px solid $grey-lightest;
 
-  .control.has-icons-left {
-    clear: both;
-    position: relative;
+  .container {
+    .control.has-icons-left {
+      clear: both;
+      position: relative;
 
-    .select {
-      font-size: 1rem;
+      .select {
+        font-size: 1rem;
 
-      select {
-        padding-left: 40px;
+        select {
+          padding-left: 40px;
+        }
+      }
+
+      .icon.is-left {
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        float: none;
+        color: $grey-lighter;
+        pointer-events: none;
       }
     }
 
-    .icon.is-left {
-      height: 40px;
-      width: 40px;
-      position: absolute;
-      left: 0;
-      top: 0;
-      float: none;
-      color: $grey-lighter;
-      pointer-events: none;
-    }
-  }
-
-  .container {
     .social-links ul {
       list-style-type: none;
       margin-left: 0;
@@ -124,6 +126,11 @@ export default {
 
     .lang-switch {
       display: inline-block;
+      margin-bottom: 2rem;
+    }
+
+    .block.github {
+      margin-top: 3rem;
     }
   }
 }
