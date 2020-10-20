@@ -1,3 +1,18 @@
+## [1.14.11](https://github.com/feerglas/feiertach/compare/v1.14.10...v1.14.11) (2020-10-20)
+
+
+### Bug Fixes
+
+* add missing global styles ([7d12d79](https://github.com/feerglas/feiertach/commit/7d12d7953e55931692493c350225daa48372c7ae))
+* add vertical spacings ([571ee20](https://github.com/feerglas/feiertach/commit/571ee20a24b58abf372c52e5dbbcfdf225c51380))
+* define color variables ([5db3592](https://github.com/feerglas/feiertach/commit/5db359235ec89f5a1d8996825577c101089adaee))
+* fix stylings of footer ([d79a2f0](https://github.com/feerglas/feiertach/commit/d79a2f015ce1f253a33aa260916cb191b1d36b4e))
+* fix vertical spacings ([fb7b343](https://github.com/feerglas/feiertach/commit/fb7b3430dca308fac2ff936a467c08091482f771))
+* fix vertical spacings ([d99ba89](https://github.com/feerglas/feiertach/commit/d99ba895465a4acdd61dfed414948f9baaebc5e3))
+* properly style cantons list ([ca04f55](https://github.com/feerglas/feiertach/commit/ca04f551e1028bc5085b47e88a521b62af540399))
+* redesign holiday mobile header ([f43ecda](https://github.com/feerglas/feiertach/commit/f43ecdab56a41fd5e1a3a66bf158e9ed7db62274))
+* remove obsolete counter ([2438ab3](https://github.com/feerglas/feiertach/commit/2438ab3267000484daeca6aedd780a93c0a0631e))
+
 ## [1.14.10](https://github.com/feerglas/feiertach/compare/v1.14.9...v1.14.10) (2020-10-20)
 
 
