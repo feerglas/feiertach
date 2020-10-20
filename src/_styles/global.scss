@@ -1,0 +1,20 @@
+body {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.icon.icon, .icon.icon.is-small {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  height: 100%;
+}
+
+.button .icon.icon, .button .icon.icon.is-small {
+  width: 1rem;
+}
+
+a:focus,
+button.button:focus {
+  color: $link-hover;
+}
