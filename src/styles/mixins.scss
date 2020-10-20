@@ -1,7 +1,7 @@
 @mixin defaultLayoutHorizontal() {
   @include until($tablet) {
-    padding-right: 2rem;
-    padding-left: 2rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
   }
 
   @include from($tablet) {
@@ -19,18 +19,18 @@
 
 @mixin defaultLayoutVetical() {
   @include until($tablet) {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 5rem;
   }
 
   @include from($tablet) {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+    padding-top: 4rem;
+    padding-bottom: 6rem;
   }
 
   @include from($desktop) {
-    padding-top: 3rem;
-    padding-bottom: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 7rem;
   }
 }
 
