@@ -92,6 +92,30 @@ export default {
   text-align: center;
   border-top: 2px solid $grey-lightest;
 
+  .control.has-icons-left {
+    clear: both;
+    position: relative;
+
+    .select {
+      font-size: 1rem;
+
+      select {
+        padding-left: 40px;
+      }
+    }
+
+    .icon.is-left {
+      height: 40px;
+      width: 40px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      float: none;
+      color: $grey-lighter;
+      pointer-events: none;
+    }
+  }
+
   .container {
     .social-links ul {
       list-style-type: none;
