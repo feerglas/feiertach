@@ -72,8 +72,9 @@ export default {
     box-shadow: 0px 0px 3rem $grey-light;
   }
 
-  .title {
+  .title.title {
     display: block;
+    margin-bottom: 1.5rem;
   }
 
   .lead {

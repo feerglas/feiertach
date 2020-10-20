@@ -128,7 +128,7 @@ export default {
   .header {
     display: flex;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 
     .image {
       margin-right: 1rem;
