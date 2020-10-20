@@ -81,7 +81,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../styles/bulma.scss";
+@import "../styles/styles.scss";
 
 .page-cantons {
   .list-item {

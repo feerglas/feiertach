@@ -84,7 +84,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../styles/bulma.scss";
+@import "../styles/styles.scss";
 
 .footer.footer {
   padding-left: 0;

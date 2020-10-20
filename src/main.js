@@ -1,4 +1,4 @@
-import './styles/bulma.scss';
+import './styles/styles.scss';
 import CustomBuefy from './customBuefy';
 import DefaultLayout from './layouts/Default.vue';
 import extractLocale from './locales/extractLocale';

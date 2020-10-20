@@ -71,7 +71,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../styles/bulma.scss";
+@import "../styles/styles.scss";
 
 .comp-header {
   background-color: $primary;
