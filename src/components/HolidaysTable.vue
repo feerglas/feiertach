@@ -17,12 +17,18 @@
         >
 
           <div class="mobile-header">
-            <p class="mobile-title">{{ item.title[currentLocale] }}</p>
-
-            <div class="mobile-date">
+            <span class="mobile-date">
               {{ formatDate(item.dateObject).date }}
-              <span class="mobile-weekday">{{ formatDate(item.dateObject).weekday }}</span>
-            </div>
+            </span>
+
+            <span class="mobile-title">
+              {{ item.title[currentLocale] }}
+            </span>
+
+            <span class="mobile-weekday">
+              {{ formatDate(item.dateObject).weekday }}
+            </span>
+
           </div>
 
           <p
@@ -412,8 +418,8 @@ export default {
     .mobile-list-item {
       border-radius: .3rem;
       margin-bottom: 2rem;
-      padding: .7rem;
-      box-shadow: 0px 0px 10px $grey-lighter;
+      padding: 1rem;
+      box-shadow: 0px 0px 10px $shadow-over-background;
     }
 
     .mobile-list-item-next {
@@ -436,26 +442,51 @@ export default {
     }
 
     .mobile-header {
-      border-bottom: 1px solid $grey-lighter;
-      padding-bottom: .6rem;
-      margin-bottom: .6rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-between;
+      border-bottom: 1px solid $shadow-over-background;
+      padding-bottom: 1rem;
+      margin: 0 -1rem 1rem -1rem;
+    }
+
+    .mobile-date {
+      flex-shrink: 0;
+      flex-grow: 0;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      order: 2;
+
+      @media (min-width: 420px) {
+        oreder: 1;
+      }
     }
 
     .mobile-title {
       font-weight: bold;
-      margin-bottom: .3rem;
+      padding-right: 1rem;
+      padding-left: 1rem;
+      flex-basis: 100%;
+      order: 1;
 
-    }
-
-    .mobile-date {
-      display: flex;
-      align-items: baseline;
-      flex-wrap: wrap;
+      @media (min-width: 420px) {
+        order: 2;
+        flex-basis: auto;
+      }
     }
 
     .mobile-weekday {
-      padding-left: 1rem;
+      flex-shrink: 0;
+      flex-grow: 0;
       font-size: .8rem;
+      padding-right: 1rem;
+      padding-left: 1rem;
+      order: 3;
+
+      @media (min-width: 420px) {
+        order: 3;
+      }
     }
 
     .mobile-info-line {
