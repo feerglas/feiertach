@@ -34,7 +34,7 @@ const getNextHolidayAfterDate = (holidays, date) => {
     const month = parseInt(holiday.date.month, 10);
     const day = parseInt(holiday.date.day, 10);
 
-    if (year >= thisYear && month >= thisMonth && day >= thisDay) {
+    if ((year === thisYear && month >= thisMonth && day >= thisDay) || year > thisYear) {
       lastHoliday = holiday;
 
       if (!nextHoliday) {
