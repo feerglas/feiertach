@@ -49,12 +49,11 @@ export default {
 .page-home {
   .hero {
     text-align: center;
-    background-color: $white-bis;
-    padding: 4rem 3rem;
-    border-bottom: 2px solid $grey-lightest;
+    background-color: $hero-background;
+    border-bottom: 2px solid $hero-border;
 
     @include until($tablet) {
-      padding: 2rem;
+      padding: 3rem 2rem;
     }
 
     @include from($tablet) {

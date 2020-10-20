@@ -74,8 +74,8 @@ export default {
 @import "../styles/styles.scss";
 
 .comp-header {
-  background-color: $primary;
-  border: .3rem solid $primary;
+  background-color: $navigation-background;
+  border: .3rem solid $navigation-background;
 
   .navigation {
     @include defaultLayoutHorizontal;
@@ -87,8 +87,8 @@ export default {
     display: block;
     padding: .7rem;
     margin: 0 .2rem;
-    color: white;
-    border: 1px solid $primary;
+    color: $navigation-text;
+    border: 1px solid $navigation-background;
     transition: border-color 150ms ease-in;
     border-radius: .5rem;
   }
@@ -99,13 +99,13 @@ export default {
 
   .nav-item:hover:not(.is-active),
   .nav-item:focus:not(.is-active) {
-    border: 1px solid $grey-lightest;
-    color: white;
+    border: 1px solid $navigation-text;
+    color: $navigation-text;
   }
 
   .nav-item.is-active {
-    background-color: white;
-    color: $primary;
+    background-color: $navigation-background-active;
+    color: $navigation-text-active;
   }
 }
 </style>
