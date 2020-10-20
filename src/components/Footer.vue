@@ -30,7 +30,7 @@
           <a
             href="https://github.com/feerglas/feiertach"
             target="_blank"
-          >{{$t('footer.findOnGithub')}} <span class="tag">Version {{$data.version}}</span></a>
+          >{{$t('footer.findOnGithub')}}<br><span class="tag">Version {{$data.version}}</span></a>
         </div>
 
       </div>
@@ -132,6 +132,10 @@ export default {
 
     .block.github {
       margin-top: 3rem;
+
+      .tag {
+        margin-top: .3rem;
+      }
     }
   }
 }
