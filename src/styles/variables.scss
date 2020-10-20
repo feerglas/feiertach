@@ -1,4 +1,43 @@
-$primary: #8c67ef;
+$red-dark: #e85a4f;
+$red-light: #e98074;
+$brown-light: lighten(#eae7dc, 10%);
+
+$brown-dark: #d8c3a5;
+$grey: #8e8d8a;
+
+
+
+
+$primary: $red-dark;
+
+
+
 
 $link: $primary;
-$link-hover: red;
+$link-hover: darken($red-light, 25%);
+
+$background: $brown-light;
+$shadow-over-background: rgba(0, 0, 0, 0.15);
+$text: lighten(black, 15%);
+
+$navigation-background: $red-dark;
+$navigation-background-active: $red-light;
+$navigation-text: white;
+$navigation-text-active: white;
+
+$button-background: $primary;
+$button-background-hover: lighten($primary, 2%);
+$button-border: lighten($primary, 10%);
+$button-border-hover: darken($primary, 25%);
+$button-text: white;
+$button-text-hover: white;
+
+$select-background: white;
+$select-border: darken(white, 50%);
+$select-text: $text;
+
+$hero-background: lighten($navigation-background, 35%);
+$hero-border: darken($background, 10%);
+
+$footer-background: darken($background, 5%);
+$footer-border: darken($background, 10%);
