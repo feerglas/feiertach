@@ -1,15 +1,13 @@
 import './styles/bulma.scss';
-import Buefy from 'buefy';
+import CustomBuefy from './customBuefy';
 import DefaultLayout from './layouts/Default.vue';
 import extractLocale from './locales/extractLocale';
 import locales from './locales/locales';
-import VueFeatherIconPack from './components/VueFeatherIconPack.vue';
 
 export default (Vue, {
   head,
   appOptions
 }) => {
-  Vue.component('vue-feather-icon-pack', VueFeatherIconPack);
 
   // add <html> attributes
   /* eslint-disable no-param-reassign */
@@ -26,22 +24,7 @@ export default (Vue, {
     name: 'width=device-width, initial-scale=1'
   });
 
-  // Register Bulma
-  Vue.use(Buefy, {
-    customIconPacks: {
-      ft: {
-        iconPrefix: '',
-        sizes: {
-          'default': '1.5x',
-          'is-large': '3x',
-          'is-medium': '2x',
-          'is-small': '1x'
-        }
-      }
-    },
-    defaultIconComponent: 'vue-feather-icon-pack',
-    defaultIconPack: 'ft'
-  });
+  Vue.use(CustomBuefy);
 
   // Set Locales Messages
   appOptions.i18n.setLocaleMessage('de', extractLocale('de', locales));
