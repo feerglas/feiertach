@@ -1,3 +1,10 @@
+## [1.14.9](https://github.com/feerglas/feiertach/compare/v1.14.8...v1.14.9) (2020-10-20)
+
+
+### Bug Fixes
+
+* remove more styles ([12c6f65](https://github.com/feerglas/feiertach/commit/12c6f658429264a2c134b08d9bb035846ae0df63))
+
 ## [1.14.8](https://github.com/feerglas/feiertach/compare/v1.14.7...v1.14.8) (2020-10-20)
 
 
