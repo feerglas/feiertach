@@ -1,3 +1,10 @@
+## [1.14.7](https://github.com/feerglas/feiertach/compare/v1.14.6...v1.14.7) (2020-10-20)
+
+
+### Bug Fixes
+
+* remove more buefy/bulma styles ([282770a](https://github.com/feerglas/feiertach/commit/282770a1c3f2857b4b58b8d1c32c782cd6f8c104))
+
 ## [1.14.6](https://github.com/feerglas/feiertach/compare/v1.14.5...v1.14.6) (2020-10-20)
 
 
