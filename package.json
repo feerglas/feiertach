@@ -17,7 +17,6 @@
     "gridsome": "^0.7.0",
     "gridsome-plugin-i18n": "~1.6.0",
     "ics": "~2.25.0",
-    "netlify-cli": "~2.65.6",
     "vue-feather-icons": "~5.1.0"
   },
   "devDependencies": {
@@ -33,6 +32,7 @@
     "eslint-plugin-vue": "~7.0.0",
     "eslint-plugin-yaml": "~0.3.0",
     "husky": "~4.3.0",
+    "netlify-cli": "~2.65.6",
     "node-sass": "~4.14.1",
     "sass-loader": "~10.0.2",
     "semantic-release": "~17.1.2",
