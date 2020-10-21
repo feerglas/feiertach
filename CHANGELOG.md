@@ -1,3 +1,11 @@
+## [1.15.13](https://github.com/feerglas/feiertach/compare/v1.15.12...v1.15.13) (2020-10-21)
+
+
+### Bug Fixes
+
+* add confirmation file for google search console ([d50e9fa](https://github.com/feerglas/feiertach/commit/d50e9faee6fbe0a23fe7ba080f90d3761eb3333c))
+* margin of list description ([3b1d224](https://github.com/feerglas/feiertach/commit/3b1d224eed645158bc1cdcce1ba9cea70ef68f31))
+
 ## [1.15.12](https://github.com/feerglas/feiertach/compare/v1.15.11...v1.15.12) (2020-10-21)
 
 
