@@ -1,3 +1,11 @@
+## [1.15.2](https://github.com/feerglas/feiertach/compare/v1.15.1...v1.15.2) (2020-10-21)
+
+
+### Bug Fixes
+
+* disable html caching ([94c6959](https://github.com/feerglas/feiertach/commit/94c6959edacbc58fff6da4297b20912cb0e7464b))
+* typo in app name ([4a76afd](https://github.com/feerglas/feiertach/commit/4a76afdd3759db3714de04d5431364d318188147))
+
 ## [1.15.1](https://github.com/feerglas/feiertach/compare/v1.15.0...v1.15.1) (2020-10-21)
 
 
