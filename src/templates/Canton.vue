@@ -95,9 +95,9 @@ import {
   getNextHolidayAfterDate
 } from '../helpers/date';
 import Flag from '../assets/flags/Index.vue';
+import getMetaInfo from '../helpers/meta';
 import HolidaysInfoLine from '../components/HolidaysInfoLine.vue';
 import HolidaysTable from '../components/HolidaysTable.vue';
-import getMetaInfo from '../helpers/meta';
 import YearsSelector from '../components/YearsSelector.vue';
 
 export default {
