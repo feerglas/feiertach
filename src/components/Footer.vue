@@ -22,7 +22,7 @@
 
         <div class="block social-links">
           <p>©2020 Yves Tscherry</p>
-          <p>{{$t('footer.findOnSocial')}}:</p>
+          <p class="list-description">{{$t('footer.findOnSocial')}}:</p>
           <SocialLinks />
         </div>
 
@@ -121,9 +121,14 @@ export default {
       }
     }
 
+    .list-description {
+      margin: 0;
+    }
+
     .social-links ul {
       list-style-type: none;
-      margin-left: 0;
+      margin: 0;
+      padding: 0;
       display: flex;
       align-items: center;
       justify-content: center;
