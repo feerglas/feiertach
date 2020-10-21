@@ -1,3 +1,11 @@
+## [1.15.12](https://github.com/feerglas/feiertach/compare/v1.15.11...v1.15.12) (2020-10-21)
+
+
+### Bug Fixes
+
+* change layout of footer links ([37aba37](https://github.com/feerglas/feiertach/commit/37aba376513fae5e5f98912035c4b920c33baaa1))
+* reduce text ([c4440e1](https://github.com/feerglas/feiertach/commit/c4440e12a8ccaba081e19ca70d3b5337c10cbca0))
+
 ## [1.15.11](https://github.com/feerglas/feiertach/compare/v1.15.10...v1.15.11) (2020-10-21)
 
 
