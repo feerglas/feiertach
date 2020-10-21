@@ -1,3 +1,10 @@
+## [1.15.6](https://github.com/feerglas/feiertach/compare/v1.15.5...v1.15.6) (2020-10-21)
+
+
+### Bug Fixes
+
+* diable json and html again ([8976604](https://github.com/feerglas/feiertach/commit/8976604022d0c1d352e09edf51cf08eea35b1b13))
+
 ## [1.15.5](https://github.com/feerglas/feiertach/compare/v1.15.4...v1.15.5) (2020-10-21)
 
 
