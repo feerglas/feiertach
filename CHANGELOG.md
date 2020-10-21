@@ -1,3 +1,10 @@
+## [1.15.7](https://github.com/feerglas/feiertach/compare/v1.15.6...v1.15.7) (2020-10-21)
+
+
+### Bug Fixes
+
+* disable json caching ([6338821](https://github.com/feerglas/feiertach/commit/6338821e5d11342977e9da44e0a277d5bc54c871))
+
 ## [1.15.6](https://github.com/feerglas/feiertach/compare/v1.15.5...v1.15.6) (2020-10-21)
 
 
