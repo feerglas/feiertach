@@ -48,10 +48,10 @@ const locales = {
       it: 'Rullo di tamburi'
     },
     content1: {
-      de: 'Diese App ist werbefrei, und du kannst sie gratis benutzen. Wenn du mir "Merci" sagen willst, wenn du Verbesserungsvorschläge hast oder Fehler gefunden hast, kannst du dich gerne via Twitter, Facebook oder Insta bei mir melden:',
-      en: 'This app is ad-free and you can use it for free. If you want to tell me "Merci", if you have suggestions for improvements or if you have found errors, feel free to contact me via Twitter, Facebook or Insta:',
-      fr: 'Cette application est sans publicité et tu peux l\'utiliser gratuitement. Si tu souhaite me dire "Merci", si tu as des suggestions d\'amélioration ou si tu as trouvé des erreurs, n\'hésite pas à me contacter via Twitter, Facebook ou Insta:',
-      it: 'Questa app è senza pubblicità e puoi usarla gratuitamente. Se vuoi dirmi "Gracie", se hai suggerimenti per il miglioramento o se hai trovato errori, non esitare a contattarmi tramite Twitter, Facebook o Insta:'
+      de: 'Diese App ist werbefrei, und du kannst sie gratis benutzen. Wenn du mir "Merci" sagen willst, wenn du Verbesserungsvorschläge hast oder Fehler gefunden hast, kannst du dich gerne bei mir melden:',
+      en: 'This app is ad-free and you can use it for free. If you want to tell me "Merci", if you have suggestions for improvements or if you have found errors, feel free to contact me:',
+      fr: 'Cette application est sans publicité et tu peux l\'utiliser gratuitement. Si tu souhaite me dire "Merci", si tu as des suggestions d\'amélioration ou si tu as trouvé des erreurs, n\'hésite pas à me contacter:',
+      it: 'Questa app è senza pubblicità e puoi usarla gratuitamente. Se vuoi dirmi "Gracie", se hai suggerimenti per il miglioramento o se hai trovato errori, non esitare a contattarmi:'
     },
     title2: {
       de: 'Los geht\'s',
