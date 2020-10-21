@@ -38,7 +38,7 @@ module.exports = {
       options: {
         appleMaskIconColor: '#fdfdfc',
         backgroundColor: '#fdfdfc',
-        cachedFileTypes: 'js,css,png,jpg,jpeg,svg,gif',
+        cachedFileTypes: 'css,png,jpg,jpeg,svg,gif',
         categories: [
           'lifestyle',
           'productivity',
