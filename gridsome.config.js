@@ -38,7 +38,7 @@ module.exports = {
       options: {
         appleMaskIconColor: '#fdfdfc',
         backgroundColor: '#fdfdfc',
-        cachedFileTypes: 'css,png,jpg,jpeg,svg,gif',
+        cachedFileTypes: 'js,json,html,css,png,jpg,jpeg,svg,gif',
         categories: [
           'lifestyle',
           'productivity',
@@ -47,7 +47,7 @@ module.exports = {
         description: 'Schweizerische Feiertage',
         dir: 'auto',
         disableServiceWorker: false,
-        disableTemplatedUrls: false,
+        disableTemplatedUrls: true,
         display: 'standalone',
         icon: 'src/favicon.png',
         lang: 'de-DE',
