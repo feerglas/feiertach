@@ -1,3 +1,11 @@
+## [1.15.4](https://github.com/feerglas/feiertach/compare/v1.15.3...v1.15.4) (2020-10-21)
+
+
+### Bug Fixes
+
+* disable js caching ([454b7ac](https://github.com/feerglas/feiertach/commit/454b7ace6fd6b37bd562e3f093ddd2459dd47683))
+* remove screenshots ([19c2f36](https://github.com/feerglas/feiertach/commit/19c2f3630bf04b9c9ecb2a7502eeda287c4091ad))
+
 ## [1.15.3](https://github.com/feerglas/feiertach/compare/v1.15.2...v1.15.3) (2020-10-21)
 
 
