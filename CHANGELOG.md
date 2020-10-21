@@ -1,3 +1,10 @@
+# [1.15.0](https://github.com/feerglas/feiertach/compare/v1.14.13...v1.15.0) (2020-10-21)
+
+
+### Features
+
+* add pwa config ([42ebde7](https://github.com/feerglas/feiertach/commit/42ebde74285b4eeceb5acb93e54d22319d5651b4))
+
 ## [1.14.13](https://github.com/feerglas/feiertach/compare/v1.14.12...v1.14.13) (2020-10-20)
 
 
