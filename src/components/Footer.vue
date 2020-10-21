@@ -30,6 +30,7 @@
           <a
             href="https://github.com/feerglas/feiertach"
             target="_blank"
+            rel="noreferrer"
           >{{$t('footer.findOnGithub')}}<br><span class="tag">Version {{$data.version}}</span></a>
         </div>
 
@@ -123,11 +124,21 @@ export default {
     .social-links ul {
       list-style-type: none;
       margin-left: 0;
+
+      a {
+        padding: .6rem 0;
+        display: block;
+      }
     }
 
     .lang-switch {
       display: inline-block;
       margin-bottom: 2rem;
+
+      .label {
+        margin-bottom: .5rem;
+        display: block;
+      }
     }
 
     .block.github {

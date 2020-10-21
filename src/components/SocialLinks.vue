@@ -5,6 +5,7 @@
       <a
         href="https://twitter.com/feerglas"
         target="_blank"
+        rel="noreferrer"
       >
         Twitter
       </a>
@@ -14,6 +15,7 @@
       <a
         href="https://www.facebook.com/yves.tscherry"
         target="_blank"
+        rel="noreferrer"
       >
         Facbeook
       </a>
@@ -23,6 +25,7 @@
       <a
         href="https://www.instagram.com/feerglas"
         target="_blank"
+        rel="noreferrer"
       >
         Instagram
       </a>

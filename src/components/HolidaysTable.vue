@@ -101,6 +101,7 @@
               class="mobile-link"
               :href="item.link[currentLocale]"
               target="_blank"
+              rel="noreferrer"
             >
               <span class="content-icon">
                 <b-icon
@@ -271,6 +272,7 @@
         <a
           :href="props.row.link[currentLocale]"
           target="_blank"
+          rel="noreferrer"
         >Wikipedia</a>
       </b-table-column>
 

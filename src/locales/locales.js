@@ -2,9 +2,9 @@
 const locales = {
   navigation: {
     home: {
-      de: 'Start',
+      de: 'Home',
       en: 'Home',
-      fr: 'Accueil',
+      fr: 'Home',
       it: 'Home'
     },
     cantons: {
