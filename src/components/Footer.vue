@@ -124,9 +124,18 @@ export default {
     .social-links ul {
       list-style-type: none;
       margin-left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      li {
+        margin: 0;
+      }
 
       a {
-        padding: .6rem 0;
+        padding: .7rem .5rem;
+        margin: 0 .2rem;
         display: block;
       }
     }
