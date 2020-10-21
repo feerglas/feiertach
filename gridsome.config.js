@@ -64,8 +64,7 @@ module.exports = {
       use: 'gridsome-plugin-pwa'
     }
   ],
-  siteDescription: 'List holidays from Switzerland',
-  siteName: 'Swiss Holidays',
+  siteName: 'feiertaCH',
   siteUrl: 'https://feiertach.ch',
   templates: {
     Canton: '/cantons/:id'
