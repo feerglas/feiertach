@@ -9,6 +9,7 @@
         <g-image
           class="image"
           src="~/favicon.png"
+          alt="FeiertaCH Icon"
         />
         <h1 class="title is-1">feiertaCH</h1>
         <p class="lead is-size-4">{{$t("home.lead")}}</p>
