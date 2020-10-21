@@ -1,3 +1,10 @@
+## [1.15.10](https://github.com/feerglas/feiertach/compare/v1.15.9...v1.15.10) (2020-10-21)
+
+
+### Bug Fixes
+
+* enable js caching again ([5860f5a](https://github.com/feerglas/feiertach/commit/5860f5ab3546c443459c6554b96f08775c7eddbf))
+
 ## [1.15.9](https://github.com/feerglas/feiertach/compare/v1.15.8...v1.15.9) (2020-10-21)
 
 
