@@ -10,13 +10,15 @@ const metaInfo = (options) => {
     description
   } = options;
 
+  const _route = `https://www.feiertach.ch${route}`;
+
   return {
     htmlAttrs: {
       lang
     },
     link: [
       {
-        href: route,
+        href: _route,
         rel: 'canonical'
       }
     ],
@@ -43,7 +45,7 @@ const metaInfo = (options) => {
         property: 'og:description'
       },
       {
-        content: route,
+        content: _route,
         property: 'og:url'
       },
       {
