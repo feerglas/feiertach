@@ -1,3 +1,10 @@
+## [1.15.5](https://github.com/feerglas/feiertach/compare/v1.15.4...v1.15.5) (2020-10-21)
+
+
+### Bug Fixes
+
+* enable caching of js, html and json again, disable template caching ([67b74b9](https://github.com/feerglas/feiertach/commit/67b74b9dc5ec2cca1d91141f6430a614d7ad7ece))
+
 ## [1.15.4](https://github.com/feerglas/feiertach/compare/v1.15.3...v1.15.4) (2020-10-21)
 
 
