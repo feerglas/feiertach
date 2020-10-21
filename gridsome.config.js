@@ -57,12 +57,12 @@ module.exports = {
         screenshots: [
           {
             sizes: '1280x720',
-            src: 'screenshots/screenshot1.png',
+            src: 'src/screenshots/screenshot1.png',
             type: 'image/png'
           },
           {
             sizes: '1280x720',
-            src: 'screenshots/screenshot2.png',
+            src: 'src/screenshots/screenshot2.png',
             type: 'image/png'
           }
         ],
