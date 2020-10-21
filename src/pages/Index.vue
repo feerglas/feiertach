@@ -32,14 +32,23 @@
 </template>
 
 <script>
+import getMetaInfo from '../helpers/meta';
 import SocialLinks from '../components/SocialLinks.vue';
 
 export default {
   components: {
     SocialLinks
   },
-  metaInfo: {
-    title: 'feiertaCH'
+  metaInfo() {
+    const lang = this.$i18n.locale;
+    const route = this.$route.fullPath;
+    const description = this.$t('seo.description.home');
+
+    return getMetaInfo({
+      description,
+      lang,
+      route
+    });
   }
 };
 </script>

@@ -53,6 +53,7 @@
 
 <script>
 import Flags from '../assets/flags/Index.vue';
+import getMetaInfo from '../helpers/meta';
 
 export default {
   components: {
@@ -82,6 +83,17 @@ export default {
 
       return cantons;
     }
+  },
+  metaInfo() {
+    const lang = this.$i18n.locale;
+    const route = this.$route.fullPath;
+    const description = this.$t('seo.description.cantons');
+
+    return getMetaInfo({
+      description,
+      lang,
+      route
+    });
   }
 };
 

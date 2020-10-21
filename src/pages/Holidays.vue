@@ -70,6 +70,7 @@ import {
   getLastHolidayOfEachYear,
   getNextHolidayAfterDate
 } from '../helpers/date';
+import getMetaInfo from '../helpers/meta';
 import HolidaysInfoLine from '../components/HolidaysInfoLine.vue';
 import HolidaysTable from '../components/HolidaysTable.vue';
 import YearsSelector from '../components/YearsSelector.vue';
@@ -86,6 +87,17 @@ export default {
       lastHolidayOfEachYear: {},
       nextHoliday: false
     };
+  },
+  metaInfo() {
+    const lang = this.$i18n.locale;
+    const route = this.$route.fullPath;
+    const description = this.$t('seo.description.holidays');
+
+    return getMetaInfo({
+      description,
+      lang,
+      route
+    });
   },
   methods: {
     handleFilter(holidays) {

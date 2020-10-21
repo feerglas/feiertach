@@ -97,6 +97,7 @@ import {
 import Flag from '../assets/flags/Index.vue';
 import HolidaysInfoLine from '../components/HolidaysInfoLine.vue';
 import HolidaysTable from '../components/HolidaysTable.vue';
+import getMetaInfo from '../helpers/meta';
 import YearsSelector from '../components/YearsSelector.vue';
 
 export default {
@@ -112,6 +113,19 @@ export default {
       lastHolidayOfEachYear: {},
       nextHoliday: false
     };
+  },
+  metaInfo() {
+    const lang = this.$i18n.locale;
+    const route = this.$route.fullPath;
+    const description = this.$t('seo.description.canton', {
+      canton: this.$page.canton.name[this.$i18n.locale]
+    });
+
+    return getMetaInfo({
+      description,
+      lang,
+      route
+    });
   },
   methods: {
     handleFilter(holidays) {
