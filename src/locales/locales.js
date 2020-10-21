@@ -1,12 +1,6 @@
 /* eslint-disable sort-keys */
 const locales = {
   navigation: {
-    home: {
-      de: 'Start',
-      en: 'Home',
-      fr: 'Accueil',
-      it: 'Home'
-    },
     cantons: {
       de: 'Kantone',
       en: 'Cantons',
@@ -18,6 +12,12 @@ const locales = {
       en: 'Holidays',
       fr: 'Vacances',
       it: 'Feste'
+    },
+    home: {
+      de: 'Start',
+      en: 'Home',
+      fr: 'Accueil',
+      it: 'Home'
     }
   },
   footer: {
