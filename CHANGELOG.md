@@ -1,3 +1,11 @@
+## [1.15.1](https://github.com/feerglas/feiertach/compare/v1.15.0...v1.15.1) (2020-10-21)
+
+
+### Bug Fixes
+
+* move screenshots to src ([9e98eec](https://github.com/feerglas/feiertach/commit/9e98eecfdd9a5a26882098f2d5b2339527f23069))
+* set path to screenshots to src ([b2710f1](https://github.com/feerglas/feiertach/commit/b2710f10de9d59129c5989ded2eec767d6f27539))
+
 # [1.15.0](https://github.com/feerglas/feiertach/compare/v1.14.13...v1.15.0) (2020-10-21)
 
 
