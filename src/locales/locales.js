@@ -20,6 +20,34 @@ const locales = {
       it: 'Feste'
     }
   },
+  seo: {
+    description: {
+      home: {
+        de: 'Mit feiertaCH kannst du Feiertage für die einzelnen Kantone direkt in den Kalender eintragen.',
+        en: 'With feiertaCH you can add public holidays for the individual cantons directly into your calendar.',
+        fr: 'Avec feiertaCH, tu peux saisir les jours fériés des cantons individuels directement dans le calendrier.',
+        it: 'Con feiertaCH è possibile inserire i giorni festivi dei singoli cantoni direttamente nel calendario.'
+      },
+      cantons: {
+        de: 'Schau dir die Feiertage für jeden schweizer Kanton an',
+        en: 'Look at the holidays for each Swiss canton',
+        fr: 'Regardez les jours fériés de chaque canton suisse',
+        it: 'Guarda le vacanze per ogni cantone svizzero'
+      },
+      canton: {
+        de: 'Feiertage für den Kanton {canton}',
+        en: 'Holidays for the canton {canton}',
+        fr: 'Jours fériés pour le canton {canton}',
+        it: 'Vacanze per il cantone {canton}'
+      },
+      holidays: {
+        de: 'Liste der Feiertage der gesamten Schweiz',
+        en: 'List of public holidays throughout Switzerland',
+        fr: 'Liste des jours fériés dans toute la Suisse',
+        it: 'Elenco dei giorni festivi in ​​tutta la Svizzera'
+      }
+    }
+  },
   footer: {
     findOnGithub: {
       de: 'Projekt auf GitHub',
