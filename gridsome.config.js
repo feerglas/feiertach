@@ -71,7 +71,7 @@ module.exports = {
         startUrl: '/',
         statusBarStyle: 'default',
         themeColor: '#e85a4f',
-        title: 'feiertaCh'
+        title: 'feiertaCH'
       },
       use: 'gridsome-plugin-pwa'
     }
