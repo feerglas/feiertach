@@ -54,18 +54,6 @@ module.exports = {
         manifestPath: 'manifest.json',
         maskableIcon: true,
         msTileColor: '#fdfdfc',
-        screenshots: [
-          {
-            sizes: '1280x720',
-            src: 'src/screenshots/screenshot1.png',
-            type: 'image/png'
-          },
-          {
-            sizes: '1280x720',
-            src: 'src/screenshots/screenshot2.png',
-            type: 'image/png'
-          }
-        ],
         serviceWorkerPath: 'service-worker.js',
         shortName: 'feiertaCH',
         startUrl: '/',
