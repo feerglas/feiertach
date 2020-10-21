@@ -1,3 +1,10 @@
+## [1.15.8](https://github.com/feerglas/feiertach/compare/v1.15.7...v1.15.8) (2020-10-21)
+
+
+### Bug Fixes
+
+* move home to end of nav items ([77dd0f9](https://github.com/feerglas/feiertach/commit/77dd0f94dfd4d1e51b7ad5ccce3a40bdca659b7c))
+
 ## [1.15.7](https://github.com/feerglas/feiertach/compare/v1.15.6...v1.15.7) (2020-10-21)
 
 
