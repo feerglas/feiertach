@@ -1,3 +1,10 @@
+## [1.15.9](https://github.com/feerglas/feiertach/compare/v1.15.8...v1.15.9) (2020-10-21)
+
+
+### Bug Fixes
+
+* move home to start again ([3501d7b](https://github.com/feerglas/feiertach/commit/3501d7b6e908417b9ae0a2f4688e1f7d77860806))
+
 ## [1.15.8](https://github.com/feerglas/feiertach/compare/v1.15.7...v1.15.8) (2020-10-21)
 
 
