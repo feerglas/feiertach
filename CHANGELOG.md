@@ -1,3 +1,13 @@
+## [1.14.13](https://github.com/feerglas/feiertach/compare/v1.14.12...v1.14.13) (2020-10-20)
+
+
+### Bug Fixes
+
+* fix icon for select ([a409fe1](https://github.com/feerglas/feiertach/commit/a409fe1f369287596c343fa686a0d68565d9366c))
+* highlight row on hover ([8759703](https://github.com/feerglas/feiertach/commit/8759703c8f189fe7a73b52359eb15571a14b8e31))
+* move version tag below github link ([6379bf3](https://github.com/feerglas/feiertach/commit/6379bf38da593b69602ff6ef638fcbade26b28f2))
+* optimize nav ([5fa0632](https://github.com/feerglas/feiertach/commit/5fa0632c56982ead00952f409df09bc0f692332d))
+
 ## [1.14.12](https://github.com/feerglas/feiertach/compare/v1.14.11...v1.14.12) (2020-10-20)
 
 
