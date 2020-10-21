@@ -1,3 +1,11 @@
+## [1.15.11](https://github.com/feerglas/feiertach/compare/v1.15.10...v1.15.11) (2020-10-21)
+
+
+### Bug Fixes
+
+* add alt text to image ([09af7d3](https://github.com/feerglas/feiertach/commit/09af7d364ebc32c44a650368815e14be278798e2))
+* add noreferrer to links, make footer links tappable ([7809628](https://github.com/feerglas/feiertach/commit/7809628c7a8e2e889eac61f41696bb80442c3d57))
+
 ## [1.15.10](https://github.com/feerglas/feiertach/compare/v1.15.9...v1.15.10) (2020-10-21)
 
 
