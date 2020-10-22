@@ -54,6 +54,7 @@
 <script>
 import Flags from '../assets/flags/Index.vue';
 import getMetaInfo from '../helpers/meta';
+import sortCantons from '../helpers/sort';
 
 export default {
   components: {
@@ -64,24 +65,7 @@ export default {
       return this.$i18n.locale;
     },
     sortedCantons() {
-      const cantons = this.$page.allCanton.edges;
-
-      cantons.sort((a, b) => {
-        const aUpper = a.node.name[this.$i18n.locale].toUpperCase();
-        const bUpper = b.node.name[this.$i18n.locale].toUpperCase();
-
-        if (aUpper < bUpper) {
-          return -1;
-        }
-
-        if (aUpper > bUpper) {
-          return 1;
-        }
-
-        return 0;
-      });
-
-      return cantons;
+      return sortCantons(this.$page.allCanton.edges, this.$i18n.locale);
     }
   },
   metaInfo() {
