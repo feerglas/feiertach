@@ -1,3 +1,19 @@
+# [1.16.0](https://github.com/feerglas/feiertach/compare/v1.15.13...v1.16.0) (2020-10-21)
+
+
+### Bug Fixes
+
+* add base url to helper ([18a9d8d](https://github.com/feerglas/feiertach/commit/18a9d8d15596a8a87733b786623f21ba137159be))
+* fix linting issue ([0b375ad](https://github.com/feerglas/feiertach/commit/0b375adab211571e4eef847babfed85170f18ba8))
+* remove description ([e487f35](https://github.com/feerglas/feiertach/commit/e487f357dbbcf43d27c5bf5a012962ff02727d6b))
+
+
+### Features
+
+* add helper to create meta info ([955653d](https://github.com/feerglas/feiertach/commit/955653de185a40d43a17670512c7382b78f9431c))
+* add localizations for meta info ([99a061b](https://github.com/feerglas/feiertach/commit/99a061bd99448a31bfdd2f16132e19598d938e3d))
+* add meta description ([e5135ed](https://github.com/feerglas/feiertach/commit/e5135ed692bbf8c6dd449981b207bd97bb152f5e))
+
 ## [1.15.13](https://github.com/feerglas/feiertach/compare/v1.15.12...v1.15.13) (2020-10-21)
 
 
