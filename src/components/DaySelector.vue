@@ -3,7 +3,7 @@
     <b-field :label="$t('plan.chooseFreeDays')">
       <b-checkbox
         class="is-medium"
-        v-for="(day, index) in $data.days"
+        v-for="(day, index) in days"
         :key="index"
         :native-value="day.index"
         v-model="daySelection"
@@ -27,43 +27,45 @@
 import globalConfig from '../config/global';
 
 export default {
+  computed: {
+    days() {
+      return [
+        {
+          index: 1,
+          name: this.$t('plan.days.monday')
+        },
+        {
+          index: 2,
+          name: this.$t('plan.days.tuesday')
+        },
+        {
+          index: 3,
+          name: this.$t('plan.days.wednesday')
+        },
+        {
+          index: 4,
+          name: this.$t('plan.days.thursday')
+        },
+        {
+          index: 5,
+          name: this.$t('plan.days.friday')
+        },
+        {
+          index: 6,
+          name: this.$t('plan.days.saturday')
+        },
+        {
+          index: 0,
+          name: this.$t('plan.days.sunday')
+        }
+      ];
+    }
+  },
   data() {
-    const days = [
-      {
-        index: 1,
-        name: this.$t('plan.days.monday')
-      },
-      {
-        index: 2,
-        name: this.$t('plan.days.tuesday')
-      },
-      {
-        index: 3,
-        name: this.$t('plan.days.wednesday')
-      },
-      {
-        index: 4,
-        name: this.$t('plan.days.thursday')
-      },
-      {
-        index: 5,
-        name: this.$t('plan.days.friday')
-      },
-      {
-        index: 6,
-        name: this.$t('plan.days.saturday')
-      },
-      {
-        index: 0,
-        name: this.$t('plan.days.sunday')
-      }
-    ];
-
     return {
-      days,
       daySelection: [
-        days[5].index,
-        days[6].index
+        6,
+        0
       ],
       maxDays: globalConfig.planerMaxFreeDays,
       showError: false
