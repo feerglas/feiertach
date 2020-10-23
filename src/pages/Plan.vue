@@ -49,14 +49,21 @@
     </b-field>
 
     <div
-      class="block"
+      class="block suggestions"
       v-if="suggestions.length > 0"
     >
       <h2
         class="title is-4"
       >{{$t('plan.suggestions')}}</h2>
 
-      <ul>
+      <button
+        class="button toggle-past"
+        @click="togglePastSuggestions"
+      >
+        {{this.$data.pastSuggestionsVisible ? $t('plan.hidePastSuggestions') : $t('plan.showPastSuggestions')}}
+      </button>
+
+      <ul class="suggestions-list">
         <li
           class="suggestion-item"
           v-for="(suggestion, index) in suggestions"
@@ -85,7 +92,7 @@
             </div>
 
             <button
-              class="button"
+              class="button add-calendar"
             >
               <span class="button-icon">
                 <b-icon
@@ -216,11 +223,14 @@ export default {
   },
   data() {
     return {
+      allSuggestions: [],
       currentCanton: undefined,
       currentDays: [],
       onlyAllCantonSelection: false,
       onlyOfficialSelection: false,
-      suggestions: []
+      pastSuggestionsVisible: false,
+      suggestions: [],
+      upcomingSuggestions: []
     };
   },
   metaInfo() {
@@ -244,12 +254,19 @@ export default {
         return;
       }
 
-      this.suggestions = planHelper({
+      const {
+        all,
+        onlyUpcoming
+      } = planHelper({
         canton: this.currentCanton,
         freeDays: this.currentDays,
         onlyAllCanton: this.onlyAllCantonSelection,
         onlyOfficial: this.onlyOfficialSelection
       });
+
+      this.allSuggestions = all;
+      this.upcomingSuggestions = onlyUpcoming;
+      this.setSuggestions();
 
     },
     cantonChanged() {
@@ -265,6 +282,16 @@ export default {
     },
     optionsChange() {
       this.calculate();
+    },
+    setSuggestions() {
+      this.suggestions = this.pastSuggestionsVisible
+        ? this.allSuggestions
+        : this.upcomingSuggestions;
+    },
+    togglePastSuggestions() {
+      this.pastSuggestionsVisible = !this.pastSuggestionsVisible;
+
+      this.setSuggestions();
     }
   },
   mounted() {
@@ -303,6 +330,14 @@ export default {
     width: 100%;
   }
 
+  .suggestions {
+    margin-top: 4rem;
+  }
+
+  .suggestions-list {
+    margin-top: 2rem;
+  }
+
   .suggestion-item {
     @include card;
     max-width: 40rem;
@@ -325,7 +360,7 @@ export default {
     padding: 1rem 1rem 0;
   }
 
-  .button {
+  .button.add-calendar {
     flex-shrink: 0;
     flex-grow: 0;
     margin: 1rem 1rem 0 1rem;
