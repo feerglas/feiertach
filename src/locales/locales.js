@@ -261,6 +261,12 @@ const locales = {
       fr: 'Jour congé',
       it: 'Giorno libero'
     },
+    addToCalendar: {
+      de: 'In den Kalender',
+      en: 'To calendar',
+      fr: 'Dans le calendrier',
+      it: 'Nel calendario'
+    },
     days: {
       monday: {
         de: 'Mo',
