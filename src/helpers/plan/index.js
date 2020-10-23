@@ -1,4 +1,5 @@
 import clean from './cleanUp';
+import filterPast from './filterPast';
 import find from './potentialHolidays';
 import meta from './meta';
 import prepare from './prepareDates';
@@ -32,7 +33,14 @@ const planHolidays = (options) => {
     suggestions: results
   });
 
-  return suggestionsWithMeta;
+  const suggestionsWithoutPast = filterPast({
+    suggestions: JSON.parse(JSON.stringify(suggestionsWithMeta))
+  });
+
+  return {
+    all: suggestionsWithMeta,
+    onlyUpcoming: suggestionsWithoutPast
+  };
 };
 
 export default planHolidays;
