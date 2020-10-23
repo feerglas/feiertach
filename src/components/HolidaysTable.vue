@@ -418,10 +418,7 @@ export default {
     }
 
     .mobile-list-item {
-      border-radius: .3rem;
-      margin-bottom: 2rem;
-      padding: 1rem;
-      box-shadow: 0px 0px 10px $shadow-over-background;
+      @include card;
     }
 
     .mobile-list-item-next {
@@ -444,13 +441,7 @@ export default {
     }
 
     .mobile-header {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: baseline;
-      justify-content: space-between;
-      border-bottom: 1px solid $shadow-over-background;
-      padding-bottom: 1rem;
-      margin: 0 -1rem 1rem -1rem;
+      @include cardHeader;
     }
 
     .mobile-date {
@@ -461,7 +452,7 @@ export default {
       order: 2;
 
       @media (min-width: 420px) {
-        oreder: 1;
+        order: 1;
       }
     }
 
