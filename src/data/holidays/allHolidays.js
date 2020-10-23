@@ -31,33 +31,15 @@ const setDateForVariableHoliday = (holidays, year) => {
   return holidaysWithYear;
 };
 
-const addLeadingZeroesToDate = (holidays) => {
-  const holidaysWithZeroes = holidays.map((day) => {
-    const dayWithZeroes = JSON.parse(JSON.stringify(day));
-    const _day = dayWithZeroes.date.day;
-    const _month = dayWithZeroes.date.month;
-    const _dayZero = _day < 10
-      ? `0${_day}`
-      : _day.toString();
-
-    const _monthZero = _month < 10
-      ? `0${_month}`
-      : _month.toString();
-
-    dayWithZeroes.date.day = _dayZero;
-    dayWithZeroes.date.month = _monthZero;
-
-    return dayWithZeroes;
-  });
-
-  return holidaysWithZeroes;
-};
+const convertNumberToStringWithLeadingZero = (number) => (number < 10
+  ? `0${number}`
+  : number.toString());
 
 const addSortDates = (holidays) => {
   const holidaysWithYear = holidays.map((day) => {
     const dayWithSortDate = day;
-    const _day = dayWithSortDate.date.day;
-    const _month = dayWithSortDate.date.month;
+    const _day = convertNumberToStringWithLeadingZero(dayWithSortDate.date.day);
+    const _month = convertNumberToStringWithLeadingZero(dayWithSortDate.date.month);
     const _year = dayWithSortDate.date.year;
 
     dayWithSortDate.sortDate = `${_year}${_month}${_day}`;
@@ -93,13 +75,9 @@ const getHolidaysForYear = (year) => {
   const constantHolidaysWithYear = addYearToHolidays(constantHolidays, year);
   const variableHolidaysWithYear = setDateForVariableHoliday(variableHolidaysForYear, year);
 
-  // add leading zeroes to date and stringify
-  const constantWithLeadingZeroDates = addLeadingZeroesToDate(constantHolidaysWithYear);
-  const variableWithLeadingZeroDates = addLeadingZeroesToDate(variableHolidaysWithYear);
-
   // add sort date
-  const constantWithSortDate = addSortDates(constantWithLeadingZeroDates);
-  const variableWithSortDate = addSortDates(variableWithLeadingZeroDates);
+  const constantWithSortDate = addSortDates(constantHolidaysWithYear);
+  const variableWithSortDate = addSortDates(variableHolidaysWithYear);
 
   // add type
   const constantWithType = addType(constantWithSortDate, true);
@@ -120,7 +98,7 @@ const getHolidaysForYear = (year) => {
 };
 
 const getHolidaysForYearAndCanton = (year, canton) => {
-  const yearHolidays = getHolidaysForYear(year);
+  const yearHolidays = JSON.parse(JSON.stringify(getHolidaysForYear(year)));
 
   const filtered = yearHolidays.filter((day) => {
     const cantonKeys = Object.keys(day.cantons);
