@@ -40,11 +40,15 @@ const findSiblingFreeDays = (options) => {
 
   // iterate backward in time
   while (keepLoop) {
-    const nextDayToCheck = _daysBefore[_daysBefore.length - 1];
+    if (_daysBefore.length > 1) {
+      const nextDayToCheck = _daysBefore[_daysBefore.length - 1];
 
-    if (nextDayToCheck.free || nextDayToCheck.holiday) {
-      beforeIndex--;
-      _daysBefore.pop();
+      if (nextDayToCheck.free || nextDayToCheck.holiday) {
+        beforeIndex--;
+        _daysBefore.pop();
+      } else {
+        keepLoop = false;
+      }
     } else {
       keepLoop = false;
     }
@@ -52,11 +56,15 @@ const findSiblingFreeDays = (options) => {
 
   // iterate forward in time
   while (keepLoop) {
-    const nextDayToCheck = _daysAfter[0];
+    if (_daysAfter.length > 0) {
+      const nextDayToCheck = _daysAfter[0];
 
-    if (nextDayToCheck.free || nextDayToCheck.holiday || nextDayToCheck.takeFree) {
-      afterIndex++;
-      _daysBefore.shift();
+      if (nextDayToCheck.free || nextDayToCheck.holiday || nextDayToCheck.takeFree) {
+        afterIndex++;
+        _daysBefore.shift();
+      } else {
+        keepLoop = false;
+      }
     } else {
       keepLoop = false;
     }
@@ -136,11 +144,11 @@ const addDayBeforeAndAfterFreeSiblingDays = (options) => {
         });
 
         if (hasHoliday) {
-          if (!days[beforeIndex - 1].holiday && !days[beforeIndex - 1].free) {
+          if (!days[beforeIndex - 1].holiday && (days[beforeIndex - 1] && !days[beforeIndex - 1].free)) {
             days[beforeIndex - 1].takeFree = true;
           }
 
-          if (!days[afterIndex + 1].holiday && !days[afterIndex + 1].free) {
+          if (!days[afterIndex + 1].holiday && (days[afterIndex + 1] && !days[afterIndex + 1].free)) {
             days[afterIndex + 1].takeFree = true;
           }
         }
