@@ -320,13 +320,15 @@ export default {
   }
 
   .header-infos {
-    padding: 1rem;
+    flex: 1;
+    min-width: 16rem;
+    padding: 1rem 1rem 0;
   }
 
   .button {
     flex-shrink: 0;
     flex-grow: 0;
-    margin: 1rem;
+    margin: 1rem 1rem 0 1rem;
   }
 
   .button-icon {
@@ -335,7 +337,6 @@ export default {
 
   .suggestion-range {
     font-weight: bold;
-    flex-basis: 100%;
   }
 
   .suggestion-free-info-wrapper {
@@ -350,6 +351,7 @@ export default {
   .days-list {
     border-top: 1px solid $shadow-over-background;
     padding: 1rem;
+    margin-top: 1rem;
   }
 
   .day-item {
