@@ -18,6 +18,12 @@ const locales = {
       en: 'Holidays',
       fr: 'Vacances',
       it: 'Feste'
+    },
+    plan: {
+      de: 'Planen',
+      en: 'Plan',
+      fr: 'Plan',
+      it: 'Piano'
     }
   },
   seo: {
@@ -45,6 +51,12 @@ const locales = {
         en: 'List of public holidays throughout Switzerland',
         fr: 'Liste des jours fériés dans toute la Suisse',
         it: 'Elenco dei giorni festivi in ​​tutta la Svizzera'
+      },
+      plan: {
+        de: 'Sag mir in welchem Kanton du arbeitest und an welchen Wochentagen du frei hast, und ich sage dir, an welchen Tagen es sich am meisten lohnt, frei zu nehmen.',
+        en: 'Tell me in which canton you work and on which days of the week you are free, and I will tell you which days it is most worthwhile to take time off.',
+        fr: 'Dis-moi dans quel canton tu travaille et quels jours de la semaine tu es libre, et je te dirai quels jours il vaut le mieux prendre congé.',
+        it: 'Dimmi in quale cantone lavori e in quali giorni della settimana sei libero, e ti dirò in quali giorni vale la pena prendersi una pausa.'
       }
     }
   },
@@ -162,6 +174,136 @@ const locales = {
       en: 'Info',
       fr: 'Infos',
       it: 'Informazioni'
+    }
+  },
+  plan: {
+    description: {
+      de: 'Sag mir in welchem Kanton du arbeitest und an welchen Wochentagen du frei hast, und ich sage dir, an welchen Tagen es sich am meisten lohnt, frei zu nehmen.',
+      en: 'Tell me in which canton you work and on which days of the week you are free, and I will tell you which days it is most worthwhile to take time off.',
+      fr: 'Dis-moi dans quel canton tu travaille et quels jours de la semaine tu es libre, et je te dirai quels jours il vaut le mieux prendre congé.',
+      it: 'Dimmi in quale cantone lavori e in quali giorni della settimana sei libero, e ti dirò in quali giorni vale la pena prendersi una pausa.'
+    },
+    chooseCanton: {
+      de: 'Wähle einen Kanton',
+      en: 'Choose a canton',
+      fr: 'Choisi un canton',
+      it: 'Scegli un cantone'
+    },
+    chooseFreeDays: {
+      de: 'Deine freien Wochentage',
+      en: 'Your free days of the week',
+      fr: 'Tes jours libre de la semaine',
+      it: 'I tuoi giorni liberi della settimana'
+    },
+    canton: {
+      de: 'Kanton',
+      en: 'Canton',
+      fr: 'Canton',
+      it: 'Cantone'
+    },
+    errorTooManyDays: {
+      de: 'Du hast zu viele freie Tage gewählt. Du kannst maximal {maxDays} wählen.',
+      en: 'You chose too many days off. You can choose a maximum of {maxDays}.',
+      fr: 'Tu as choisi trop de jours de congé. Tu peux choisir un maximum de {maxDays}.',
+      it: 'Hai scelto troppi giorni di ferie. Puoi scegliere un massimo di {maxDays}.'
+    },
+    options: {
+      de: 'Optionen',
+      en: 'Options',
+      fr: 'Options',
+      it: 'Opzioni'
+    },
+    onlyOfficial: {
+      de: 'Nur offizielle Feiertage',
+      en: 'Official holidays only',
+      fr: 'Seuls les jours fériés officiellement reconnus',
+      it: 'Solo i giorni festivi ufficialmente riconosciuti'
+    },
+    onlyAllCanton: {
+      de: 'Nur Feiertage, welche im ganzen Kanton gelten',
+      en: 'Only public holidays that are valid for the whole canton',
+      fr: 'Seuls les jours fériés valables dans tout le canton',
+      it: 'Solo i giorni festivi validi in tutto il cantone'
+    },
+    suggestions: {
+      de: 'Vorschläge',
+      en: 'Suggestions',
+      fr: 'Propositions',
+      it: 'Proposte'
+    },
+    takeFreeSingular: {
+      de: '1 Tag frei nehmen',
+      en: 'Take 1 day off',
+      fr: 'Prendre 1 jour de congé',
+      it: 'Prenditi 1 giorno libero'
+    },
+    takeFreePluar: {
+      de: '{days} Tage frei nehmen',
+      en: 'Take {days} days off',
+      fr: 'Prendre {days} jours de congé',
+      it: 'Prenditi {days} giorni libero'
+    },
+    freeDays: {
+      de: '{days} Tage frei',
+      en: '{days} days off',
+      fr: '{days} jours de congé',
+      it: '{days} giorni di riposo'
+    },
+    takeFree: {
+      de: 'Frei nehmen',
+      en: 'Take off',
+      fr: 'Prendre congé',
+      it: 'Prenditi riposo'
+    },
+    freeDay: {
+      de: 'Freier Tag',
+      en: 'Free day',
+      fr: 'Jour congé',
+      it: 'Giorno libero'
+    },
+    days: {
+      monday: {
+        de: 'Mo',
+        en: 'Mon',
+        fr: 'Lun',
+        it: 'Lun'
+      },
+      tuesday: {
+        de: 'Di',
+        en: 'Tue',
+        fr: 'Mar',
+        it: 'Mar'
+      },
+      wednesday: {
+        de: 'Mi',
+        en: 'Wed',
+        fr: 'Mer',
+        it: 'Mer'
+      },
+      thursday: {
+        de: 'Do',
+        en: 'Thu',
+        fr: 'Jeu',
+        it: 'Gio'
+      },
+      friday: {
+        de: 'Fr',
+        en: 'Fri',
+        fr: 'Ven',
+        it: 'Ven'
+      },
+      saturday: {
+        de: 'Sa',
+        en: 'Sat',
+        fr: 'Sam',
+        it: 'Sab'
+      },
+      sunday: {
+        de: 'So',
+        en: 'Sun',
+        fr: 'Dim',
+        it: 'Do'
+      }
     }
   }
 };
