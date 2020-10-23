@@ -49,36 +49,52 @@
     </b-field>
 
     <div
-      class="results block"
+      class="block"
       v-if="suggestions.length > 0"
     >
       <h2
         class="title is-4"
       >{{$t('plan.suggestions')}}</h2>
 
-      <ul class="suggestions-list">
+      <ul>
         <li
           class="suggestion-item"
           v-for="(suggestion, index) in suggestions"
           :key="index"
         >
           <div class="suggestion-header">
-            <div class="suggestion-range">
-              {{ formatDate(suggestion.days[0].dateObject).date }} - {{ formatDate(suggestion.days[suggestion.days.length - 1].dateObject).date }}
+            <div class="header-infos">
+              <div class="suggestion-range">
+                {{ formatDate(suggestion.days[0].dateObject).date }} - {{ formatDate(suggestion.days[suggestion.days.length - 1].dateObject).date }}
+              </div>
+
+              <div class="suggestion-free-info-wrapper">
+                <div class="suggestion-total-free-info">
+                  {{$t('plan.freeDays', {days: suggestion.totalFree})}}
+                </div>
+
+                <div>
+                  <span v-if="suggestion.takeFree === 1">
+                    {{$t('plan.takeFreeSingular', {days: suggestion.takeFree})}}
+                  </span>
+                  <span v-if="suggestion.takeFree > 1">
+                    {{$t('plan.takeFreePluar', {days: suggestion.takeFree})}}
+                  </span>
+                </div>
+              </div>
             </div>
 
-            <div class="suggestion-total-free-info">
-              {{$t('plan.freeDays', {days: suggestion.totalFree})}}
-            </div>
-
-            <div class="suggestion-take-free-info">
-              <span v-if="suggestion.takeFree === 1">
-                {{$t('plan.takeFreeSingular', {days: suggestion.takeFree})}}
+            <button
+              class="button"
+            >
+              <span class="button-icon">
+                <b-icon
+                  icon="plus"
+                  size="is-small"
+                ></b-icon>
               </span>
-              <span v-if="suggestion.takeFree > 1">
-                {{$t('plan.takeFreePluar', {days: suggestion.takeFree})}}
-              </span>
-            </div>
+              <span>{{$t('plan.addToCalendar')}}</span>
+            </button>
 
           </div>
 
@@ -108,15 +124,7 @@
               </span>
 
               <span class="day-info">
-
-                <span class="day-weekday">
-                  {{formatDate(day.dateObject).weekday}}
-                </span>
-
-                <span class="day-date">
-                  {{formatDate(day.dateObject).date}}
-                </span>
-
+                {{formatDate(day.dateObject).weekday}} {{formatDate(day.dateObject).date}}
               </span>
 
             </li>
@@ -274,34 +282,55 @@ export default {
 
 .page-plan {
   .block {
-    margin-top: 3rem;
+    margin-top: 2.5rem;
   }
 
   .block.options .field.has-addons {
     display: block;
   }
 
+  .day-selector.block .field.has-addons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -1rem;
+
+    label.b-checkbox  {
+      margin-bottom: 1rem;
+    }
+  }
+
   .block.options label.b-checkbox {
     width: 100%;
   }
 
-  .results {
-
-  }
-
-  .suggestions-list {
-
-  }
-
   .suggestion-item {
     @include card;
-    max-width: 30rem;
+    max-width: 40rem;
+    padding: 0;
   }
 
   .suggestion-header {
     @include cardHeader;
-    justify-content: flex-start;
-    padding: 0 1rem 1rem;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    border-bottom: none;
+  }
+
+  .header-infos {
+    padding: 1rem;
+  }
+
+  .button {
+    flex-shrink: 0;
+    flex-grow: 0;
+    margin: 1rem;
+  }
+
+  .button-icon {
+    padding-right: .7rem;
   }
 
   .suggestion-range {
@@ -309,45 +338,81 @@ export default {
     flex-basis: 100%;
   }
 
+  .suggestion-free-info-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .suggestion-total-free-info {
     padding-right: 1rem;
   }
 
-  .suggestion-take-free-info {
-
-  }
-
   .days-list {
-
+    border-top: 1px solid $shadow-over-background;
+    padding: 1rem;
   }
 
   .day-item {
+    padding: .5rem 0 .5rem 3rem;
+    position: relative;
+  }
 
+  .day-item:before {
+    content: '';
+    position: absolute;
+    left: 1rem;
+    top: 0;
+    width: .2rem;
+    height: 100%;
+    background-color: $planer-results-dimmed-grey;
+  }
+
+  .day-item:first-child:before {
+    top: 50%;
+    height: 50%;
+  }
+
+  .day-item:last-child:before {
+    bottom: 50%;
+    height: 50%;
+  }
+
+  .day-item:first-child:after,
+  .day-item:last-child:after {
+    content: '';
+    position: absolute;
+    left: .6rem;
+    width: 1rem;
+    height: 1rem;
+    background-color: $planer-results-dimmed-grey;
+    border-radius: 60%;
+  }
+
+  .day-item:first-child:after {
+    top: calc(50% - .5rem);
+  }
+
+  .day-item:last-child:after {
+    bottom: calc(50% - .5rem);
   }
 
   .day-title {
-
+    font-size: 1.3rem;
+    display: block;
   }
 
   .day-title.title-primary {
-
+    color: $planer-results-pearl-chain;
   }
 
   .day-title.title-secondary {
-
+    color: $planer-results-dimmed-grey;
   }
 
   .day-info {
-
+    color: $planer-results-dimmed-grey;
   }
 
-  .day-weekday {
-
-  }
-
-  .day-date {
-
-  }
 }
 
 </style>
