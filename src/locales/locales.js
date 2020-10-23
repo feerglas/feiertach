@@ -267,6 +267,18 @@ const locales = {
       fr: 'Dans le calendrier',
       it: 'Nel calendario'
     },
+    hidePastSuggestions: {
+      de: 'Frühere ausblenden',
+      en: 'Hide previous',
+      fr: 'Masquer les précédents',
+      it: 'Nascondi precedenti'
+    },
+    showPastSuggestions: {
+      de: 'Frühere einblenden',
+      en: 'Show previous',
+      fr: 'Afficher les précédents',
+      it: 'Mostra precedenti'
+    },
     days: {
       monday: {
         de: 'Mo',
