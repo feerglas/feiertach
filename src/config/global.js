@@ -1,4 +1,6 @@
 const config = {
+  planerDaySpanToIncludeForYearBeforeFirstAndAfterLast: 7,
+  planerMaxFreeDays: 3,
   years: [
     2020,
     2021,
