@@ -42,3 +42,20 @@
 @mixin maxWidth() {
   max-width: calc(960px - (2 * #{$gap}));
 }
+
+@mixin card() {
+  border-radius: .3rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  box-shadow: 0px 0px 10px $shadow-over-background;
+}
+
+@mixin cardHeader() {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  border-bottom: 1px solid $shadow-over-background;
+  padding-bottom: 1rem;
+  margin: 0 -1rem 1rem -1rem;
+}
