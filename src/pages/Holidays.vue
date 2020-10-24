@@ -1,7 +1,7 @@
 <template>
   <Layout>
 
-    <h1 class="title">{{$t('navigation.holidays')}}</h1>
+    <h1 class="title">{{$t('cantons.allSwitzerland')}}</h1>
 
     <YearsSelector
       :holidays="this.$page.allHoliday.edges[0].node.holidays"
