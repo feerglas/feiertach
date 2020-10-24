@@ -124,6 +124,12 @@ const locales = {
       en: 'Show previous',
       fr: 'Afficher les précédents',
       it: 'Mostra precedenti'
+    },
+    noHolidays: {
+      de: 'Keine Feiertage gefunden',
+      en: 'No holidays found',
+      fr: 'Aucun jour férié trouvé',
+      it: 'Nessuna vacanza trovata'
     }
   },
   cantons: {
@@ -250,6 +256,12 @@ const locales = {
       en: 'Only public holidays that are valid for the whole canton',
       fr: 'Seuls les jours fériés valables dans tout le canton',
       it: 'Solo i giorni festivi validi in tutto il cantone'
+    },
+    noSuggestions: {
+      de: 'Keine Vorschläge gefunden',
+      en: 'No suggestions found',
+      fr: 'Aucune suggestion trouvée',
+      it: 'Nessun suggerimento trovato'
     },
     suggestions: {
       de: 'Vorschläge',
