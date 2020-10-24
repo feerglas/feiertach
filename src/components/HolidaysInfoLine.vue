@@ -1,6 +1,6 @@
 <template>
   <div class="comp-info-line">
-    <span class="holidays-counter tag is-light">{{holidays.length}} {{$t('navigation.holidays')}}</span>
+    <span class="holidays-counter tag is-light">{{holidays.length}} {{$t('holidays.holidays')}}</span>
 
     <AddHolidays
       :holidays="holidays"
