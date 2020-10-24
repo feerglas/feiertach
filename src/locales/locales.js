@@ -94,10 +94,10 @@ const locales = {
       it: 'Andiamo'
     },
     content2: {
-      de: 'Wähle einen Kanton oder schau dir die Feiertage sämtlicher Kantone an',
-      en: 'Choose a canton or look at the public holidays of all cantons',
-      fr: 'Choisi un canton ou regarde les jours fériés de tous les cantons',
-      it: 'Scegli un cantone o guarda i giorni festivi di tutti i cantoni'
+      de: 'Wähle einen Kanton oder lass dir vom smarten Planer Vorschläge für deine Ferien liefern',
+      en: 'Choose a canton or let the smart planner provide you with suggestions for your vacation',
+      fr: 'Choisi un canton ou laisse le planificateur intelligent te proposer des suggestions pour tes vacances',
+      it: 'Scegli un cantone o lascia che il pianificatore intelligente ti fornisca suggerimenti per la tua vacanza'
     }
   },
   holidays: {
@@ -112,6 +112,18 @@ const locales = {
       en: 'Holidays',
       fr: 'Vacances',
       it: 'Feste'
+    },
+    hidePastSuggestions: {
+      de: 'Frühere ausblenden',
+      en: 'Hide previous',
+      fr: 'Masquer les précédents',
+      it: 'Nascondi precedenti'
+    },
+    showPastSuggestions: {
+      de: 'Frühere einblenden',
+      en: 'Show previous',
+      fr: 'Afficher les précédents',
+      it: 'Mostra precedenti'
     }
   },
   cantons: {
