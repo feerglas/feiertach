@@ -1,4 +1,5 @@
 import {
+  Button,
   Checkbox,
   Field,
   Icon,
@@ -28,6 +29,7 @@ const MyBuefy = {
     config.defaultIconComponent = 'vue-feather-icon-pack';
     config.defaultIconPack = 'ft';
 
+    Vue.use(Button);
     Vue.use(Checkbox);
     Vue.use(Field);
     Vue.use(Icon);
