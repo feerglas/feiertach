@@ -49,12 +49,19 @@
     </b-field>
 
     <div
+      class="no-suggestions"
+      v-if="noResults"
+    >
+      {{$t('plan.noSuggestions')}}
+    </div>
+
+    <div
       class="block suggestions"
       v-if="suggestions.length > 0"
     >
       <h2
         class="title is-4"
-      >{{$t('plan.suggestions')}}</h2>
+      >{{$t('plan.suggestions')}} ({{suggestions.length}})</h2>
 
       <b-button
         type="is-light"
@@ -221,6 +228,9 @@ export default {
     currentLocaleString() {
       return `${this.$i18n.locale}-${this.$i18n.locale.toUpperCase()}`;
     },
+    noResults() {
+      return this.suggestions.length < 1 && this.currentCanton && this.currentDays.length <= globalConfig.planerMaxFreeDays;
+    },
     sortedCantons() {
       return sortCantons(this.$page.allCanton.edges, this.$i18n.locale);
     }
@@ -316,13 +326,15 @@ export default {
 
       this.setSuggestions();
     }
-  },
-  mounted() {
-
-    // TODO: remove for PROD
-    this.currentCanton = this.$page.allCanton.edges[0].node;
-    this.cantonChanged();
   }
+
+  /**
+   * mounted() {
+   *   // TODO: remove for PROD
+   *   this.currentCanton = this.$page.allCanton.edges[0].node;
+   *   this.cantonChanged();
+   * }
+   */
 };
 
 </script>
@@ -331,6 +343,11 @@ export default {
 @import "../styles/styles.scss";
 
 .page-plan {
+  .no-suggestions {
+    @include card;
+    margin: 2rem 0;
+  }
+
   .block {
     margin-top: 2.5rem;
   }
