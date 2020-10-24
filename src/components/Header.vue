@@ -28,7 +28,9 @@ export default {
       const _navItems = Object.keys(locales.navigation);
       const currentRoute = this.$route.path;
       const homeRoute = `/${this.$i18n.locale}/`;
+      const holidaysRoute = `${homeRoute}holidays`;
       const isHomeRoute = currentRoute === homeRoute;
+      const isHolidaysRoute = currentRoute === holidaysRoute;
       const navItems = _navItems.map((item) => {
         const navItem = {
           isActive: false,
@@ -41,6 +43,14 @@ export default {
 
           if (isHomeRoute) {
             navItem.isActive = true;
+          }
+        } else if (item === 'cantons') {
+          if (isHolidaysRoute) {
+            navItem.isActive = true;
+          } else {
+            if (currentRoute.indexOf(`/${item}/`) !== -1) {
+              navItem.isActive = true;
+            }
           }
         } else {
           if (currentRoute.indexOf(`/${item}/`) !== -1) {
