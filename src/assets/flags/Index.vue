@@ -23,6 +23,7 @@ import sankt_gallen from './icons/sankt_gallen.vue';
 import schaffhausen from './icons/schaffhausen.vue';
 import schwyz from './icons/schwyz.vue';
 import solothurn from './icons/solothurn.vue';
+import switzerland from './icons/switzerland.vue';
 import tessin from './icons/tessin.vue';
 import thurgau from './icons/thurgau.vue';
 import uri from './icons/uri.vue';
@@ -53,6 +54,7 @@ export default {
     schaffhausen,
     schwyz,
     solothurn,
+    switzerland,
     tessin,
     thurgau,
     uri,
