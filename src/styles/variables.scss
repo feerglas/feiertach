@@ -18,13 +18,6 @@ $navigation-background-active: $red-light;
 $navigation-text: white;
 $navigation-text-active: white;
 
-$button-background: $primary;
-$button-background-hover: lighten($primary, 2%);
-$button-border: lighten($primary, 10%);
-$button-border-hover: darken($primary, 25%);
-$button-text: white;
-$button-text-hover: white;
-
 $select-background: white;
 $select-border: darken(white, 50%);
 $select-text: $text;
