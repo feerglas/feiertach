@@ -263,7 +263,7 @@ const locales = {
       fr: 'Prendre 1 jour de congé',
       it: 'Prenditi 1 giorno libero'
     },
-    takeFreePluar: {
+    takeFreePlural: {
       de: '{days} Tage frei nehmen',
       en: 'Take {days} days off',
       fr: 'Prendre {days} jours de congé',
