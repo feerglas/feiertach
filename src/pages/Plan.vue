@@ -86,7 +86,7 @@
                     {{$t('plan.takeFreeSingular', {days: suggestion.takeFree})}}
                   </span>
                   <span v-if="suggestion.takeFree > 1">
-                    {{$t('plan.takeFreePluar', {days: suggestion.takeFree})}}
+                    {{$t('plan.takeFreePlural', {days: suggestion.takeFree})}}
                   </span>
                 </div>
               </div>
@@ -95,6 +95,7 @@
             <b-button
               class="button add-calendar"
               type="is-primary is-light"
+              @click="handleAddSuggestion(suggestion)"
             >
               <span class="button-icon">
                 <b-icon
@@ -201,6 +202,7 @@
 </page-query>
 
 <script>
+import { addSuggestions } from '../helpers/calendar';
 import DaySelector from '../components/DaySelector.vue';
 import { getFormattedDate } from '../helpers/date';
 import getMetaInfo from '../helpers/meta';
@@ -276,6 +278,25 @@ export default {
     },
     formatDate(dateObject) {
       return getFormattedDate(dateObject, this.currentLocaleString);
+    },
+    handleAddSuggestion(suggestion) {
+      const takeFreeString = suggestion.takeFree > 1
+        ? this.$t('plan.takeFreePlural', {
+          days: suggestion.takeFree
+        })
+        : this.$t('plan.takeFreeSingular');
+
+      const strings = {
+        copyright: this.$t('holiday.copyright'),
+        holidays: this.$t('holidays.holidays'),
+        takeFree: takeFreeString,
+        takeFreeTitle: this.$t('plan.takeFree'),
+        totalFree: this.$t('plan.freeDays', {
+          days: suggestion.totalFree
+        })
+      };
+
+      addSuggestions(suggestion, strings, this.currentLocale, this.currentLocaleString);
     },
     handleFilter(days) {
       this.currentDays = days;
