@@ -26,6 +26,14 @@
       :canton="this.$page.canton.key.toUpperCase()"
     />
 
+    <b-button
+      type="is-light"
+      class="button"
+      @click="togglePastHolidays"
+    >
+      {{this.$data.pastHolidaysVisible ? $t('holidays.hidePastSuggestions') : $t('holidays.showPastSuggestions')}}
+    </b-button>
+
     <HolidaysTable
       :holidays="$data.filteredHolidays"
       :next-holiday="$data.nextHoliday"
@@ -94,6 +102,7 @@ import {
   getLastHolidayOfEachYear,
   getNextHolidayAfterDate
 } from '../helpers/date';
+import filterPast from '../helpers/holidaysFilterPast';
 import Flag from '../assets/flags/Index.vue';
 import getMetaInfo from '../helpers/meta';
 import HolidaysInfoLine from '../components/HolidaysInfoLine.vue';
@@ -109,9 +118,12 @@ export default {
   },
   data() {
     return {
+      allHolidays: [],
       filteredHolidays: [],
       lastHolidayOfEachYear: {},
-      nextHoliday: false
+      nextHoliday: false,
+      pastHolidaysVisible: false,
+      upcomingHolidays: []
     };
   },
   metaInfo() {
@@ -129,9 +141,22 @@ export default {
   },
   methods: {
     handleFilter(holidays) {
-      this.filteredHolidays = holidays;
-      this.nextHoliday = getNextHolidayAfterDate(this.filteredHolidays);
-      this.lastHolidayOfEachYear = getLastHolidayOfEachYear(this.filteredHolidays);
+      this.allHolidays = holidays;
+      this.upcomingHolidays = filterPast(holidays);
+      this.nextHoliday = getNextHolidayAfterDate(holidays);
+      this.lastHolidayOfEachYear = getLastHolidayOfEachYear(holidays);
+
+      this.setHolidays();
+    },
+    setHolidays() {
+      this.filteredHolidays = this.pastHolidaysVisible
+        ? this.allHolidays
+        : this.upcomingHolidays;
+    },
+    togglePastHolidays() {
+      this.pastHolidaysVisible = !this.pastHolidaysVisible;
+
+      this.setHolidays();
     }
   }
 };
