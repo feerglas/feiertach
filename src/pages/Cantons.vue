@@ -28,6 +28,29 @@
         </g-link>
       </li>
     </ul>
+
+    <h1 class="title">{{$t('cantons.allSwitzerland')}}</h1>
+
+    <ul class="list">
+      <li
+        class="list-item"
+      >
+        <g-link
+          class="link"
+          :to="$tp('holidays')"
+        >
+          <Flags name="switzerland" />
+          <span class="name-wrapper">
+            <span class="name">
+              {{$t('cantons.switzerland')}}
+            </span>
+            <span class="tag is-light">
+              {{swissHolidaysCount}}
+            </span>
+          </span>
+        </g-link>
+      </li>
+    </ul>
   </Layout>
 </template>
 
@@ -48,12 +71,24 @@
         }
       }
     }
+    allHoliday {
+      edges {
+        node {
+          holidays {
+            date {
+              year
+            }
+          }
+        }
+      }
+    }
   }
 </page-query>
 
 <script>
 import Flags from '../assets/flags/Index.vue';
 import getMetaInfo from '../helpers/meta';
+import globalConfig from '../config/global';
 import sortCantons from '../helpers/sort';
 
 export default {
@@ -66,6 +101,13 @@ export default {
     },
     sortedCantons() {
       return sortCantons(this.$page.allCanton.edges, this.$i18n.locale);
+    },
+    swissHolidaysCount() {
+      const year = globalConfig.years[0];
+      const allHolidays = this.$page.allHoliday.edges[0].node.holidays;
+      const filtered = allHolidays.filter((holiday) => holiday.date.year === year);
+
+      return filtered.length;
     }
   },
   metaInfo() {
@@ -87,6 +129,10 @@ export default {
 @import "../styles/styles.scss";
 
 .page-cantons {
+  .title:not(:nth-child(1)) {
+    margin-top: 3rem;
+  }
+
   .list {
     margin-top: -1.3rem;
   }
