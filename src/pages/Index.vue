@@ -24,7 +24,7 @@
         <p>{{$t("home.content2")}}:</p>
         <ul>
           <li><g-link to="/cantons/">{{$t("navigation.cantons")}}</g-link></li>
-          <li><g-link to="/holidays/">{{$t("navigation.holidays")}}</g-link></li>
+          <li><g-link to="/plan/">{{$t("navigation.plan")}}</g-link></li>
         </ul>
       </div>
     </div>
