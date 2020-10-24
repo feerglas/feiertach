@@ -13,12 +13,6 @@ const locales = {
       fr: 'Cantons',
       it: 'Cantoni'
     },
-    holidays: {
-      de: 'Feiertage',
-      en: 'Holidays',
-      fr: 'Vacances',
-      it: 'Feste'
-    },
     plan: {
       de: 'Planen',
       en: 'Plan',
@@ -112,6 +106,26 @@ const locales = {
       en: 'Cantons',
       fr: 'Cantons',
       it: 'Cantoni'
+    },
+    holidays: {
+      de: 'Feiertage',
+      en: 'Holidays',
+      fr: 'Vacances',
+      it: 'Feste'
+    }
+  },
+  cantons: {
+    allSwitzerland: {
+      de: 'Ganze Schweiz',
+      en: 'All of Switzerland',
+      fr: 'Toute la Suisse',
+      it: 'Tutta la Svizzera'
+    },
+    switzerland: {
+      de: 'Schweiz',
+      en: 'Switzerland',
+      fr: 'Suisse',
+      it: 'Svizzera'
     }
   },
   holiday: {
