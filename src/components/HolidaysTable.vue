@@ -1,7 +1,12 @@
 <template>
 
   <div class="comp-table">
-
+    <div
+      class="no-results"
+      v-if="holidays.length < 1"
+    >
+      {{$t('holidays.noHolidays')}}
+    </div>
     <!-- CUSTOM LAYOUT FOR MOBILE -->
     <div class="is-block-mobile is-hidden-tablet content">
 
@@ -377,6 +382,11 @@ export default {
 <style lang="scss">
 @import "../styles/styles.scss";
 .comp-table {
+  .no-results {
+    @include card;
+    margin: 2rem 0;
+  }
+
   .b-table .table-wrapper {
     overflow: visible;
   }
