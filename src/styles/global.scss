@@ -30,25 +30,12 @@ a:focus {
   color: $link-hover;
 }
 
-.button {
-  background-color: $button-background;
-  border-color: $button-border;
-  color: $button-text;
-}
-
-button.button:hover,
-button.button:focus {
-  color: $button-text-hover;
-  border-color: $button-border-hover;
-  background-color: $button-background-hover;
-}
-
 .control {
-  color: $select-text;
+  // color: $select-text;
 }
 
 .select select {
-  background-color: $select-background;
-  border-color: $select-border;
-  color: currentColor;
+  // background-color: $select-background;
+  // border-color: $select-border;
+  // color: currentColor;
 }
