@@ -1,6 +1,7 @@
 <template>
-  <button
+  <b-button
     class="button"
+    type="is-primary is-light"
     @click="addAllEvents(holidays, canton)"
   >
     <span class="button-icon">
@@ -10,7 +11,7 @@
       ></b-icon>
     </span>
     <span>{{$t('holiday.addAllToCalendar')}}</span>
-  </button>
+  </b-button>
 </template>
 
 <script>

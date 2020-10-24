@@ -112,8 +112,9 @@
               Wikipedia
             </a>
 
-            <button
+            <b-button
               class="button"
+              type="is-primary is-light"
               @click="addSingleEvent(item)"
             >
               <span class="button-icon">
@@ -123,7 +124,7 @@
                 ></b-icon>
               </span>
               <span>{{$t('holiday.addToCalendar')}}</span>
-            </button>
+            </b-button>
           </div>
 
           <div
