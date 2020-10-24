@@ -56,12 +56,13 @@
         class="title is-4"
       >{{$t('plan.suggestions')}}</h2>
 
-      <button
+      <b-button
+        type="is-light"
         class="button toggle-past"
         @click="togglePastSuggestions"
       >
         {{this.$data.pastSuggestionsVisible ? $t('plan.hidePastSuggestions') : $t('plan.showPastSuggestions')}}
-      </button>
+      </b-button>
 
       <ul class="suggestions-list">
         <li
@@ -91,8 +92,9 @@
               </div>
             </div>
 
-            <button
+            <b-button
               class="button add-calendar"
+              type="is-primary is-light"
             >
               <span class="button-icon">
                 <b-icon
@@ -101,7 +103,7 @@
                 ></b-icon>
               </span>
               <span>{{$t('plan.addToCalendar')}}</span>
-            </button>
+            </b-button>
 
           </div>
 
