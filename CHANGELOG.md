@@ -1,3 +1,52 @@
+# [1.17.0](https://github.com/feerglas/feiertach/compare/v1.16.0...v1.17.0) (2020-10-24)
+
+
+### Bug Fixes
+
+* add method to sort cantons ([fb53c09](https://github.com/feerglas/feiertach/commit/fb53c09d37e7766f045473f17bd019b8decd150a))
+* add translations for add to calendar ([346e63b](https://github.com/feerglas/feiertach/commit/346e63b2cd4edf55861be4ccc62dbc429cee7d30))
+* fix error with accessing potentially empty object ([316b2a0](https://github.com/feerglas/feiertach/commit/316b2a0c36fc0592d58f22175918b46a1e9b9639))
+* fix styling issues of item header ([a31c409](https://github.com/feerglas/feiertach/commit/a31c4097bf6b3cb90821f1605ef5f1cdade4dec8))
+* fix text for home, add translations for hiding past holidays ([d3bdf27](https://github.com/feerglas/feiertach/commit/d3bdf277e49567b9999b57da026e1124837b02c0))
+* fix typo ([4de2fcd](https://github.com/feerglas/feiertach/commit/4de2fcdb28f560c08e010929d039c8ad619b1e57))
+* import button ([37cbd82](https://github.com/feerglas/feiertach/commit/37cbd828f089291d481ac768bffbd3cd118fca9a))
+* import tools styles ([deb483a](https://github.com/feerglas/feiertach/commit/deb483a4cf45fda4508428de9902ceb2604e9009))
+* make options computed ([d8c3310](https://github.com/feerglas/feiertach/commit/d8c331093135bfcbd15e1cc2ca31f41d6ef018c6))
+* make sure cantons is active item when all swiss holidays is active ([1590c29](https://github.com/feerglas/feiertach/commit/1590c29a23d951ec58353d87f83f1787652a73c5))
+* remove button overwrites for buttons ([035c3e5](https://github.com/feerglas/feiertach/commit/035c3e5f511b081b852040f6b5c2fd9f43435b98))
+* remove variables for button colors ([7b27d31](https://github.com/feerglas/feiertach/commit/7b27d31f7f55f34394810259677237594ab0d712))
+* set correct title ([69e4eec](https://github.com/feerglas/feiertach/commit/69e4eec21a4eb7714e70107c0b16e89797e9a5a0))
+* use buefy button ([6c84c38](https://github.com/feerglas/feiertach/commit/6c84c38fa2e9017743ed96451d8ebe3aabfca45f))
+* use buefy button ([0162737](https://github.com/feerglas/feiertach/commit/01627370b505aab4b09464644b8d9d902f97c75e))
+* use correct locale key ([e71f815](https://github.com/feerglas/feiertach/commit/e71f815d01430da5ea1773201f5d30c8ec380704))
+
+
+### Features
+
+* add basic styling for planer ([6f5ffe2](https://github.com/feerglas/feiertach/commit/6f5ffe2e1adc342391c279cbee7726993c9a8780))
+* add button to toggle past holidays ([d960173](https://github.com/feerglas/feiertach/commit/d9601731eeb7a80c315ed0cee2ceec9a1b371f6a))
+* add config for planer ([a02686f](https://github.com/feerglas/feiertach/commit/a02686f898020af61b556811201cdc838eec8dad))
+* add day selector ([cd3defc](https://github.com/feerglas/feiertach/commit/cd3defccd18fd035b946e30fe800e52c827fd3af))
+* add flag for switzerland ([ee93a97](https://github.com/feerglas/feiertach/commit/ee93a9714ece9d73af82da1caefb2705b53b7baa))
+* add flag for switzerland ([266fd0e](https://github.com/feerglas/feiertach/commit/266fd0e6ee3b5186b48cc62581471744b442fb3b))
+* add functionality to toggle past suggestions ([984ba22](https://github.com/feerglas/feiertach/commit/984ba22b995d418e26ffd2655871db438d497632))
+* add helper to add suggestions to calendar ([ff6a32e](https://github.com/feerglas/feiertach/commit/ff6a32e9d723540ca8dd79dc34a0f45073097108))
+* add item for switzerland ([e3829f0](https://github.com/feerglas/feiertach/commit/e3829f0b45bbcfae05890e2da13a762b2ebf3d50))
+* add message if no holidays are found ([79213fd](https://github.com/feerglas/feiertach/commit/79213fd14c2957ddd7aa753720411115820afb0d))
+* add message if no suggestions are found ([65c4f5d](https://github.com/feerglas/feiertach/commit/65c4f5dc7a7ee1e81382fdd24baefebe851b29a1))
+* add method to add suggestions to calendar ([96cbfc5](https://github.com/feerglas/feiertach/commit/96cbfc5b1c598bd012abec9b6f9322c96a02ddef))
+* add method to filter out past suggestions ([092075d](https://github.com/feerglas/feiertach/commit/092075da59bd82224aac0b700daceba2a11f1283))
+* add method to filter past holidays ([bd836df](https://github.com/feerglas/feiertach/commit/bd836df11f330a945eb67b8f1b2cd842aec2f4a2))
+* add methods for business logic of planer ([fba3f23](https://github.com/feerglas/feiertach/commit/fba3f23346bb0b810c53a2a14224c22d52d3caa0))
+* add methods for business logic of planer ([9f119be](https://github.com/feerglas/feiertach/commit/9f119be241e9493bb1f0e82a5b694449f3ebc2fa))
+* add planer to home ([f74ae5b](https://github.com/feerglas/feiertach/commit/f74ae5b283ae21511ff0f989e1664d579133bc07))
+* add strings for no suggestions and no holidays found ([7034fbf](https://github.com/feerglas/feiertach/commit/7034fbff6a107f58dd6287ac1e71d695428aacc2))
+* add strings for swiss holidays section ([b7c3159](https://github.com/feerglas/feiertach/commit/b7c31598239a5bdeae232b5fbb4c0b7a3a3f37de))
+* add translations for planer ([bb23547](https://github.com/feerglas/feiertach/commit/bb235471230005d365557351498d9f58abcf89ae))
+* add translations for toggle past suggestions button ([8c051f9](https://github.com/feerglas/feiertach/commit/8c051f977cf8f5787668a4c2fe76132f74e56827))
+* add view for planer ([1d28909](https://github.com/feerglas/feiertach/commit/1d28909c2d8037d99c1cbcfeb9208e9bef83f558))
+* return all suggestions and suggestion with filtered past suggestions ([a3f793d](https://github.com/feerglas/feiertach/commit/a3f793d557d40eef2a138b2119b5d4d92edf9b9c))
+
 # [1.16.0](https://github.com/feerglas/feiertach/compare/v1.15.13...v1.16.0) (2020-10-21)
 
 
