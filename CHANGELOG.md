@@ -1,3 +1,15 @@
+# [1.18.0](https://github.com/feerglas/feiertach/compare/v1.17.0...v1.18.0) (2020-10-26)
+
+
+### Features
+
+* add loader component ([e0bae57](https://github.com/feerglas/feiertach/commit/e0bae57e5d60998dd5de8462e9f0ad6f99e3b84f))
+* add prop to diable ui ([a42de84](https://github.com/feerglas/feiertach/commit/a42de848d38d188aeff9969653c7b6a886a99582))
+* add webworker to do heavy calcualtion stuff ([ca1a74e](https://github.com/feerglas/feiertach/commit/ca1a74e3aa0e6d2bc26acc076bcbbbae516187d7))
+* add worker-plugin to webpack config ([8b6ed0e](https://github.com/feerglas/feiertach/commit/8b6ed0e5055c285fea002fe58300a2992733177f))
+* disable ui and add loader while calculating ([df4977a](https://github.com/feerglas/feiertach/commit/df4977a11f9440a6fe2c462116ba2b948d5727e8))
+* install worker plugin ([2e6dabd](https://github.com/feerglas/feiertach/commit/2e6dabd84068d652f9bf308875873ae20fb32673))
+
 # [1.17.0](https://github.com/feerglas/feiertach/compare/v1.16.0...v1.17.0) (2020-10-24)
 
 
