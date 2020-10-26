@@ -11,6 +11,7 @@
         :placeholder="$t('plan.chooseCanton')"
         v-model="currentCanton"
         @change.native="cantonChanged"
+        :disabled="this.$data.isCalculating"
       >
         <option
           v-for="(canton, index) in sortedCantons"
@@ -25,6 +26,7 @@
     <DaySelector
       class="block"
       @filter="handleFilter"
+      :disable-ui="this.$data.isCalculating"
     />
 
     <b-field
@@ -35,6 +37,7 @@
         class="is-medium"
         v-model="onlyOfficialSelection"
         @change.native="optionsChange"
+        :disabled="this.$data.isCalculating"
       >
         {{$t('plan.onlyOfficial')}}
       </b-checkbox>
@@ -43,10 +46,16 @@
         class="is-medium"
         v-model="onlyAllCantonSelection"
         @change.native="optionsChange"
+        :disabled="this.$data.isCalculating"
       >
         {{$t('plan.onlyAllCanton')}}
       </b-checkbox>
     </b-field>
+
+    <Loader
+      class="circle-loader"
+      v-if="this.$data.isCalculating"
+    />
 
     <div
       class="no-suggestions"
@@ -214,12 +223,13 @@ import DaySelector from '../components/DaySelector.vue';
 import { getFormattedDate } from '../helpers/date';
 import getMetaInfo from '../helpers/meta';
 import globalConfig from '../config/global';
-import planHelper from '../helpers/plan/index';
+import Loader from '../components/Loader.vue';
 import sortCantons from '../helpers/sort';
 
 export default {
   components: {
-    DaySelector
+    DaySelector,
+    Loader
   },
   computed: {
     currentLocale() {
@@ -229,7 +239,7 @@ export default {
       return `${this.$i18n.locale}-${this.$i18n.locale.toUpperCase()}`;
     },
     noResults() {
-      return this.suggestions.length < 1 && this.currentCanton && this.currentDays.length <= globalConfig.planerMaxFreeDays;
+      return this.suggestions.length < 1 && this.currentCanton && this.currentDays.length <= globalConfig.planerMaxFreeDays && !this.isCalculating;
     },
     sortedCantons() {
       return sortCantons(this.$page.allCanton.edges, this.$i18n.locale);
@@ -240,6 +250,7 @@ export default {
       allSuggestions: [],
       currentCanton: undefined,
       currentDays: [],
+      isCalculating: false,
       onlyAllCantonSelection: false,
       onlyOfficialSelection: false,
       pastSuggestionsVisible: false,
@@ -268,19 +279,36 @@ export default {
         return;
       }
 
-      const {
-        all,
-        onlyUpcoming
-      } = planHelper({
+      this.allSuggestions = [];
+      this.upcomingSuggestions = [];
+      this.pastSuggestions = [];
+      this.suggestions = [];
+
+      this.isCalculating = true;
+
+      const mainWorker = new Worker('../helpers/plan/main.worker.js', {
+        type: 'module'
+      });
+
+      mainWorker.postMessage({
         canton: this.currentCanton,
         freeDays: this.currentDays,
         onlyAllCanton: this.onlyAllCantonSelection,
         onlyOfficial: this.onlyOfficialSelection
       });
 
-      this.allSuggestions = all;
-      this.upcomingSuggestions = onlyUpcoming;
-      this.setSuggestions();
+      mainWorker.onmessage = (evt) => {
+        const {
+          all,
+          onlyUpcoming
+        } = evt.data;
+
+        this.allSuggestions = all;
+        this.upcomingSuggestions = onlyUpcoming;
+        this.setSuggestions();
+
+        this.isCalculating = false;
+      };
 
     },
     cantonChanged() {
@@ -346,6 +374,10 @@ export default {
   .no-suggestions {
     @include card;
     margin: 2rem 0;
+  }
+
+  .circle-loader {
+    margin-top: 3rem;
   }
 
   .block {
