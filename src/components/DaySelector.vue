@@ -8,6 +8,7 @@
         :native-value="day.index"
         v-model="daySelection"
         @change.native="handleCheckboxChange(day.index)"
+        :disabled="disableUi"
       >
         {{day.name}}
       </b-checkbox>
@@ -90,7 +91,8 @@ export default {
   mounted() {
     this.$emit('filter', this.daySelection);
   },
-  name: 'DaySelector'
+  name: 'DaySelector',
+  props: ['disableUi']
 };
 
 </script>
