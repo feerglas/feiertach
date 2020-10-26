@@ -1,3 +1,5 @@
+const WorkerPlugin = require('worker-plugin');
+
 module.exports = {
   chainWebpack(config) {
 
@@ -10,6 +12,10 @@ module.exports = {
     svgRule
       .use('vue-svg-loader')
       .loader('vue-svg-loader');
+
+    config
+      .plugin('WorkerPlugin')
+      .use(WorkerPlugin);
   },
   plugins: [
     {
