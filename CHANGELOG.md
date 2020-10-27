@@ -1,3 +1,11 @@
+## [1.18.3](https://github.com/feerglas/feiertach/compare/v1.18.2...v1.18.3) (2020-10-27)
+
+
+### Bug Fixes
+
+* make sure dates are defined before checking if they are the same ([e82a6ce](https://github.com/feerglas/feiertach/commit/e82a6ceff60a763a64182fbecf3b09c9b8cead94))
+* use correct boolean expressions after refactor ([efa08b3](https://github.com/feerglas/feiertach/commit/efa08b38148a9807912a6aa7ca073299680abcf8))
+
 ## [1.18.2](https://github.com/feerglas/feiertach/compare/v1.18.1...v1.18.2) (2020-10-27)
 
 
