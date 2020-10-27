@@ -18,7 +18,6 @@ const getFormattedDate = (dateObject, localeString) => {
 };
 
 const getNextHolidayAfterDate = (holidays, date) => {
-
   const today = date || new Date();
   const thisYear = today.getFullYear();
   const thisMonth = today.getMonth() + 1;
@@ -34,7 +33,15 @@ const getNextHolidayAfterDate = (holidays, date) => {
     const month = parseInt(holiday.date.month, 10);
     const day = parseInt(holiday.date.day, 10);
 
-    if ((year === thisYear && month >= thisMonth && day >= thisDay) || year > thisYear) {
+    const sameYear = year === thisYear;
+    const laterYear = year > thisYear;
+    const laterMonth = month > thisMonth;
+    const sameMonth = month === thisMonth;
+    const laterDay = day >= thisDay;
+
+    const isNext = (sameYear && sameMonth && laterDay) || (sameYear && laterMonth) || (laterYear);
+
+    if (isNext) {
       lastHoliday = holiday;
 
       if (!nextHoliday) {
