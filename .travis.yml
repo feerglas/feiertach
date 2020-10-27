@@ -2,6 +2,7 @@ os: linux
 arch: arm64-graviton2
 virt: lxd
 group: edge
+dist: xenail
 language: node_js
 
 jobs:
