@@ -42,7 +42,7 @@
           >... {{item.description[currentLocale]}}</p>
 
           <b-tooltip
-            v-if="forCanton === 'false'"
+            v-if="forCanton === false"
             multilined
             :label="cantonsForHoliday(item.cantons)"
             dashed
@@ -54,7 +54,7 @@
           </b-tooltip>
 
           <div class="mobile-info-line">
-            <div v-if="forCanton === 'true'">
+            <div v-if="forCanton === true">
               <b-icon
                 :icon="item.official ? 'check' : 'x'"
                 size="is-small"
@@ -72,7 +72,7 @@
               </b-tooltip>
             </div>
 
-            <div v-if="forCanton === 'true'">
+            <div v-if="forCanton === true">
               <b-icon
                 :icon="item.allCanton ? 'check' : 'x'"
                 size="is-small"
@@ -198,7 +198,7 @@
       </b-table-column>
 
       <b-table-column
-        v-if="forCanton === 'false'"
+        v-if="forCanton === false"
         field="cantons.length"
         :label="$t('holidays.cantons')"
         v-slot="props"
@@ -218,7 +218,7 @@
       </b-table-column>
 
       <b-table-column
-        v-if="forCanton === 'true'"
+        v-if="forCanton === true"
         field="official"
         :label="$t('holiday.official')"
         centered
@@ -244,7 +244,7 @@
       </b-table-column>
 
       <b-table-column
-        v-if="forCanton === 'true'"
+        v-if="forCanton === true"
         field="allCanton"
         :label="$t('holiday.allCanton')"
         centered
@@ -320,7 +320,7 @@ export default {
   },
   methods: {
     addSingleEvent(holiday) {
-      const canton = this.forCanton === 'true'
+      const canton = this.forCanton === true
         ? this.$page.canton.key.toUpperCase()
         : false;
 
