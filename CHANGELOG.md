@@ -1,3 +1,10 @@
+## [1.18.1](https://github.com/feerglas/feiertach/compare/v1.18.0...v1.18.1) (2020-10-27)
+
+
+### Bug Fixes
+
+* disable graviton architecture ([5879c1f](https://github.com/feerglas/feiertach/commit/5879c1f80695045c12705d1fe1b5f597a9e9a732))
+
 # [1.18.0](https://github.com/feerglas/feiertach/compare/v1.17.0...v1.18.0) (2020-10-26)
 
 
