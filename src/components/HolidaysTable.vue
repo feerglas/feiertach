@@ -327,6 +327,10 @@ export default {
       addEventForHoliday(holiday, this.currentLocale, this.$t('holiday.copyright'), canton);
     },
     areSameHolidays(holiday1, holiday2) {
+      if (!holiday1 || !holiday2) {
+        return false;
+      }
+
       if (holiday1.date.year !== holiday2.date.year) {
         return false;
       }
