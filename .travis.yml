@@ -1,17 +1,11 @@
 os: linux
-arch: arm64-graviton2
-virt: lxd
-group: edge
-dist: xenail
 language: node_js
-install: skip
 
 jobs:
   include:
   - stage: build and deploy
     if: ((branch = master AND type != pull_request) AND fork = false)
     script:
-    - npm install
     - npm run lint || travis_terminate 1
     - npm run build || travis_terminate 1
     after_success:
