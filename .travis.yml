@@ -1,7 +1,7 @@
 os: linux
-arch: arm64-graviton2
-virt: lxd
-group: edge
+# arch: arm64-graviton2
+# virt: lxd
+# group: edge
 language: node_js
 cache: npm
 
