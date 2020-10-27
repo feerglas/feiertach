@@ -1,34 +1,8 @@
 <template>
-  <Layout>
-
-    <h1 class="title">{{$t('cantons.allSwitzerland')}}</h1>
-
-    <YearsSelector
-      :holidays="this.$page.allHoliday.edges[0].node.holidays"
-      @filter="handleFilter"
-    />
-
-    <HolidaysInfoLine
-      :holidays="$data.filteredHolidays"
-      :canton="false"
-    />
-
-    <b-button
-      type="is-light"
-      class="button"
-      @click="togglePastHolidays"
-    >
-      {{this.$data.pastHolidaysVisible ? $t('holidays.hidePastSuggestions') : $t('holidays.showPastSuggestions')}}
-    </b-button>
-
-    <HolidaysTable
-      :holidays="$data.filteredHolidays"
-      :last-holiday-for-each-year="$data.lastHolidayOfEachYear"
-      :next-holiday="$data.nextHoliday"
-      for-canton="false"
-    />
-
-  </Layout>
+  <Holidays
+    :data="this.$page"
+    :for-canton="false"
+  />
 </template>
 
 <page-query>
@@ -74,31 +48,12 @@
 </page-query>
 
 <script>
-import {
-  getLastHolidayOfEachYear,
-  getNextHolidayAfterDate
-} from '../helpers/date';
-import filterPast from '../helpers/holidaysFilterPast';
 import getMetaInfo from '../helpers/meta';
-import HolidaysInfoLine from '../components/HolidaysInfoLine.vue';
-import HolidaysTable from '../components/HolidaysTable.vue';
-import YearsSelector from '../components/YearsSelector.vue';
+import Holidays from '../components/Holidays.vue';
 
 export default {
   components: {
-    HolidaysInfoLine,
-    HolidaysTable,
-    YearsSelector
-  },
-  data() {
-    return {
-      allHolidays: [],
-      filteredHolidays: [],
-      lastHolidayOfEachYear: {},
-      nextHoliday: false,
-      pastHolidaysVisible: false,
-      upcomingHolidays: []
-    };
+    Holidays
   },
   metaInfo() {
     const lang = this.$i18n.locale;
@@ -110,26 +65,6 @@ export default {
       lang,
       route
     });
-  },
-  methods: {
-    handleFilter(holidays) {
-      this.allHolidays = holidays;
-      this.upcomingHolidays = filterPast(holidays);
-      this.nextHoliday = getNextHolidayAfterDate(holidays);
-      this.lastHolidayOfEachYear = getLastHolidayOfEachYear(holidays);
-
-      this.setHolidays();
-    },
-    setHolidays() {
-      this.filteredHolidays = this.pastHolidaysVisible
-        ? this.allHolidays
-        : this.upcomingHolidays;
-    },
-    togglePastHolidays() {
-      this.pastHolidaysVisible = !this.pastHolidaysVisible;
-
-      this.setHolidays();
-    }
   }
 };
 </script>
