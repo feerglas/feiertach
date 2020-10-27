@@ -14,7 +14,7 @@
   "dependencies": {
     "buefy": "~0.9.3",
     "file-saver": "~2.0.2",
-    "gridsome": "^0.7.0",
+    "gridsome": "~0.7.21",
     "gridsome-plugin-i18n": "~1.6.0",
     "gridsome-plugin-pwa": "0.0.18",
     "ics": "~2.25.0",
