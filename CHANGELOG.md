@@ -1,3 +1,10 @@
+## [1.18.2](https://github.com/feerglas/feiertach/compare/v1.18.1...v1.18.2) (2020-10-27)
+
+
+### Bug Fixes
+
+* fix logic in finding next day in holidays ([3656638](https://github.com/feerglas/feiertach/commit/36566381330dc62564f02571ffabe13a38aa6f0e))
+
 ## [1.18.1](https://github.com/feerglas/feiertach/compare/v1.18.0...v1.18.1) (2020-10-27)
 
 
