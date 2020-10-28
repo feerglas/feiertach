@@ -39,8 +39,8 @@
 </template>
 
 <script>
-import { addSuggestions } from '../helpers/calendar';
-import { getFormattedDate } from '../helpers/date';
+import { addSuggestions } from '../../helpers/calendar';
+import { getFormattedDate } from '../../helpers/date';
 
 export default {
   methods: {
@@ -78,7 +78,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../styles/styles.scss";
+@import "../../styles/styles.scss";
 
 .component-suggestion-header {
   @include cardHeader;

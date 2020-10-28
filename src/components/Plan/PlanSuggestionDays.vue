@@ -33,7 +33,7 @@
 </template>
 
 <script>
-import { getFormattedDate } from '../helpers/date';
+import { getFormattedDate } from '../../helpers/date';
 
 export default {
   methods: {
@@ -52,7 +52,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../styles/styles.scss";
+@import "../../styles/styles.scss";
 
 .component-days-list {
   border-top: 1px solid $shadow-over-background;

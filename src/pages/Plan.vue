@@ -105,8 +105,8 @@ import DaySelector from '../components/DaySelector.vue';
 import getMetaInfo from '../helpers/meta';
 import globalConfig from '../config/global';
 import Loader from '../components/Loader.vue';
-import PlanOptions from '../components/PlanOptions.vue';
-import PlanSuggestions from '../components/PlanSuggestions.vue';
+import PlanOptions from '../components/Plan/PlanOptions.vue';
+import PlanSuggestions from '../components/Plan/PlanSuggestions.vue';
 
 export default {
   components: {

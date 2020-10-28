@@ -40,7 +40,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../styles/styles.scss";
+@import "../../styles/styles.scss";
 
 .component-suggestions {
   margin-top: 2rem;
