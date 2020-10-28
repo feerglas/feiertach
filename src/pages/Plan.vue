@@ -240,6 +240,9 @@ export default {
     margin-top: 2.5rem;
   }
 
+  .block.suggestions {
+    margin-top: 4rem;
+  }
 }
 
 </style>
