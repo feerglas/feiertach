@@ -1,13 +1,9 @@
-- add holiday planner
-- robots.txt
-- pwa
-- test browsers/devices
-- gitGuardian/dependabot
-- proper styling
-- on cantons and holidays page -> style counter
-- css: indent everywhere the same
-- remove unneded classes and empty styles
-- css: unify styles, like flag
-- check ressources and optimize. for example, strip out unneeded characters from mdi font
-- app.js and main css rather big, most probably from buefy
-- infinite loop -> open holidays page of a canton?
+- test browsers/devices (e.g. chrome, edge, firefox on iphone etc.)
+- readme file
+- seo
+- use schema.org
+- check meta tags with browser plugin
+- lighthouse and pagespeed insights
+- delete app from app store
+- write users to use webapp instead
+- planer -> probably make items collapsible
