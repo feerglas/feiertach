@@ -219,14 +219,6 @@ export default {
       this.setSuggestions();
     }
   }
-
-  /**
-   * mounted() {
-   *   // TODO: remove for PROD
-   *   this.currentCanton = this.$page.allCanton.edges[0].node;
-   *   this.cantonChanged();
-   * }
-   */
 };
 
 </script>
