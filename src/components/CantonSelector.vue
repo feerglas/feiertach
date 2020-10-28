@@ -11,7 +11,7 @@
       :disabled="disabled"
     >
       <option
-        v-for="(canton, index) in cantons"
+        v-for="(canton, index) in sortedCantons"
         :value="canton.node"
         :key="index"
       >
@@ -23,8 +23,14 @@
 </template>
 
 <script>
+import sortCantons from '../helpers/sort';
 
 export default {
+  computed: {
+    sortedCantons() {
+      return sortCantons(this.cantons, this.locale);
+    }
+  },
   data() {
     return {
       currentValue: undefined
@@ -44,8 +50,3 @@ export default {
 };
 
 </script>
-
-<style lang="scss">
-//@import "../styles/styles.scss";
-
-</style>
