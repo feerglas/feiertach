@@ -3,25 +3,12 @@
     <h1 class="title">{{$t('navigation.plan')}}</h1>
     <p>{{$t('plan.description')}}</p>
 
-    <b-field
-      class="block"
-      :label="$t('plan.canton')"
-    >
-      <b-select
-        :placeholder="$t('plan.chooseCanton')"
-        v-model="currentCanton"
-        @change.native="cantonChanged"
-        :disabled="this.$data.isCalculating"
-      >
-        <option
-          v-for="(canton, index) in sortedCantons"
-          :value="canton.node"
-          :key="index"
-        >
-          {{ canton.node.name[currentLocale] }}
-        </option>
-      </b-select>
-    </b-field>
+    <CantonSelector
+      :disabled="this.$data.isCalculating"
+      :cantons="sortedCantons"
+      :locale="currentLocale"
+      @changed="cantonChanged"
+    />
 
     <DaySelector
       class="block"
@@ -219,6 +206,7 @@
 
 <script>
 import { addSuggestions } from '../helpers/calendar';
+import CantonSelector from '../components/CantonSelector.vue';
 import DaySelector from '../components/DaySelector.vue';
 import { getFormattedDate } from '../helpers/date';
 import getMetaInfo from '../helpers/meta';
@@ -228,6 +216,7 @@ import sortCantons from '../helpers/sort';
 
 export default {
   components: {
+    CantonSelector,
     DaySelector,
     Loader
   },
@@ -311,7 +300,8 @@ export default {
       };
 
     },
-    cantonChanged() {
+    cantonChanged(canton) {
+      this.currentCanton = canton;
       this.calculate();
     },
     formatDate(dateObject) {
