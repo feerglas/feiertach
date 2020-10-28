@@ -1,5 +1,5 @@
 <template>
-  <div class="day-selector">
+  <div class="block day-selector">
     <b-field :label="$t('plan.chooseFreeDays')">
       <b-checkbox
         class="is-medium"
@@ -98,7 +98,13 @@ export default {
 </script>
 
 <style lang="scss">
-.day-selector {
+.day-selector.block .field.has-addons {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -1rem;
 
+  label.b-checkbox  {
+    margin-bottom: 1rem;
+  }
 }
 </style>
