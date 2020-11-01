@@ -1,3 +1,10 @@
+## [1.18.4](https://github.com/feerglas/feiertach/compare/v1.18.3...v1.18.4) (2020-10-28)
+
+
+### Bug Fixes
+
+* fix paths after moving plan components to separate folder ([7ba8c69](https://github.com/feerglas/feiertach/commit/7ba8c697d5b1db494745bf31e34c25f0453d86fd))
+
 ## [1.18.3](https://github.com/feerglas/feiertach/compare/v1.18.2...v1.18.3) (2020-10-27)
 
 
