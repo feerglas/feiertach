@@ -1,3 +1,16 @@
+# [1.19.0](https://github.com/feerglas/feiertach/compare/v1.18.4...v1.19.0) (2021-11-06)
+
+
+### Bug Fixes
+
+* fix button icon alignement ([aaad1c3](https://github.com/feerglas/feiertach/commit/aaad1c33f7ec8db3182a8425bdad35b750c601ae))
+* fix infoline icon alignment ([45bd5c7](https://github.com/feerglas/feiertach/commit/45bd5c737e6cb961b4fe88221694a8b4678d8688))
+
+
+### Features
+
+* make years array automatically starting from current year ([8e9c147](https://github.com/feerglas/feiertach/commit/8e9c147c4da4edb5a313eca79b62e23440297df5))
+
 ## [1.18.4](https://github.com/feerglas/feiertach/compare/v1.18.3...v1.18.4) (2020-10-28)
 
 
