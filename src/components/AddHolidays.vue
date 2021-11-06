@@ -8,6 +8,7 @@
       <b-icon
         icon="plus"
         size="is-small"
+        class="button-icon__icon"
       ></b-icon>
     </span>
     <span>{{$t('holiday.addAllToCalendar')}}</span>
@@ -38,7 +39,12 @@ export default {
 </script>
 
 <style lang="scss">
+.button > span {
+  display: flex;
+}
+
 .button-icon {
   padding-right: .7rem;
 }
+
 </style>
