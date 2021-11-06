@@ -54,7 +54,7 @@
           </b-tooltip>
 
           <div class="mobile-info-line">
-            <div v-if="forCanton === true">
+            <div v-if="forCanton === true" class="mobile-info-line-wrapper">
               <b-icon
                 :icon="item.official ? 'check' : 'x'"
                 size="is-small"
@@ -72,7 +72,7 @@
               </b-tooltip>
             </div>
 
-            <div v-if="forCanton === true">
+            <div v-if="forCanton === true" class="mobile-info-line-wrapper">
               <b-icon
                 :icon="item.allCanton ? 'check' : 'x'"
                 size="is-small"
@@ -502,6 +502,11 @@ export default {
       align-items: center;
       justify-content: space-between;
       padding-bottom: 1rem;
+    }
+
+    .mobile-info-line-wrapper {
+      display: flex;
+      align-items: center;
     }
 
     .mobile-info-item-text {
