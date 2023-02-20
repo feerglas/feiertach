@@ -7,3 +7,4 @@
 - delete app from app store
 - write users to use webapp instead
 - planer -> probably make items collapsible
+- is ci/netlify_deploy.sh & .travis.yml needed?
