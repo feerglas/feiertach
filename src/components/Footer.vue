@@ -31,7 +31,7 @@
             href="https://github.com/feerglas/feiertach"
             target="_blank"
             rel="noreferrer"
-          >{{$t('footer.findOnGithub')}}<br><br><span class="tag">Version {{$data.version}}</span></a>
+          >{{$t('footer.findOnGithub')}}</a>
         </div>
 
       </div>
@@ -53,7 +53,6 @@ export default {
     return {
       availableLocales: this.$i18n.availableLocales,
       currentLocale: this.$i18n.locale.toString(),
-      version: '0.0.0'
     };
   },
   methods: {
@@ -65,21 +64,6 @@ export default {
       });
 
     }
-  },
-  async mounted() {
-    const versionData = await fetch('/version.txt');
-
-    if (!versionData.ok) {
-      throw new Error('Version file not found');
-    }
-
-    let versionNumber = await versionData.text();
-
-    if (versionNumber.trim() === '0.0.0') {
-      versionNumber = documentationPackageJson.version;
-    }
-
-    this.version = versionNumber;
   },
   name: 'Footer'
 };
