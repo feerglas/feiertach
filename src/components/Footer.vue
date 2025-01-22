@@ -21,7 +21,7 @@
         </div>
 
         <div class="block social-links">
-          <p>©2020 Yves Tscherry</p>
+          <p>©2025 Yves Tscherry</p>
           <p class="list-description">{{$t('footer.findOnSocial')}}:</p>
           <SocialLinks />
         </div>
