@@ -15,7 +15,7 @@
     "file-saver": "~2.0.2",
     "gridsome": "~0.7.21",
     "gridsome-plugin-i18n": "~1.6.0",
-    "gridsome-plugin-pwa": "0.0.18",
+    "gridsome-plugin-pwa": "0.0.22",
     "ics": "~2.25.0",
     "sass": "^1.83.4",
     "vue-feather-icons": "~5.1.0",
