@@ -43,8 +43,6 @@
 <script>
 import SocialLinks from './SocialLinks.vue';
 
-const documentationPackageJson = require('../../package.json');
-
 export default {
   components: {
     SocialLinks
@@ -52,7 +50,7 @@ export default {
   data() {
     return {
       availableLocales: this.$i18n.availableLocales,
-      currentLocale: this.$i18n.locale.toString(),
+      currentLocale: this.$i18n.locale.toString()
     };
   },
   methods: {
