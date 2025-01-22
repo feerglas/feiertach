@@ -1,3 +1,5 @@
+// https://www.schulferien.org/schweiz/feiertage/ostersonntag/
+
 const holidays = [
 
   // Näfelser Fahrt
@@ -9,28 +11,28 @@ const holidays = [
       }
     },
     dates: {
-      2020: {
-        day: 2,
-        month: 4
-      },
-      2021: {
-        day: 8,
-        month: 4
-      },
-      2022: {
-        day: 7,
-        month: 4
-      },
-      2023: {
-        day: 13,
-        month: 4
-      },
-      2024: {
-        day: 4,
-        month: 4
-      },
       2025: {
         day: 3,
+        month: 4
+      },
+      2026: {
+        day: 9,
+        month: 4
+      },
+      2027: {
+        day: 1,
+        month: 4
+      },
+      2028: {
+        day: 6,
+        month: 4
+      },
+      2029: {
+        day: 5,
+        month: 4
+      },
+      2030: {
+        day: 4,
         month: 4
       }
     },
@@ -155,28 +157,28 @@ const holidays = [
       }
     },
     dates: {
-      2020: {
-        day: 10,
-        month: 4
-      },
-      2021: {
-        day: 2,
-        month: 4
-      },
-      2022: {
-        day: 15,
-        month: 4
-      },
-      2023: {
-        day: 7,
-        month: 4
-      },
-      2024: {
-        day: 29,
-        month: 3
-      },
       2025: {
         day: 18,
+        month: 4
+      },
+      2026: {
+        day: 3,
+        month: 4
+      },
+      2027: {
+        day: 26,
+        month: 3
+      },
+      2028: {
+        day: 14,
+        month: 4
+      },
+      2029: {
+        day: 30,
+        month: 3
+      },
+      2030: {
+        day: 19,
         month: 4
       }
     },
@@ -309,28 +311,28 @@ const holidays = [
       }
     },
     dates: {
-      2020: {
-        day: 12,
-        month: 4
-      },
-      2021: {
-        day: 4,
-        month: 4
-      },
-      2022: {
-        day: 17,
-        month: 4
-      },
-      2023: {
-        day: 9,
-        month: 4
-      },
-      2024: {
-        day: 31,
-        month: 3
-      },
       2025: {
         day: 20,
+        month: 4
+      },
+      2026: {
+        day: 5,
+        month: 4
+      },
+      2027: {
+        day: 28,
+        month: 3
+      },
+      2028: {
+        day: 16,
+        month: 4
+      },
+      2029: {
+        day: 1,
+        month: 4
+      },
+      2030: {
+        day: 21,
         month: 4
       }
     },
@@ -459,28 +461,28 @@ const holidays = [
       }
     },
     dates: {
-      2020: {
-        day: 13,
-        month: 4
-      },
-      2021: {
-        day: 5,
-        month: 4
-      },
-      2022: {
-        day: 18,
-        month: 4
-      },
-      2023: {
-        day: 10,
-        month: 4
-      },
-      2024: {
-        day: 1,
-        month: 4
-      },
       2025: {
         day: 21,
+        month: 4
+      },
+      2026: {
+        day: 6,
+        month: 4
+      },
+      2027: {
+        day: 29,
+        month: 3
+      },
+      2028: {
+        day: 17,
+        month: 4
+      },
+      2029: {
+        day: 2,
+        month: 4
+      },
+      2030: {
+        day: 22,
         month: 4
       }
     },
@@ -519,28 +521,28 @@ const holidays = [
       }
     },
     dates: {
-      2020: {
+      2025: {
+        day: 28,
+        month: 4
+      },
+      2026: {
         day: 20,
         month: 4
       },
-      2021: {
+      2027: {
         day: 19,
         month: 4
       },
-      2022: {
-        day: 25,
+      2028: {
+        day: 24,
         month: 4
       },
-      2023: {
-        day: 17,
+      2029: {
+        day: 16,
         month: 4
       },
-      2024: {
-        day: 15,
-        month: 4
-      },
-      2025: {
-        day: 28,
+      2030: {
+        day: 29,
         month: 4
       }
     },
@@ -673,28 +675,28 @@ const holidays = [
       }
     },
     dates: {
-      2020: {
-        day: 21,
-        month: 5
-      },
-      2021: {
-        day: 13,
-        month: 5
-      },
-      2022: {
-        day: 26,
-        month: 5
-      },
-      2023: {
-        day: 18,
-        month: 5
-      },
-      2024: {
-        day: 9,
-        month: 5
-      },
       2025: {
         day: 29,
+        month: 5
+      },
+      2026: {
+        day: 14,
+        month: 5
+      },
+      2027: {
+        day: 6,
+        month: 5
+      },
+      2028: {
+        day: 25,
+        month: 5
+      },
+      2029: {
+        day: 10,
+        month: 5
+      },
+      2030: {
+        day: 30,
         month: 5
       }
     },
@@ -823,28 +825,28 @@ const holidays = [
       }
     },
     dates: {
-      2020: {
-        day: 1,
-        month: 6
-      },
-      2021: {
-        day: 24,
-        month: 5
-      },
-      2022: {
-        day: 6,
-        month: 6
-      },
-      2023: {
-        day: 29,
-        month: 5
-      },
-      2024: {
-        day: 20,
-        month: 5
-      },
       2025: {
         day: 9,
+        month: 6
+      },
+      2026: {
+        day: 25,
+        month: 5
+      },
+      2027: {
+        day: 17,
+        month: 5
+      },
+      2028: {
+        day: 5,
+        month: 6
+      },
+      2029: {
+        day: 21,
+        month: 5
+      },
+      2030: {
+        day: 10,
         month: 6
       }
     },
@@ -937,28 +939,28 @@ const holidays = [
       }
     },
     dates: {
-      2020: {
-        day: 11,
-        month: 6
-      },
-      2021: {
-        day: 3,
-        month: 6
-      },
-      2022: {
-        day: 16,
-        month: 6
-      },
-      2023: {
-        day: 8,
-        month: 6
-      },
-      2024: {
-        day: 30,
-        month: 5
-      },
       2025: {
         day: 19,
+        month: 6
+      },
+      2026: {
+        day: 4,
+        month: 6
+      },
+      2027: {
+        day: 27,
+        month: 5
+      },
+      2028: {
+        day: 15,
+        month: 6
+      },
+      2029: {
+        day: 31,
+        month: 5
+      },
+      2030: {
+        day: 20,
         month: 6
       }
     },
@@ -991,28 +993,28 @@ const holidays = [
       }
     },
     dates: {
-      2020: {
+      2025: {
+        day: 11,
+        month: 9
+      },
+      2026: {
         day: 10,
         month: 9
       },
-      2021: {
+      2027: {
         day: 9,
         month: 9
       },
-      2022: {
-        day: 8,
-        month: 9
-      },
-      2023: {
+      2028: {
         day: 7,
         month: 9
       },
-      2024: {
-        day: 5,
+      2029: {
+        day: 6,
         month: 9
       },
-      2025: {
-        day: 11,
+      2030: {
+        day: 5,
         month: 9
       }
     },
@@ -1051,28 +1053,28 @@ const holidays = [
       }
     },
     dates: {
-      2020: {
+      2025: {
+        day: 15,
+        month: 9
+      },
+      2026: {
         day: 14,
         month: 9
       },
-      2021: {
+      2027: {
         day: 13,
         month: 9
       },
-      2022: {
-        day: 12,
-        month: 9
-      },
-      2023: {
+      2028: {
         day: 11,
         month: 9
       },
-      2024: {
-        day: 9,
+      2029: {
+        day: 10,
         month: 9
       },
-      2025: {
-        day: 15,
+      2030: {
+        day: 9,
         month: 9
       }
     },
@@ -1117,28 +1119,28 @@ const holidays = [
       }
     },
     dates: {
-      2020: {
+      2025: {
+        day: 22,
+        month: 9
+      },
+      2026: {
         day: 21,
         month: 9
       },
-      2021: {
+      2027: {
         day: 20,
         month: 9
       },
-      2022: {
-        day: 19,
-        month: 9
-      },
-      2023: {
+      2028: {
         day: 18,
         month: 9
       },
-      2024: {
-        day: 16,
+      2029: {
+        day: 17,
         month: 9
       },
-      2025: {
-        day: 22,
+      2030: {
+        day: 16,
         month: 9
       }
     },
